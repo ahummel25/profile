@@ -1,30 +1,36 @@
-import * as React from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React, { FC } from "react";
+import Helmet from "react-helmet";
+import { StaticQuery, graphql } from "gatsby";
 
-import 'modern-normalize'
-import '../styles/normalize'
+import "modern-normalize";
+import "../styles/normalize";
 
-import Header from '../components/Header'
-import LayoutRoot from '../components/LayoutRoot'
-import LayoutMain from '../components/LayoutMain'
+import Header from "../components/Header";
+import LayoutRoot from "../components/LayoutRoot";
+import LayoutMain from "../components/LayoutMain";
 
 interface StaticQueryProps {
   site: {
     siteMetadata: {
-      title: string
-      description: string
-      keywords: string
-    }
-  }
+      author: {
+        name: string;
+      };
+      title: string;
+      description: string;
+      keywords: string;
+    };
+  };
 }
 
-const IndexLayout: React.FC = ({ children }) => (
+const IndexLayout: FC<{}> = ({ children }) => (
   <StaticQuery
     query={graphql`
       query IndexLayoutQuery {
         site {
           siteMetadata {
+            author {
+              name
+            }
             title
             description
           }
@@ -36,15 +42,18 @@ const IndexLayout: React.FC = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: data.site.siteMetadata.description },
-            { name: 'keywords', content: data.site.siteMetadata.keywords }
+            {
+              name: "description",
+              content: data.site.siteMetadata.description
+            },
+            { name: "keywords", content: data.site.siteMetadata.keywords }
           ]}
         />
-        <Header title={data.site.siteMetadata.title} />
+        <Header headerTitle={data.site.siteMetadata.author.name} />
         <LayoutMain>{children}</LayoutMain>
       </LayoutRoot>
     )}
   />
-)
+);
 
-export default IndexLayout
+export default IndexLayout;

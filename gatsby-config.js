@@ -1,17 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: "gatsby-starter-typescript-plus",
+    title: "Andrew Hummel Profile",
     description:
       "A starter kit for TypeScript-based Gatsby projects with sensible defaults.",
     keywords: "gatsbyjs, gatsby, javascript, sample, something",
     siteUrl: "https://gatsby-starter-typescript-plus.netlify.com",
     author: {
-      name: "Resi Respati",
-      url: "https://twitter.com/resir014",
-      email: "resir014@gmail.com"
+      name: "Andrew W. Hummel",
+      url: "https://github.com/ahummel25",
+      email: "ahummel25@gmail.com"
     }
   },
+  pathPrefix: "/profile",
   plugins: [
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/images`
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
