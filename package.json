@@ -10,10 +10,10 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "clean": "rimraf public",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "dev": "gatsby develop",
+    "dev": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "lint": "eslint src/ --ext .js,.ts,.jsx,.tsx",
     "lint-fix": "eslint src/ --ext .js,.ts,.jsx,.tsx --fix",
