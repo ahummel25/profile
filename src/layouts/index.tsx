@@ -49,7 +49,7 @@ const IndexLayout: FC<{}> = ({ children }) => (
             { name: "keywords", content: data.site.siteMetadata.keywords }
           ]}
         />
-        <Header headerTitle={data.site.siteMetadata.author.name} />
+        <Header title={data.site.siteMetadata.author.name} />
         <LayoutMain>{children}</LayoutMain>
       </LayoutRoot>
     )}

@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "clean": "rimraf public",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "dev": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "dev": "GATSBY_GRAPHQL_IDE=playground gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "lint": "eslint src/ --ext .js,.ts,.jsx,.tsx",
     "lint-fix": "eslint src/ --ext .js,.ts,.jsx,.tsx --fix",
@@ -27,6 +27,10 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.12",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "babel-plugin-styled-components": "^1.10.1",
     "classnames": "^2.2.6",
     "gatsby": "^2.10.0",
@@ -53,9 +57,11 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.8.0",
     "typescript": "^3.5.2"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "@types/classnames": "^2.2.8",
     "@types/node": "^12.0.10",
     "@types/react": "^16.8.22",
@@ -70,6 +76,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2",
+    "react-social-icons": "^4.1.0",
     "rimraf": "^2.6.3"
   }
 }

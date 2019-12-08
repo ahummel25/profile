@@ -1,7 +1,7 @@
 import { FluidObject } from "gatsby-image";
 
-export interface HeaderProps {
-  headerTitle: string;
+export interface TitleProps {
+  title: string;
 }
 export interface ImageProfileData {
   file: {
