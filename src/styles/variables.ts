@@ -14,6 +14,7 @@ export const colors = {
     whisper: "#fbfafc"
   },
   code: "#fcf6f0",
+  profileText: "#285172",
   gray: {
     dark: "hsla(270, 17.119554496%, 0%, 0.92)",
     copy: "hsla(270, 15.797828016000002%, 0%, 0.88)",
@@ -49,7 +50,11 @@ export const widths = {
 export const dimensions = {
   fontSize: {
     regular: 16,
-    large: 18
+    large: 18,
+    profileText: 30
+  },
+  fontWeight: {
+    profileText: 700
   },
   headingSizes: {
     h1: 2.441,

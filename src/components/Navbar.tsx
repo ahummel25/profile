@@ -28,14 +28,15 @@ const HeaderTop = styled(Container)`
   @media screen and (min-width: 760px) {
     float: left;
   }
-  padding: 0 ${dimensions.containerPadding}rem;
+  //padding: 0 ${dimensions.containerPadding}rem;
   display: flex;
   flex-direction: row;
 `;
 
 const HomepageLink = styled(Link)`
   @media screen and (max-width: 480px) {
-    font-size: 0.75rem;
+    font-size: 1rem;
+    margin-top: 5px;
   }
   @media screen and (max-width: 760px) {
     padding-top: ${dimensions.containerPadding * 0.65}rem;
@@ -58,6 +59,10 @@ const HomepageLink = styled(Link)`
 `;
 
 const GitIconWrapper = styled.div`
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+    margin: 0;
+  }
   @media screen and (max-width: 760px) {
     padding-top: 15px;
   }
@@ -65,8 +70,14 @@ const GitIconWrapper = styled.div`
     padding-top: 35px;
   }
   display: flex;
-  flex-direction: row;
+  flex-direction: center;
+  justify-content: space-around !important;
   padding-left: 20px;
+  .social-icon {
+    box-sizing: content-box !important;
+    height: 45px !important;
+    width: 45px !important;
+  }
   .social-container {
     border: 2px solid ${colors.white} !important;
     border-radius: 100%;

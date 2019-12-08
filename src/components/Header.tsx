@@ -5,16 +5,15 @@ import Img from "gatsby-image";
 import Navbar from "../components/Navbar";
 import { useGetProfileImage } from "../hooks";
 import { TitleProps } from "../interfaces";
-import { heights, dimensions, colors } from "../styles/variables";
+import { heights, dimensions, colors, fonts } from "../styles/variables";
 
 const StyledHeaderContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  height: 100%;
   width: 100%;
   background-color: ${colors.babyBlue};
 `;
 
-const StyledHeaderProfile = styled.header`
+const StyledHeaderProfile = styled.div`
   @media screen and (max-width: 480px) {
     width: 60%;
   }
@@ -24,9 +23,18 @@ const StyledHeaderProfile = styled.header`
   @media screen and (min-width: 900px) {
     width: 17%;
   }
-  height: 100%;
+  margin: 0 auto;
   padding: 0 ${dimensions.containerPadding}rem;
   padding-top: 40px !important;
+`;
+
+const StyledHeaderText = styled.div`
+  color: ${colors.white};
+  font-family: ${fonts.helvetica};
+  font-size: 2.25em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
 `;
 
 const ImgStyled = styled(Img)`
@@ -51,8 +59,9 @@ const Header: FC<TitleProps> = ({ title }): JSX.Element => {
             alt="Head Shot"
           />
           <br />
-          <br />
         </StyledHeaderProfile>
+        <StyledHeaderText>Andrew W. Hummel</StyledHeaderText>
+        <hr />
       </StyledHeaderContainer>
     </>
   );
