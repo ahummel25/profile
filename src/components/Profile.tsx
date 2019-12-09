@@ -12,16 +12,18 @@ const StyledProfileContainer = styled.div`
 
 const StyledProfileBody = styled.p`
   font-family: ${fonts.helvetica};
-  font-size: ${dimensions.fontSize.profileText}px;
-  font-weight: ${dimensions.fontWeight.profileText};
+  font-size: ${dimensions.fontSize.profileText};
+  font-weight: ${dimensions.fontWeight.bold};
   color: ${colors.profileText};
   text-transform: uppercase;
 `;
 
 const Profile: FC<{}> = (): JSX.Element => (
-  <StyledProfileContainer>
-    <StyledProfileBody>About Me</StyledProfileBody>
-  </StyledProfileContainer>
+  <>
+    <StyledProfileContainer>
+      <StyledProfileBody>About Me</StyledProfileBody>
+    </StyledProfileContainer>
+  </>
 );
 
 export default Profile;

@@ -54,7 +54,7 @@ export const dimensions = {
     profileText: 30
   },
   fontWeight: {
-    profileText: 700
+    bold: 700
   },
   headingSizes: {
     h1: 2.441,
@@ -66,7 +66,8 @@ export const dimensions = {
     regular: 1.45,
     heading: 1.2
   },
-  containerPadding: 1.5
+  containerPadding: 1,
+  containerPaddingLg: 1.5
 };
 
 export const heights = {

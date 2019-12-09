@@ -1,24 +1,29 @@
 import React, { FC } from "react";
 import styled from "@emotion/styled";
-import { transparentize } from "polished";
 import { Link } from "gatsby";
-import { SocialIcon } from "react-social-icons";
+
 import { TitleProps } from "../interfaces";
 import { heights, dimensions, colors, fonts } from "../styles/variables";
 import Container from "./Container";
+import Hamburger from "./Mobile/Hamburger";
+import SocialIcons from "./SocialIcons";
 
-const StyledHeaderTop = styled.header`
+const StyledHeaderTop = styled.nav`
   @media screen and (max-width: 760px) {
     height: ${heights.header * 0.425}px;
   }
-
   @media screen and (min-width: 760px) {
     height: ${heights.header * 0.75}px;
     transition: 0.2s ease-in;
   }
-  padding: 0 ${dimensions.containerPadding}rem;
   background-color: ${colors.darkBlue};
-  color: ${transparentize(1, colors.white)};
+  //border-color: rgba(111, 111, 111, 0.2) transparent transparent;
+  border-bottom: 1.25px solid #3f6380;
+  padding: 0 ${dimensions.containerPadding}rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 `;
 
 const HeaderTop = styled(Container)`
@@ -28,22 +33,36 @@ const HeaderTop = styled(Container)`
   @media screen and (min-width: 760px) {
     float: left;
   }
-  //padding: 0 ${dimensions.containerPadding}rem;
   display: flex;
   flex-direction: row;
 `;
 
 const HomepageLink = styled(Link)`
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 374px) {
+    font-size: 1rem;
+    margin-top: 5px;
+    padding-top: ${dimensions.containerPaddingLg * 0.25}rem;
+  }
+  @media screen and (min-width: 375px) and (max-width: 410px) {
     font-size: 1rem;
     margin-top: 5px;
   }
-  @media screen and (max-width: 760px) {
-    padding-top: ${dimensions.containerPadding * 0.65}rem;
+  @media screen and (min-width: 481px) and (max-width: 800px) {
+    font-size: 1.75rem;
+    padding-top: ${dimensions.containerPaddingLg * 1.35}rem;
+    padding-left: ${dimensions.containerPaddingLg * 1}rem;
+    transition: 0.2s ease-in;
   }
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 801px) and (max-width: 1024px) {
     font-size: 1.875rem;
-    padding-top: ${dimensions.containerPadding * 1.25}rem;
+    padding-top: ${dimensions.containerPaddingLg * 1.25}rem;
+    padding-left: ${dimensions.containerPaddingLg * 1.5}rem;
+    transition: 0.2s ease-in;
+  }
+  @media screen and (min-width: 1025px) {
+    font-size: 1.875rem;
+    padding-top: ${dimensions.containerPaddingLg * 1.25}rem;
+    padding-left: ${dimensions.containerPaddingLg * 5}rem;
     transition: 0.2s ease-in;
   }
   color: ${colors.white};
@@ -58,67 +77,12 @@ const HomepageLink = styled(Link)`
   }
 `;
 
-const GitIconWrapper = styled.div`
-  @media screen and (max-width: 480px) {
-    font-size: 1rem;
-    margin: 0;
-  }
-  @media screen and (max-width: 760px) {
-    padding-top: 15px;
-  }
-  @media screen and (min-width: 760px) {
-    padding-top: 35px;
-  }
-  display: flex;
-  flex-direction: center;
-  justify-content: space-around !important;
-  padding-left: 20px;
-  .social-icon {
-    box-sizing: content-box !important;
-    height: 45px !important;
-    width: 45px !important;
-  }
-  .social-container {
-    border: 2px solid ${colors.white} !important;
-    border-radius: 100%;
-    height: 65% !important;
-    width: 65% !important;
-
-    .social-svg {
-      stroke: ${colors.white};
-      stroke-width: 1;
-    }
-    .social-svg-icon {
-      fill: ${colors.white} !important;
-    }
-    .social-svg-mask {
-      fill: ${colors.darkBlue} !important;
-    }
-
-    &:hover {
-      .social-svg {
-        stroke: ${colors.babyBlue};
-        stroke-width: 1;
-      }
-      .social-svg-icon {
-        fill: ${colors.babyBlue} !important;
-      }
-      .social-svg-mask {
-        fill: ${colors.white} !important;
-      }
-    }
-  }
-`;
-
 const Navbar: FC<TitleProps> = ({ title }): JSX.Element => (
   <StyledHeaderTop>
     <HeaderTop>
       <HomepageLink to="/">{title}</HomepageLink>
-      <GitIconWrapper>
-        <SocialIcon url="https://www.linkedin.com/in/andrew-hummel-7b618719/"></SocialIcon>
-        <SocialIcon url="https://github.com/ahummel25"></SocialIcon>
-        <SocialIcon url="https://stackoverflow.com/"></SocialIcon>
-      </GitIconWrapper>
+      <SocialIcons />
+      <Hamburger />
     </HeaderTop>
   </StyledHeaderTop>
 );

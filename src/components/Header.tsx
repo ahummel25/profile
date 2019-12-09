@@ -10,7 +10,18 @@ import { heights, dimensions, colors, fonts } from "../styles/variables";
 const StyledHeaderContainer = styled.div`
   height: 100%;
   width: 100%;
+  color: ${colors.white};
+  flex: auto;
+  text-align: center;
+  font-size: 1.5rem;
   background-color: ${colors.babyBlue};
+  hr {
+    margin: 15px auto 25px;
+    max-width: 250px;
+    padding: 0;
+    border: 0;
+    border-top: 4px solid;
+  }
 `;
 
 const StyledHeaderProfile = styled.div`
@@ -24,14 +35,14 @@ const StyledHeaderProfile = styled.div`
     width: 17%;
   }
   margin: 0 auto;
-  padding: 0 ${dimensions.containerPadding}rem;
-  padding-top: 40px !important;
+  padding: 0 ${dimensions.containerPaddingLg}rem;
+  padding-top: 40px;
 `;
 
 const StyledHeaderText = styled.div`
   color: ${colors.white};
   font-family: ${fonts.helvetica};
-  font-size: 2.25em;
+  font-size: 2.25rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -62,6 +73,7 @@ const Header: FC<TitleProps> = ({ title }): JSX.Element => {
         </StyledHeaderProfile>
         <StyledHeaderText>Andrew W. Hummel</StyledHeaderText>
         <hr />
+        <span>Software Engineer based in Chicago, IL</span>
       </StyledHeaderContainer>
     </>
   );
