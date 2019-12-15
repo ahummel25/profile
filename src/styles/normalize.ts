@@ -23,7 +23,8 @@ export default `
     overflow-y: scroll;
     font-family: ${fonts.sansSerif};
     color: ${colors.black};
-    background-color: ${colors.white};
+	background-color: ${colors.white};
+	letter-spacing: 1px;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
   }
@@ -118,12 +119,12 @@ export default `
     color: ${colors.black};
   }
 
-  ul,
-  ol,
-  dl {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
+//   ul,
+//   ol,
+//   dl {
+//     margin-top: 0;
+//     margin-bottom: 1rem;
+//   }
 
   dt {
     font-weight: bold;
@@ -131,13 +132,6 @@ export default `
 
   dd {
     margin-bottom: .5rem;
-  }
-
-  hr {
-    position: relative;
-    margin: 1.5rem 0;
-    border: 0;
-    border-top: 1px solid ${colors.ui.light};
   }
 
   blockquote {

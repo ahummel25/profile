@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from "gatsby";
 import "modern-normalize";
 import "../styles/normalize";
 
+import { IndexLayoutProps } from "../interfaces";
 import Header from "../components/Header";
 import LayoutRoot from "../components/LayoutRoot";
 import LayoutMain from "../components/LayoutMain";
@@ -22,7 +23,7 @@ interface StaticQueryProps {
   };
 }
 
-const IndexLayout: FC<{}> = ({ children }) => (
+const IndexLayout: FC<IndexLayoutProps> = ({ children, refsToForward }) => (
   <StaticQuery
     query={graphql`
       query IndexLayoutQuery {
@@ -49,7 +50,10 @@ const IndexLayout: FC<{}> = ({ children }) => (
             { name: "keywords", content: data.site.siteMetadata.keywords }
           ]}
         />
-        <Header title={data.site.siteMetadata.author.name} />
+        <Header
+          title={data.site.siteMetadata.author.name}
+          refsToForward={refsToForward}
+        />
         <LayoutMain>{children}</LayoutMain>
       </LayoutRoot>
     )}

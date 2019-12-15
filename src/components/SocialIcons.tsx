@@ -7,6 +7,7 @@ const GitIconWrapper = styled.div`
   @media screen and (min-width: 376px) and (max-width: 480px) {
     font-size: 1rem;
     margin: 0;
+    padding-right: 60px;
   }
   @media screen and (max-width: 760px) {
     padding-top: 15px;
@@ -14,8 +15,10 @@ const GitIconWrapper = styled.div`
   @media screen and (min-width: 760px) {
     padding-top: 35px;
   }
+  @media screen and (min-width: 1000px) {
+    padding-left: 20px;
+  }
   display: flex;
-  padding-left: 20px;
   .social-icon {
     box-sizing: content-box !important;
     height: 45px !important;

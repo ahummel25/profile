@@ -4,18 +4,19 @@ import Img from "gatsby-image";
 
 import Navbar from "../components/Navbar";
 import { useGetProfileImage } from "../hooks";
-import { TitleProps } from "../interfaces";
+import { HeaderProps } from "../interfaces";
 import { heights, dimensions, colors, fonts } from "../styles/variables";
 
 const StyledHeaderContainer = styled.div`
   height: 100%;
   width: 100%;
   color: ${colors.white};
-  flex: auto;
   text-align: center;
   font-size: 1.5rem;
   background-color: ${colors.babyBlue};
+  padding-bottom: 40px;
   hr {
+    color: ${colors.white};
     margin: 15px auto 25px;
     max-width: 250px;
     padding: 0;
@@ -31,7 +32,10 @@ const StyledHeaderProfile = styled.div`
   @media screen and (min-width: 600px) {
     width: 35%;
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 900px) and (max-width: 1599px) {
+    width: 25%;
+  }
+  @media screen and (min-width: 1600px) {
     width: 17%;
   }
   margin: 0 auto;
@@ -57,12 +61,12 @@ const ImgStyled = styled(Img)`
   border-radius: 50%;
 `;
 
-const Header: FC<TitleProps> = ({ title }): JSX.Element => {
+const Header: FC<HeaderProps> = ({ title, refsToForward }): JSX.Element => {
   const imgData = useGetProfileImage();
 
   return (
     <>
-      <Navbar title={title}></Navbar>
+      <Navbar title={title} refsToForward={refsToForward}></Navbar>
       <StyledHeaderContainer>
         <StyledHeaderProfile>
           <ImgStyled

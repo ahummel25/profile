@@ -9,6 +9,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 
+import { DropDownListProps } from "../../interfaces";
 import { colors, dimensions, fonts } from "../../styles/variables";
 
 const useStyles = makeStyles<Theme, {}>({
@@ -37,8 +38,13 @@ const useStyles = makeStyles<Theme, {}>({
       fontWeight: 700
     }
   },
-  menuIconRoot: {
-    color: colors.white
+  menuIconButtonRoot: {
+    color: colors.white,
+    paddingRight: 0,
+    "& > span:first-child > svg:first-child": {
+      height: "1.5em",
+      width: "1.5em"
+    }
   }
 });
 
@@ -59,32 +65,34 @@ const HamburgerWrapper = styled.div`
     margin-right: 0;
     float: right;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
     display: none;
   }
 `;
 
-const DropDownItems: FC<{}> = (): JSX.Element => {
-  const classes = useStyles();
-  return (
-    <List
-      classes={{
-        root: classes.listRoot
-      }}
-    >
-      {["About Me"].map(text => (
+const DropDownList: FC<DropDownListProps> = ({
+  listRoot,
+  listItemRoot
+}): JSX.Element => (
+  <List
+    classes={{
+      root: listRoot
+    }}
+  >
+    {["About Me"].map(
+      (text: string): JSX.Element => (
         <ListItem button key={text}>
           <ListItemText
             classes={{
-              root: classes.listItemRoot
+              root: listItemRoot
             }}
             primary={text}
           />
         </ListItem>
-      ))}
-    </List>
-  );
-};
+      )
+    )}
+  </List>
+);
 
 const Hamburger: FC<{}> = (): JSX.Element => {
   const classes = useStyles();
@@ -94,7 +102,7 @@ const Hamburger: FC<{}> = (): JSX.Element => {
     <HamburgerWrapper>
       <IconButton
         classes={{
-          root: classes.menuIconRoot
+          root: classes.menuIconButtonRoot
         }}
         color="primary"
         onClick={() => {
@@ -111,9 +119,14 @@ const Hamburger: FC<{}> = (): JSX.Element => {
           modal: classes.drawerModal
         }}
         open={isOpen}
-        onClose={() => setIsOpen(false)}
+        onClose={(): void => {
+          setIsOpen(false);
+        }}
       >
-        <DropDownItems />
+        <DropDownList
+          listRoot={classes.listRoot}
+          listItemRoot={classes.listItemRoot}
+        />
       </Drawer>
     </HamburgerWrapper>
   );
