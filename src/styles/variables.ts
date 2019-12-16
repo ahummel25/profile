@@ -26,12 +26,12 @@ export const colors = {
 };
 
 export const fonts = {
-  helvetica: 'Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif',
+  helvetica: "Montserrat,\"Helvetica Neue\",Helvetica,Arial,sans-serif",
   sansSerif:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
-  serif: 'Georgia, "Times New Roman", Times, serif',
+    "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", Arial, sans-serif",
+  serif: "Georgia, \"Times New Roman\", Times, serif",
   monospace:
-    'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace'
+    "Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace, monospace"
 };
 
 export const breakpoints = {
