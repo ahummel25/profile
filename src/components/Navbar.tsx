@@ -93,7 +93,7 @@ const Navbar: FC<NavbarProps> = ({ title, refsToForward }): JSX.Element => (
     <HeaderTop>
       <HomepageLink to="/">{title}</HomepageLink>
       <SocialIcons />
-      <Hamburger />
+      <Hamburger refsToForward={refsToForward} />
     </HeaderTop>
     <NavbarLinks refsToForward={refsToForward} />
   </StyledHeaderTop>

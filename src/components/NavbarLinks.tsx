@@ -1,8 +1,9 @@
-import React, { createRef, FC, RefObject } from "react";
+import React, { FC } from "react";
 import styled from "@emotion/styled";
 
-import { NavbarLinksProps } from "../interfaces";
-import { heights, dimensions, colors, fonts } from "../styles/variables";
+import { handleScrollTo } from "../utils";
+import { LinkProps, NavbarLinksProps } from "../interfaces";
+import { colors } from "../styles/variables";
 
 const StyledNavbarLinksContainer = styled.div`
   @media screen and (max-width: 480px) {
@@ -34,9 +35,6 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLi = styled.li`
-  //   @media screen and (min-width: 481px) and (max-width: 900px) {
-  //     padding: 10px 15px;
-  //   }
   color: ${colors.white};
   cursor: pointer;
   display: inline;
@@ -45,35 +43,19 @@ const StyledLi = styled.li`
   text-transform: uppercase;
 `;
 
-const handleScrollTo = (elRef: RefObject<HTMLDivElement>): void => {
-  if (elRef.current) {
-    //Scroll the element into view
-    elRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
-  }
-};
-
 const NavbarLinks: FC<NavbarLinksProps> = ({ refsToForward }): JSX.Element => {
   const links = [
     {
       text: "About Me",
-      onClickHandler: () => {
-        handleScrollTo(refsToForward.aboutRef);
-      }
+      ref: refsToForward.aboutRef
     },
     {
       text: "Interests",
-      onClickHandler: () => {
-        handleScrollTo(refsToForward.aboutRef);
-      }
+      ref: refsToForward.aboutRef
     },
     {
       text: "Contact",
-      onClickHandler: () => {
-        handleScrollTo(refsToForward.aboutRef);
-      }
+      ref: refsToForward.aboutRef
     }
   ];
 
@@ -81,11 +63,11 @@ const NavbarLinks: FC<NavbarLinksProps> = ({ refsToForward }): JSX.Element => {
     <StyledNavbarLinksContainer>
       <StyledUl>
         {links.map(
-          (link: { text: string; onClickHandler: () => void }): JSX.Element => (
+          (link: LinkProps): JSX.Element => (
             <StyledLi
               key={link.text}
               onClick={(): void => {
-                link.onClickHandler();
+                handleScrollTo(link.ref);
               }}
             >
               {link.text}

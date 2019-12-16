@@ -1,10 +1,5 @@
 import { RefObject } from "react";
 import { FluidObject } from "gatsby-image";
-
-export interface DropDownListProps {
-  listRoot: string;
-  listItemRoot: string;
-}
 export interface ImageProfileData {
   file: {
     childImageSharp: {
@@ -19,12 +14,24 @@ export interface ForwardedRefsProps {
   };
 }
 
+export interface LinkProps {
+  text: string;
+  ref: RefObject<HTMLDivElement>;
+}
+
+export interface DropDownListProps {
+  listRoot: string;
+  listItemRoot: string;
+  links: LinkProps[];
+}
+
 export interface TitleProps extends ForwardedRefsProps {
   title: string;
 }
 
-export interface NavbarProps extends TitleProps {}
+export interface HamburgerProps extends ForwardedRefsProps {}
 export interface HeaderProps extends TitleProps {}
-export interface IndexLayoutProps extends ForwardedRefsProps {}
+export interface NavbarProps extends TitleProps {}
 export interface NavbarLinksProps extends ForwardedRefsProps {}
+export interface IndexLayoutProps extends ForwardedRefsProps {}
 export interface ProfileProps extends ForwardedRefsProps {}

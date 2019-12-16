@@ -12,7 +12,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "rimraf public",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "rimraf .cache && gatsby build --prefix-paths && gh-pages -d public",
     "dev": "GATSBY_GRAPHQL_IDE=playground gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "lint": "eslint src/ --ext .js,.ts,.jsx,.tsx",

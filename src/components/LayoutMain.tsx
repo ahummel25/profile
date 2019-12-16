@@ -11,7 +11,10 @@ interface LayoutMainProps {
   className?: string;
 }
 
-const LayoutMain: FC<LayoutMainProps> = ({ children, className }) => (
+const LayoutMain: FC<LayoutMainProps> = ({
+  children,
+  className
+}): JSX.Element => (
   <StyledLayoutMain className={className}>{children}</StyledLayoutMain>
 );
 

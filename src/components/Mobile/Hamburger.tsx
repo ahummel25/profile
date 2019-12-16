@@ -9,7 +9,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 
-import { DropDownListProps } from "../../interfaces";
+import { handleScrollTo } from "../../utils";
+import { DropDownListProps, HamburgerProps, LinkProps } from "../../interfaces";
 import { colors, dimensions, fonts } from "../../styles/variables";
 
 const useStyles = makeStyles<Theme, {}>({
@@ -72,21 +73,28 @@ const HamburgerWrapper = styled.div`
 
 const DropDownList: FC<DropDownListProps> = ({
   listRoot,
-  listItemRoot
+  listItemRoot,
+  links
 }): JSX.Element => (
   <List
     classes={{
       root: listRoot
     }}
   >
-    {["About Me"].map(
-      (text: string): JSX.Element => (
-        <ListItem button key={text}>
+    {links.map(
+      (link: LinkProps): JSX.Element => (
+        <ListItem
+          button
+          key={link.text}
+          onClick={(): void => {
+            handleScrollTo(link.ref);
+          }}
+        >
           <ListItemText
             classes={{
               root: listItemRoot
             }}
-            primary={text}
+            primary={link.text}
           />
         </ListItem>
       )
@@ -94,9 +102,23 @@ const DropDownList: FC<DropDownListProps> = ({
   </List>
 );
 
-const Hamburger: FC<{}> = (): JSX.Element => {
+const Hamburger: FC<HamburgerProps> = ({ refsToForward }): JSX.Element => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const links = [
+    {
+      text: "About Me",
+      ref: refsToForward.aboutRef
+    },
+    {
+      text: "Interests",
+      ref: refsToForward.aboutRef
+    },
+    {
+      text: "Contact",
+      ref: refsToForward.aboutRef
+    }
+  ];
 
   return (
     <HamburgerWrapper>
@@ -124,6 +146,7 @@ const Hamburger: FC<{}> = (): JSX.Element => {
         }}
       >
         <DropDownList
+          links={links}
           listRoot={classes.listRoot}
           listItemRoot={classes.listItemRoot}
         />

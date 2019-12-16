@@ -1,4 +1,4 @@
-import React, { forwardRef, FC, RefObject, Ref } from "react";
+import React, { forwardRef, FC, RefObject } from "react";
 import styled from "@emotion/styled";
 import { dimensions, colors, fonts } from "../styles/variables";
 
@@ -31,13 +31,19 @@ const StyledHr = styled.hr`
 `;
 
 const StyledAboutBodyLeft = styled.div`
-  width: 50%;
-  float: left;
+  @media screen and (min-width: 480px) {
+    width: 50%;
+    float: left;
+    padding-left: 15px;
+  }
 `;
 
 const StyledAboutBodyRight = styled.div`
-  width: 50%;
-  float: right;
+  @media screen and (min-width: 480px) {
+    width: 50%;
+    float: right;
+    padding-left: 25px;
+  }
 `;
 
 const StyledAboutText = styled.p`
@@ -71,4 +77,4 @@ const About: FC<{}> = (_, ref: RefObject<HTMLDivElement>): JSX.Element => (
   </div>
 );
 
-export default forwardRef<HTMLDivElement>(About);
+export default forwardRef<HTMLDivElement, {}>(About);
