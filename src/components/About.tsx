@@ -5,7 +5,6 @@ import { dimensions, colors, fonts } from "../styles/variables";
 const StyledAboutContainer = styled.div`
   height: 100%;
   width: 100%;
-  background-color: ${colors.white};
   border: 0;
   display: flex;
   justify-content: center;

@@ -9,7 +9,7 @@ import Hamburger from "./Mobile/Hamburger";
 import NavbarLinks from "./NavbarLinks";
 import SocialIcons from "./SocialIcons";
 
-const StyledHeaderTop = styled.nav`
+const HeaderNav = styled.nav`
   @media screen and (max-width: 760px) {
     height: ${heights.header * 0.425}px;
   }
@@ -32,7 +32,7 @@ const StyledHeaderTop = styled.nav`
   z-index: 1;
 `;
 
-const HeaderTop = styled(Container)`
+const ChildHeaderContainer = styled(Container)`
   @media screen and (max-width: 760px) {
     right: 5px;
   }
@@ -89,14 +89,14 @@ const HomepageLink = styled(Link)`
 `;
 
 const Navbar: FC<NavbarProps> = ({ title, refsToForward }): JSX.Element => (
-  <StyledHeaderTop>
-    <HeaderTop>
+  <HeaderNav>
+    <ChildHeaderContainer>
       <HomepageLink to="/">{title}</HomepageLink>
       <SocialIcons />
       <Hamburger refsToForward={refsToForward} />
-    </HeaderTop>
+    </ChildHeaderContainer>
     <NavbarLinks refsToForward={refsToForward} />
-  </StyledHeaderTop>
+  </HeaderNav>
 );
 
 export default Navbar;

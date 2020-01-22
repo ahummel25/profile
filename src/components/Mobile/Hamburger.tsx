@@ -87,7 +87,7 @@ const DropDownList: FC<DropDownListProps> = ({
           button
           key={link.text}
           onClick={(): void => {
-            handleScrollTo(link.ref);
+            link.onClickHandler();
           }}
         >
           <ListItemText
@@ -108,15 +108,21 @@ const Hamburger: FC<HamburgerProps> = ({ refsToForward }): JSX.Element => {
   const links = [
     {
       text: "About Me",
-      ref: refsToForward.aboutRef
+      onClickHandler: () => {
+        handleScrollTo(refsToForward!.aboutRef);
+      }
     },
     {
       text: "Interests",
-      ref: refsToForward.aboutRef
+      onClickHandler: () => {
+        handleScrollTo(refsToForward!.aboutRef);
+      }
     },
     {
       text: "Contact",
-      ref: refsToForward.aboutRef
+      onClickHandler: () => {
+        handleScrollTo(refsToForward!.aboutRef);
+      }
     }
   ];
 
@@ -127,11 +133,14 @@ const Hamburger: FC<HamburgerProps> = ({ refsToForward }): JSX.Element => {
           root: classes.menuIconButtonRoot
         }}
         color="primary"
-        onClick={() => {
+        onClick={(): void => {
           setIsOpen(!isOpen);
         }}
       >
-        <MenuRoundedIcon />
+        <MenuRoundedIcon
+          aria-label="Side Menu Button"
+          aria-labelledby="MuiButtonBase-root"
+        />
       </IconButton>
       <Drawer
         anchor="top"

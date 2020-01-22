@@ -5,7 +5,7 @@ import { ProfileProps } from "../interfaces";
 
 const Profile: FC<ProfileProps> = ({ refsToForward }): JSX.Element => (
   <>
-    <About ref={refsToForward.aboutRef} />
+    <About ref={refsToForward!.aboutRef} />
   </>
 );
 

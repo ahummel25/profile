@@ -9,14 +9,14 @@ export interface ImageProfileData {
 }
 
 export interface ForwardedRefsProps {
-  refsToForward: {
+  refsToForward?: {
     [key: string]: RefObject<HTMLDivElement>;
   };
 }
 
 export interface LinkProps {
   text: string;
-  ref: RefObject<HTMLDivElement>;
+  onClickHandler: () => void;
 }
 
 export interface DropDownListProps {

@@ -1,4 +1,4 @@
-const path = require("path");
+/*const path = require("path");
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -79,3 +79,4 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 };
+*/

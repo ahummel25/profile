@@ -47,15 +47,21 @@ const NavbarLinks: FC<NavbarLinksProps> = ({ refsToForward }): JSX.Element => {
   const links = [
     {
       text: "About Me",
-      ref: refsToForward.aboutRef
+      onClickHandler: () => {
+        handleScrollTo(refsToForward!.aboutRef);
+      }
     },
     {
       text: "Interests",
-      ref: refsToForward.aboutRef
+      onClickHandler: () => {
+        handleScrollTo(refsToForward!.aboutRef);
+      }
     },
     {
       text: "Contact",
-      ref: refsToForward.aboutRef
+      onClickHandler: () => {
+        handleScrollTo(refsToForward!.aboutRef);
+      }
     }
   ];
 
@@ -67,7 +73,7 @@ const NavbarLinks: FC<NavbarLinksProps> = ({ refsToForward }): JSX.Element => {
             <StyledLi
               key={link.text}
               onClick={(): void => {
-                handleScrollTo(link.ref);
+                link.onClickHandler();
               }}
             >
               {link.text}

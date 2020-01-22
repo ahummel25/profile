@@ -11,19 +11,11 @@
 		"ecmaFeatures": {
 			"experimentalObjectRestSpread": true,
 			"jsx": true,
+			"modules": true,
 			"warnOnUnsupportedTypeScriptVersion": false
 		},
 		"ecmaVersion": 7,
 		"sourceType": "module"
-	},
-	"ecmaFeatures": {
-		"arrowFunctions": true,
-		"blockBindings": true,
-		"classes": true,
-		"defaultParams": true,
-		"modules": true,
-		"spread": true,
-		"globalReturn": true
 	},
 	"rules": {
 		"comma-dangle": [
