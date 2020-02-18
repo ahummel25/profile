@@ -1,102 +1,110 @@
 import React, { FC } from "react";
 import styled from "@emotion/styled";
-import { Link } from "gatsby";
+import Drawer from "@material-ui/core/Drawer";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Divider from "@material-ui/core/Divider";
 
 import { NavbarProps } from "../interfaces";
-import { heights, dimensions, colors, fonts } from "../styles/variables";
-import Container from "./Container";
-import Hamburger from "./Mobile/Hamburger";
-import NavbarLinks from "./NavbarLinks";
-import SocialIcons from "./SocialIcons";
+import { colors } from "../styles/variables";
 
-const HeaderNav = styled.nav`
-  @media screen and (max-width: 760px) {
-    height: ${heights.header * 0.425}px;
-  }
-  @media screen and (min-width: 761px) {
-    height: ${heights.header * 1.2}px;
-  }
-  @media screen and (min-width: 900px) {
-    height: ${heights.header * 0.8}px;
-  }
-  background-color: ${colors.darkBlue};
-  border-bottom: 1.25px solid ${colors.navbarBorder};
-  font-family: ${fonts.helvetica};
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0 ${dimensions.containerPadding}rem;
-  position: sticky;
-  top: 0;
-  transition: 0.2s ease-in;
-  width: 100%;
-  z-index: 1;
+const drawerWidth = 190;
+
+const NavbarContainer = styled.div`
+  display: "flex";
 `;
 
-const ChildHeaderContainer = styled(Container)`
-  @media screen and (max-width: 760px) {
-    right: 5px;
-  }
-  @media screen and (min-width: 760px) {
-    float: left;
-  }
-  display: flex;
-  align-items: center;
-`;
+const DrawerContainer = styled(({ ...rest }) => <Drawer {...rest} />)`
+  flex-shrink: 0;
 
-const HomepageLink = styled(Link)`
-  @media screen and (max-width: 375px) {
-    font-size: 1rem;
-    margin-top: 5px;
-  }
-  @media screen and (min-width: 376px) and (max-width: 480px) {
-    font-size: 1rem;
-    padding-top: ${dimensions.containerPaddingLg * 0.2}rem;
-    padding-right: ${dimensions.containerPaddingLg * 0.5}rem;
-  }
-  @media screen and (min-width: 481px) and (max-width: 800px) {
-    font-size: 1.75rem;
-    padding-top: ${dimensions.containerPaddingLg}rem;
-    padding-left: ${dimensions.containerPaddingLg * 1}rem;
-    padding-right: ${dimensions.containerPaddingLg * 1}rem;
-  }
-  @media screen and (min-width: 801px) and (max-width: 1024px) {
-    font-size: 1.875rem;
-    padding-top: ${dimensions.containerPaddingLg * 1}rem;
-    padding-left: ${dimensions.containerPaddingLg * 1.5}rem;
-    padding-right: ${dimensions.containerPaddingLg * 1}rem;
-  }
-  @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    font-size: 1.875rem;
-    padding-top: ${dimensions.containerPaddingLg * 1.1}rem;
-    padding-left: ${dimensions.containerPaddingLg * 2}rem;
-  }
-  @media screen and (min-width: 1281px) {
-    font-size: 1.875rem;
-    padding-top: ${dimensions.containerPaddingLg * 1.1}rem;
-    padding-left: ${dimensions.containerPaddingLg * 10}rem;
-  }
-  color: ${colors.white};
-  font-family: ${fonts.helvetica};
-  font-size: 19px;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition: 0.2s ease-in;
+  li {
+    padding: 5px 10px 10px 10px;
+    font-size: 14.5px;
+    font-weight: 100;
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
+    a {
+      color: inherit;
+      display: flex;
+      align-items: center;
+    }
+
+    i {
+      padding: 0 10px 0 5px;
+      &.icon-aqua {
+        color: rgb(0, 188, 212);
+      }
+      &.icon-green {
+        color: rgb(0, 128, 115);
+      }
+    }
+  }
+
+  .name-title {
+    h1 {
+      color: ${colors.lightGreen};
+      font-size: 30.45px;
+      font-weight: 100;
+      margin: 0 0 5px 0;
+    }
+
+    span {
+      color: ${colors.lightBrown};
+      font-size: 14px;
+    }
+
+    background: ${colors.brandBackground};
+    display: inline-block;
+    min-height: 100px;
+    text-align: left;
+    padding: 30px 0 30px 30px;
+    width: ${drawerWidth}px;
   }
 `;
 
-const Navbar: FC<NavbarProps> = ({ title, refsToForward }): JSX.Element => (
-  <HeaderNav>
-    <ChildHeaderContainer>
-      <HomepageLink to="/">{title}</HomepageLink>
-      <SocialIcons />
-      <Hamburger refsToForward={refsToForward} />
-    </ChildHeaderContainer>
-    <NavbarLinks refsToForward={refsToForward} />
-  </HeaderNav>
+const navItems = [
+  {
+    text: "About",
+    icon: "person",
+    iconColor: "icon-green"
+  },
+  {
+    text: "Experience",
+    icon: "trending_up",
+    iconColor: "icon-aqua"
+  },
+  {
+    text: "Projects",
+    icon: "person",
+    iconColor: "icon-blue"
+  }
+];
+
+const Navbar: FC<NavbarProps> = (): JSX.Element => (
+  <NavbarContainer>
+    <CssBaseline />
+    <DrawerContainer variant="permanent" anchor="left">
+      <div className="name-title">
+        <a href="/">
+          <h1>
+            Andrew <br /> Hummel
+          </h1>
+          <span>Full Stack Developer</span>
+        </a>
+      </div>
+      <Divider />
+      <ul>
+        {navItems.map(
+          ({ text, icon, iconColor }, index): JSX.Element => (
+            <li key={index}>
+              <a href="/">
+                <i className={`small material-icons ${iconColor}`}>{icon}</i>
+                <span>{text}</span>
+              </a>
+            </li>
+          )
+        )}
+      </ul>
+    </DrawerContainer>
+  </NavbarContainer>
 );
 
 export default Navbar;

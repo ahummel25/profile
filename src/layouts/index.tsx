@@ -2,8 +2,10 @@ import React, { FC } from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
-import "modern-normalize";
-import "../styles/normalize";
+import "materialize-css/dist/css/materialize.min.css";
+//import "materialize-css/dist/js/materialize.min.js";
+//import "modern-normalize";
+//import "../styles/normalize";
 
 import { IndexLayoutProps } from "../interfaces";
 import Header from "../components/Header";
@@ -16,6 +18,7 @@ interface StaticQueryProps {
       author: {
         name: string;
       };
+      iconUrl: string;
       title: string;
       description: string;
       keywords: string;
@@ -32,6 +35,7 @@ const IndexLayout: FC<IndexLayoutProps> = ({ children, refsToForward }) => (
             author {
               name
             }
+            iconUrl
             title
             description
           }
@@ -48,6 +52,12 @@ const IndexLayout: FC<IndexLayoutProps> = ({ children, refsToForward }) => (
               content: data.site.siteMetadata.description
             },
             { name: "keywords", content: data.site.siteMetadata.keywords }
+          ]}
+          link={[
+            {
+              href: data.site.siteMetadata.iconUrl,
+              rel: "stylesheet"
+            }
           ]}
         />
         <Header

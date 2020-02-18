@@ -5,6 +5,7 @@ module.exports = {
       "A starter kit for TypeScript-based Gatsby projects with sensible defaults.",
     keywords: "gatsbyjs, gatsby, javascript, sample, something",
     siteUrl: "https://gatsby-starter-typescript-plus.netlify.com",
+    iconUrl: "https://fonts.googleapis.com/icon?family=Material+Icons",
     author: {
       name: "Andrew W. Hummel",
       url: "https://github.com/ahummel25",
@@ -20,11 +21,11 @@ module.exports = {
       options: {
         name: "Andrew Hummel Profile",
         short_name: "Profile",
-        start_url: "/",
-        background_color: "#f7f0eb",
-        theme_color: "#a2466c",
+        start_url: "/profile/",
+        background_color: "#285171",
+        theme_color: "#285171",
         display: "standalone",
-        icon: "src/images/favicon-32x32.png"
+        icon: `${__dirname}/src/images/favicon-32x32.png`
       }
     },
     {

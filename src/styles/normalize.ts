@@ -21,7 +21,7 @@ export default `
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: ${fonts.sansSerif};
+    font-family: ${fonts.roboto};
     color: ${colors.black};
 	background-color: ${colors.white};
 	letter-spacing: 1px;
@@ -87,14 +87,12 @@ export default `
   h1, h2, h3, h4, h5, h6 {
     margin-top: 1.414rem;
     margin-bottom: .5rem;
-    color: ${colors.black};
-    font-weight: 600;
+    font-weight: 100;
     line-height: ${dimensions.lineHeight.heading};
     text-rendering: optimizeLegibility;
   }
 
   h1 {
-    margin-top: 0;
     font-size: ${dimensions.headingSizes.h1}rem;
   }
 
@@ -113,6 +111,10 @@ export default `
   p {
     margin-top: 0;
     margin-bottom: 1rem;
+  }
+
+  span {
+	color: ${colors.lightBrown};
   }
 
   strong {

@@ -3,8 +3,11 @@
 export const colors = {
   babyBlue: "#2096F3",
   brand: "#663399",
+  brandBackground: "#FAFAFA",
   darkBlue: "#285171",
   lilac: "#9d7cbf",
+  lightBrown: "#795548",
+  lightGreen: "#008073",
   navbarBorder: "#3f6380",
   accent: "#ffb238",
   success: "#37b635",
@@ -26,12 +29,13 @@ export const colors = {
 };
 
 export const fonts = {
-  helvetica: "Montserrat,\"Helvetica Neue\",Helvetica,Arial,sans-serif",
+  roboto: "Roboto, sans-serif",
+  helvetica: 'Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif',
   sansSerif:
-    "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", Arial, sans-serif",
-  serif: "Georgia, \"Times New Roman\", Times, serif",
+    '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
+  serif: 'Georgia, "Times New Roman", Times, serif',
   monospace:
-    "Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace, monospace"
+    'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace'
 };
 
 export const breakpoints = {
@@ -58,14 +62,14 @@ export const dimensions = {
     bold: 700
   },
   headingSizes: {
-    h1: 2.441,
+    h1: 1.9,
     h2: 1.953,
     h3: 1.563,
     h4: 1.25
   },
   lineHeight: {
     regular: 1.45,
-    heading: 1.2
+    heading: 1
   },
   containerPadding: 1,
   containerPaddingLg: 1.5

@@ -47,10 +47,6 @@
 		],
 		"no-var": 1,
 		"no-eval": "error",
-		"quotes": [
-			"error",
-			"double"
-		],
 		"no-console": [
 			"warn",
 			{
