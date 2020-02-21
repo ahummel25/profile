@@ -1,16 +1,13 @@
 import React, { FC } from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+import styled from "@emotion/styled";
 
 import "materialize-css/dist/css/materialize.min.css";
-//import "materialize-css/dist/js/materialize.min.js";
-//import "modern-normalize";
-//import "../styles/normalize";
 
+import background from "../images/bg.png";
 import { IndexLayoutProps } from "../interfaces";
-import Header from "../components/Header";
 import LayoutRoot from "../components/LayoutRoot";
-import LayoutMain from "../components/LayoutMain";
 
 interface StaticQueryProps {
   site: {
@@ -26,15 +23,17 @@ interface StaticQueryProps {
   };
 }
 
-const IndexLayout: FC<IndexLayoutProps> = ({ children, refsToForward }) => (
+const Main = styled.main`
+  display: flex;
+  flex-flow: column nowrap;
+`;
+
+const IndexLayout: FC<IndexLayoutProps> = ({ children }) => (
   <StaticQuery
     query={graphql`
       query IndexLayoutQuery {
         site {
           siteMetadata {
-            author {
-              name
-            }
             iconUrl
             title
             description
@@ -43,7 +42,7 @@ const IndexLayout: FC<IndexLayoutProps> = ({ children, refsToForward }) => (
       }
     `}
     render={(data: StaticQueryProps) => (
-      <LayoutRoot>
+      <Main>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -60,12 +59,8 @@ const IndexLayout: FC<IndexLayoutProps> = ({ children, refsToForward }) => (
             }
           ]}
         />
-        <Header
-          title={data.site.siteMetadata.author.name}
-          refsToForward={refsToForward}
-        />
-        <LayoutMain>{children}</LayoutMain>
-      </LayoutRoot>
+        {children}
+      </Main>
     )}
   />
 );

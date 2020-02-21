@@ -8,12 +8,7 @@ interface ContainerProps {
   className?: string;
 }
 
-type StyledContainerProps = {
-  position: string;
-};
-
-const StyledContainer = styled.div<StyledContainerProps>`
-  position: ${props => props.position};
+const StyledContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: auto;
@@ -24,9 +19,7 @@ const Container: React.FC<ContainerProps> = ({
   children,
   className
 }): JSX.Element => (
-  <StyledContainer className={className} position="relative">
-    {children}
-  </StyledContainer>
+  <StyledContainer className={className}>{children}</StyledContainer>
 );
 
 export default Container;

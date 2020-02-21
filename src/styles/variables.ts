@@ -3,7 +3,7 @@
 export const colors = {
   babyBlue: "#2096F3",
   brand: "#663399",
-  brandBackground: "#FAFAFA",
+  brandBackground: "#fafafa",
   darkBlue: "#285171",
   lilac: "#9d7cbf",
   lightBrown: "#795548",

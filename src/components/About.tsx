@@ -2,6 +2,14 @@ import React, { forwardRef, FC, RefObject } from "react";
 import styled from "@emotion/styled";
 import { dimensions, colors, fonts } from "../styles/variables";
 
+const AboutHeader = styled.h3`
+  background-color: rgb(0, 128, 115);
+  font-weight: 100;
+  padding: 30px 40px;
+  margin: 0;
+  text-transform: uppercase;
+`;
+
 const StyledAboutContainer = styled.div`
   height: 100%;
   width: 100%;
@@ -53,10 +61,7 @@ const StyledAboutText = styled.p`
 
 const About: FC<{}> = (_, ref: RefObject<HTMLDivElement>): JSX.Element => (
   <div ref={ref}>
-    <StyledAboutContainer>
-      <StyledAboutHeader>About Me</StyledAboutHeader>
-    </StyledAboutContainer>
-    <StyledHr />
+    <AboutHeader className="page-title white-text">About</AboutHeader>
     <StyledAboutBodyLeft>
       <StyledAboutText>
         I have over 7 years of experience as a full-stack software engineer and

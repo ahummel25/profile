@@ -1,24 +1,31 @@
 import React, { FC } from "react";
 import styled from "@emotion/styled";
 
+import { LayoutMainProps } from "../interfaces";
 import background from "../images/bg.png";
 
-const StyledLayoutMain = styled.main`
+interface MainProps {
+  paddingLeft: number;
+}
+
+const StyledLayoutMain = styled.main<MainProps>`
   background: url(${background});
   display: flex;
   flex-direction: column;
-  flex: 1;
-`;
+  /* height: 100%;
+  width: 100%; */
+  padding-left: ${props => props.paddingLeft}px;
 
-interface LayoutMainProps {
-  className?: string;
-}
+  @media (max-width: 992px) {
+    padding-left: 0;
+  }
+`;
 
 const LayoutMain: FC<LayoutMainProps> = ({
   children,
-  className
+  paddingLeft
 }): JSX.Element => (
-  <StyledLayoutMain className={className}>{children}</StyledLayoutMain>
+  <StyledLayoutMain paddingLeft={paddingLeft}>{children}</StyledLayoutMain>
 );
 
 export default LayoutMain;
