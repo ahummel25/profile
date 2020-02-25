@@ -1,4 +1,4 @@
-import { RefObject } from "react";
+import { MutableRefObject } from "react";
 import { FluidObject } from "gatsby-image";
 export interface ImageProfileData {
   file: {
@@ -9,8 +9,11 @@ export interface ImageProfileData {
 }
 
 export interface ForwardedRefsProps {
-  refsToForward?: {
-    [key: string]: RefObject<HTMLDivElement>;
+  refsToForward: {
+    [key: string]: {
+      ref: MutableRefObject<HTMLDivElement | null>;
+      onClickHandler: () => void;
+    };
   };
 }
 
@@ -29,11 +32,11 @@ export interface DropDownListProps {
   links: LinkProps[];
 }
 
-export interface HeaderProps extends TitleProps {
+export interface HeaderProps extends ForwardedRefsProps {
   setDrawerWidth: (drawerWidth: number) => void;
 }
 
-export interface NavbarProps {
+export interface NavbarProps extends ForwardedRefsProps {
   setDrawerWidth: (drawerWidth: number) => void;
 }
 
@@ -42,6 +45,5 @@ export interface TitleProps extends ForwardedRefsProps {
 }
 
 export interface HamburgerProps extends ForwardedRefsProps {}
-export interface NavbarLinksProps extends ForwardedRefsProps {}
 export interface IndexLayoutProps extends ForwardedRefsProps {}
 export interface ProfileProps extends ForwardedRefsProps {}

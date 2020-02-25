@@ -5,10 +5,6 @@ import styled from "@emotion/styled";
 
 import "materialize-css/dist/css/materialize.min.css";
 
-import background from "../images/bg.png";
-import { IndexLayoutProps } from "../interfaces";
-import LayoutRoot from "../components/LayoutRoot";
-
 interface StaticQueryProps {
   site: {
     siteMetadata: {
@@ -28,7 +24,7 @@ const Main = styled.main`
   flex-flow: column nowrap;
 `;
 
-const IndexLayout: FC<IndexLayoutProps> = ({ children }) => (
+const IndexLayout: FC<{}> = ({ children }) => (
   <StaticQuery
     query={graphql`
       query IndexLayoutQuery {

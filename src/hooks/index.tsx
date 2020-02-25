@@ -19,7 +19,7 @@ export const useGetProfileImage = (): ImageProfileData => {
   return imgData;
 };
 
-export const useWindowDimensions = () => {
+export const useWindowDimensions = (): { width: number; height: number } => {
   const getWindowDimensions = () => {
     const { innerWidth: width, innerHeight: height } = window;
     return {

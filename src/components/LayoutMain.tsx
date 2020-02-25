@@ -12,8 +12,6 @@ const StyledLayoutMain = styled.main<MainProps>`
   background: url(${background});
   display: flex;
   flex-direction: column;
-  /* height: 100%;
-  width: 100%; */
   padding-left: ${props => props.paddingLeft}px;
 
   @media (max-width: 992px) {

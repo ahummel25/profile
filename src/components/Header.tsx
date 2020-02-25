@@ -15,7 +15,6 @@ const ImgStyled = styled(({ ...rest }) => <Img {...rest} />)`
 `;
 
 const Header: FC<HeaderProps> = ({
-  title,
   refsToForward,
   setDrawerWidth
 }): JSX.Element => {
@@ -23,7 +22,7 @@ const Header: FC<HeaderProps> = ({
 
   return (
     <>
-      <Navbar setDrawerWidth={setDrawerWidth} />
+      <Navbar refsToForward={refsToForward} setDrawerWidth={setDrawerWidth} />
       <ImgStyled
         fluid={imgData.file.childImageSharp.fluid}
         alt="Profile Shot"
