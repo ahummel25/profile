@@ -83,14 +83,6 @@ const AppBarCustom = styled(({ ...rest }) => <AppBar {...rest} />)`
   }
 `;
 
-const DrawerUl = styled.ul`
-  .active {
-    background-color: rgb(232, 232, 232);
-    border-left: 3px solid ${props => props.color};
-    font-weight: 500;
-  }
-`;
-
 const DrawerLi = styled.li<StyledLiProps>`
   cursor: pointer;
   padding: 0;
@@ -236,7 +228,7 @@ const RenderMobileDrawer: FC<RefsToForward> = ({
 };
 
 const NavBarLists: FC<RefsToForward> = ({ refsToForward }): JSX.Element => (
-  <DrawerUl>
+  <ul>
     {navItems.map(
       ({ text, icon: { type, iconClass, color }, ref }, index): JSX.Element => (
         <DrawerLi key={index} color={color}>
@@ -247,7 +239,7 @@ const NavBarLists: FC<RefsToForward> = ({ refsToForward }): JSX.Element => (
         </DrawerLi>
       )
     )}
-  </DrawerUl>
+  </ul>
 );
 
 const Navbar: FC<NavbarProps> = ({
