@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import M from "materialize-css";
 
 import Page from "../components/Page";
 import Profile from "../components/Profile";
@@ -26,6 +27,12 @@ const IndexPage = (): JSX.Element => {
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const experienceRef = useRef<HTMLDivElement | null>(null);
   const projectsRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const elems = document.querySelectorAll(".scrollspy");
+    M.ScrollSpy.init(elems);
+  }, []);
+
   const refsToForward = {
     about: {
       ref: aboutRef,
@@ -50,8 +57,11 @@ const IndexPage = (): JSX.Element => {
   return (
     <IndexLayout>
       <LayoutMain paddingLeft={drawerWidth}>
-        <Header refsToForward={refsToForward} setDrawerWidth={setDrawerWidth} />
         <Page>
+          <Header
+            refsToForward={refsToForward}
+            setDrawerWidth={setDrawerWidth}
+          />
           <Profile refsToForward={refsToForward} />
         </Page>
       </LayoutMain>

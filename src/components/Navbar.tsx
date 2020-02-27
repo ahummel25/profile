@@ -83,6 +83,14 @@ const AppBarCustom = styled(({ ...rest }) => <AppBar {...rest} />)`
   }
 `;
 
+const DrawerUl = styled.ul`
+  .active {
+    background-color: rgb(232, 232, 232);
+    border-left: 3px solid ${props => props.color};
+    font-weight: 500;
+  }
+`;
+
 const DrawerLi = styled.li<StyledLiProps>`
   cursor: pointer;
   padding: 0;
@@ -227,64 +235,20 @@ const RenderMobileDrawer: FC<RefsToForward> = ({
   );
 };
 
-const NavBarLists: FC<RefsToForward> = ({ refsToForward }): JSX.Element => {
-  const [itemClicked, setItemClicked] = useState<{ activeItem: number | null }>(
-    {
-      activeItem: null
-    }
-  );
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPos = window.scrollY;
-
-      if (scrollPos >= 100 && scrollPos < 200) {
-        setItemClicked({ activeItem: 0 });
-      }
-
-      if (scrollPos >= 200) {
-        setItemClicked({ activeItem: 1 });
-      }
-
-      if (scrollPos < 100) {
-        setItemClicked({ activeItem: null });
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  return (
-    <ul>
-      {navItems.map(
-        (
-          { text, icon: { type, iconClass, color }, ref },
-          index
-        ): JSX.Element => {
-          return (
-            <DrawerLi key={index} color={color}>
-              <a
-                className={`waves-effect waves-dark ${
-                  itemClicked.activeItem === index ? "active" : ""
-                }`}
-                onClick={(
-                  event: React.KeyboardEvent | React.MouseEvent
-                ): void => {
-                  setItemClicked({ activeItem: index });
-                  refsToForward[ref].onClickHandler();
-                }}
-              >
-                <i className={`small material-icons ${iconClass}`}>{type}</i>
-                {text}
-              </a>
-            </DrawerLi>
-          );
-        }
-      )}
-    </ul>
-  );
-};
+const NavBarLists: FC<RefsToForward> = ({ refsToForward }): JSX.Element => (
+  <DrawerUl>
+    {navItems.map(
+      ({ text, icon: { type, iconClass, color }, ref }, index): JSX.Element => (
+        <DrawerLi key={index} color={color}>
+          <a href={`#${ref}`} className={"waves-effect waves-dark"}>
+            <i className={`small material-icons ${iconClass}`}>{type}</i>
+            {text}
+          </a>
+        </DrawerLi>
+      )
+    )}
+  </DrawerUl>
+);
 
 const Navbar: FC<NavbarProps> = ({
   refsToForward,

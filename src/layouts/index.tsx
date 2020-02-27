@@ -24,41 +24,43 @@ const Main = styled.main`
   flex-flow: column nowrap;
 `;
 
-const IndexLayout: FC<{}> = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query IndexLayoutQuery {
-        site {
-          siteMetadata {
-            iconUrl
-            title
-            description
+const IndexLayout: FC<{}> = ({ children }) => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query IndexLayoutQuery {
+          site {
+            siteMetadata {
+              iconUrl
+              title
+              description
+            }
           }
         }
-      }
-    `}
-    render={(data: StaticQueryProps) => (
-      <Main>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: "description",
-              content: data.site.siteMetadata.description
-            },
-            { name: "keywords", content: data.site.siteMetadata.keywords }
-          ]}
-          link={[
-            {
-              href: data.site.siteMetadata.iconUrl,
-              rel: "stylesheet"
-            }
-          ]}
-        />
-        {children}
-      </Main>
-    )}
-  />
-);
+      `}
+      render={(data: StaticQueryProps) => (
+        <Main>
+          <Helmet
+            title={data.site.siteMetadata.title}
+            meta={[
+              {
+                name: "description",
+                content: data.site.siteMetadata.description
+              },
+              { name: "keywords", content: data.site.siteMetadata.keywords }
+            ]}
+            link={[
+              {
+                href: data.site.siteMetadata.iconUrl,
+                rel: "stylesheet"
+              }
+            ]}
+          />
+          {children}
+        </Main>
+      )}
+    />
+  );
+};
 
 export default IndexLayout;

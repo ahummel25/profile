@@ -7,6 +7,9 @@ import { useGetProfileImage } from "../hooks";
 import { HeaderProps } from "../interfaces";
 
 const ImgStyled = styled(({ ...rest }) => <Img {...rest} />)`
+  @media (max-width: 599px) {
+    margin-top: 60px;
+  }
   @media (min-width: 992px) {
     margin-top: 0;
   }
@@ -21,13 +24,13 @@ const Header: FC<HeaderProps> = ({
   const imgData = useGetProfileImage();
 
   return (
-    <>
+    <section id="header" className="scrollspy" style={{ display: "contents" }}>
       <Navbar refsToForward={refsToForward} setDrawerWidth={setDrawerWidth} />
       <ImgStyled
         fluid={imgData.file.childImageSharp.fluid}
         alt="Profile Shot"
       />
-    </>
+    </section>
   );
 };
 
