@@ -11,6 +11,7 @@ interface StaticQueryProps {
       author: {
         name: string;
       };
+      faUrl: string;
       iconUrl: string;
       title: string;
       description: string;
@@ -31,6 +32,7 @@ const IndexLayout: FC<{}> = ({ children }) => {
         query IndexLayoutQuery {
           site {
             siteMetadata {
+              faUrl
               iconUrl
               title
               description
@@ -52,6 +54,10 @@ const IndexLayout: FC<{}> = ({ children }) => {
             link={[
               {
                 href: data.site.siteMetadata.iconUrl,
+                rel: "stylesheet"
+              },
+              {
+                href: data.site.siteMetadata.faUrl,
                 rel: "stylesheet"
               }
             ]}

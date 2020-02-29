@@ -32,18 +32,14 @@ export interface DropDownListProps {
   links: LinkProps[];
 }
 
-export interface HeaderProps extends ForwardedRefsProps {
+export interface HeaderProps {
   setDrawerWidth: (drawerWidth: number) => void;
 }
 
-export interface NavbarProps extends ForwardedRefsProps {
+export interface NavbarProps {
   setDrawerWidth: (drawerWidth: number) => void;
 }
 
-export interface TitleProps extends ForwardedRefsProps {
-  title: string;
+export interface NavListProps {
+  setOpen?: (open: boolean) => void;
 }
-
-export interface HamburgerProps extends ForwardedRefsProps {}
-export interface IndexLayoutProps extends ForwardedRefsProps {}
-export interface ProfileProps extends ForwardedRefsProps {}

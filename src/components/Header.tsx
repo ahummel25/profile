@@ -17,15 +17,12 @@ const ImgStyled = styled(({ ...rest }) => <Img {...rest} />)`
   display: inline-block;
 `;
 
-const Header: FC<HeaderProps> = ({
-  refsToForward,
-  setDrawerWidth
-}): JSX.Element => {
+const Header: FC<HeaderProps> = ({ setDrawerWidth }): JSX.Element => {
   const imgData = useGetProfileImage();
 
   return (
     <section id="header" className="scrollspy" style={{ display: "contents" }}>
-      <Navbar refsToForward={refsToForward} setDrawerWidth={setDrawerWidth} />
+      <Navbar setDrawerWidth={setDrawerWidth} />
       <ImgStyled
         fluid={imgData.file.childImageSharp.fluid}
         alt="Profile Shot"

@@ -1,11 +1,12 @@
 import React, { FC } from "react";
+
 import About from "./About";
+import Experience from "./Experience";
 
-import { ProfileProps } from "../interfaces";
-
-const Profile: FC<ProfileProps> = ({ refsToForward }): JSX.Element => (
+const Profile: FC<{}> = (): JSX.Element => (
   <>
-    <About ref={refsToForward.about.ref} />
+    <About />
+    <Experience />
   </>
 );
 
