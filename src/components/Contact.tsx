@@ -41,7 +41,7 @@ const Container = styled.div`
 
 const Contact: FC<{}> = (): JSX.Element => (
   <>
-    <Section id="contact" className="scrollspy">
+    <Section id="contact" className="section scrollspy">
       <TitleHeader title="Contact" />
       <Container className="container">
         <p>

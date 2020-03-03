@@ -7,6 +7,7 @@ import TitleHeader from './TitleHeader';
 
 const Section = styled.section`
   margin-bottom: 20px;
+  padding-top: 0;
 `;
 
 const Container = styled.div`
@@ -32,7 +33,7 @@ const BlockQuote = styled.blockquote`
 
 const About: FC<{}> = (): JSX.Element => (
   <>
-    <Section id="about" className="scrollspy">
+    <Section id="about" className="section scrollspy">
       <TitleHeader title="About" />
       <Container className="container flow-text">
         <BlockQuote>

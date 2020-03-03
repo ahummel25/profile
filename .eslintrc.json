@@ -37,6 +37,7 @@
 	],
 	"rules": {
 		"@typescript-eslint/ban-ts-ignore": "warn",
+		"@typescript-eslint/camelcase": "off",
 		"@typescript-eslint/explicit-function-return-type": "error",
 		"@typescript-eslint/indent": "off",
 		"@typescript-eslint/interface-name-prefix": "off",

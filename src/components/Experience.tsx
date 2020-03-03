@@ -110,7 +110,7 @@ const Experience: FC<{}> = (): JSX.Element => {
 
   return (
     <>
-      <section id="experience" className="scrollspy">
+      <section id="experience" className="section scrollspy">
         <TitleHeader title="Experience" />
         <CardContainer>
           <Card className="card">

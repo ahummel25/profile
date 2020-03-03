@@ -21,7 +21,11 @@ const Header: FC<HeaderProps> = ({ setDrawerWidth }): JSX.Element => {
   const { profileImg } = useGetImages();
 
   return (
-    <section id="header" className="scrollspy" style={{ display: 'contents' }}>
+    <section
+      id="header"
+      className="section scrollspy"
+      style={{ display: 'contents' }}
+    >
       <Navbar setDrawerWidth={setDrawerWidth} />
       <ImgStyled fluid={profileImg.childImageSharp.fluid} alt="Profile Shot" />
     </section>

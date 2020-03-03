@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Andrew Hummel Profile',
+    title: 'Andrew Hummel | Full Stack Developer',
     description:
       'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
