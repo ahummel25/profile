@@ -43,15 +43,16 @@ const About: FC<{}> = (): JSX.Element => (
         </BlockQuote>
         <p>
           I have over 7 years of experience as a full-stack software engineer
-          and have worked at both small startups and large organizations. While
-          I&apos;m a proficient full-stack developer, my expertise is in
-          building scalable backend services (API services, stream processing,
-          and async mechanisms).
+          and have worked at both small startups and large organizations. As a
+          software developer, I enjoy putting my obsessive attention to detail
+          to use building out user friendly frontend components and scalable
+          backend services.
         </p>
         <p>
           I have an insatiable interest in learning new technologies as well as
           a strong desire to build modular, maintainable, and well-tested
-          applications.
+          applications. I am constantly sharpening my skills and keeping up with
+          the latest trends in web development and cloud computing.
         </p>
       </Container>
     </Section>

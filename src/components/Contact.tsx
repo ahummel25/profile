@@ -17,6 +17,10 @@ const Container = styled.div`
   font-weight: 400;
   padding: 0 24px;
 
+  p {
+    margin: 30px 0;
+  }
+
   a:not(.btn-floating) {
     position: relative;
     left: 20px;
@@ -103,7 +107,7 @@ const Contact: FC<{}> = (): JSX.Element => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            linkedin.com/in/andrew-hummel
+            linkedin.com/andrew-hummel
           </a>
         </p>
       </Container>
