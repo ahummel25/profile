@@ -1,7 +1,7 @@
-import { MutableRefObject } from "react";
-import { FluidObject } from "gatsby-image";
-export interface ImageProfileData {
-  file: {
+import { MutableRefObject } from 'react';
+import { FluidObject } from 'gatsby-image';
+export interface IImages {
+  [key: string]: {
     childImageSharp: {
       fluid: FluidObject;
     };

@@ -1,5 +1,10 @@
 export default `
-  body { 
+  html,
+  body {
+	height: 100%;
+  }
+
+  body {
     color: rgb(51, 51, 51);
   }
 `;

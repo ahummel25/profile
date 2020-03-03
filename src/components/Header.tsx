@@ -1,10 +1,10 @@
-import React, { FC } from "react";
-import styled from "@emotion/styled";
-import Img from "gatsby-image";
+import React, { FC } from 'react';
+import styled from '@emotion/styled';
+import Img from 'gatsby-image';
 
-import Navbar from "../components/Navbar";
-import { useGetProfileImage } from "../hooks";
-import { HeaderProps } from "../interfaces";
+import Navbar from '../components/Navbar';
+import { useGetImages } from '../hooks';
+import { HeaderProps } from '../interfaces';
 
 const ImgStyled = styled(({ ...rest }) => <Img {...rest} />)`
   @media (max-width: 599px) {
@@ -18,15 +18,12 @@ const ImgStyled = styled(({ ...rest }) => <Img {...rest} />)`
 `;
 
 const Header: FC<HeaderProps> = ({ setDrawerWidth }): JSX.Element => {
-  const imgData = useGetProfileImage();
+  const { profileImg } = useGetImages();
 
   return (
-    <section id="header" className="scrollspy" style={{ display: "contents" }}>
+    <section id="header" className="scrollspy" style={{ display: 'contents' }}>
       <Navbar setDrawerWidth={setDrawerWidth} />
-      <ImgStyled
-        fluid={imgData.file.childImageSharp.fluid}
-        alt="Profile Shot"
-      />
+      <ImgStyled fluid={profileImg.childImageSharp.fluid} alt="Profile Shot" />
     </section>
   );
 };

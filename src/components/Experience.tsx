@@ -1,16 +1,17 @@
-import React, { FC } from "react";
-import Img from "gatsby-image";
-import styled from "@emotion/styled";
-import Divider from "@material-ui/core/Divider";
+import React, { FC } from 'react';
+import Img from 'gatsby-image';
+import styled from '@emotion/styled';
+import Divider from '@material-ui/core/Divider';
 
-import TitleHeader from "./TitleHeader";
-import CardContainer from "./CardContainer";
-import { useGeti11Image } from "../hooks/images";
+import { useGetImages } from '../hooks';
+
+import TitleHeader from './TitleHeader';
+import CardContainer from './CardContainer';
 
 const Card = styled.div`
   margin-bottom: 60px;
 
-  .card-action {
+  .card-footer {
     background-color: rgba(0, 0, 0, 0.02);
     border: none;
     padding: 20px;
@@ -37,13 +38,14 @@ const CardContent = styled.div`
   }
 
   .hoverline {
+    border-bottom: 3px solid transparent !important;
     padding: 3px 3px 0 3px;
     transition: 0.25s all;
     -moz-transition: 0.25s all;
     -webkit-transition: 0.25s all;
 
     &:hover {
-      border-bottom: 3px solid rgb(0, 150, 136);
+      border-bottom: 3px solid rgb(0, 150, 136) !important;
     }
   }
 
@@ -104,7 +106,7 @@ const ImgContainer = styled.div`
 `;
 
 const Experience: FC<{}> = (): JSX.Element => {
-  const imgData = useGeti11Image();
+  const { i11Img, juristatImg, wwtImg } = useGetImages();
 
   return (
     <>
@@ -121,9 +123,9 @@ const Experience: FC<{}> = (): JSX.Element => {
                     rel="noopener noreferrer"
                   >
                     <Img
-                      style={{ maxHeight: "100%" }}
-                      imgStyle={{ objectFit: "contain" }}
-                      fluid={imgData.file.childImageSharp.fluid}
+                      style={{ maxHeight: '100%' }}
+                      imgStyle={{ objectFit: 'contain' }}
+                      fluid={i11Img.childImageSharp.fluid}
                       alt="Inspire11 Logo"
                     />
                   </a>
@@ -174,8 +176,201 @@ const Experience: FC<{}> = (): JSX.Element => {
                 </li>
               </ul>
             </CardContent>
-            <div className="card-action">
+            <div className="card-footer">
               <span>May 2019 - Present | Chicago, IL</span>
+            </div>
+          </Card>
+          <Card className="card">
+            <CardContent className="card-content">
+              <Row className="row">
+                <ImgContainer className="col s12 m2">
+                  <a
+                    href="https://juristat.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Img
+                      style={{ maxHeight: '100%' }}
+                      imgStyle={{ objectFit: 'contain' }}
+                      fluid={juristatImg.childImageSharp.fluid}
+                      alt="Juristat Logo"
+                    />
+                  </a>
+                </ImgContainer>
+                <div className="card-title">
+                  <a
+                    href="https://www.juristat.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="teal-text hoverline"
+                  >
+                    Juristat
+                  </a>
+                </div>
+                <div className="role brown-text">Software Engineer</div>
+              </Row>
+              <Divider className="divider" variant="middle" />
+              <p className="subtitle">
+                <em className="grey-text">
+                  Legal software company allowing patent prosecutors to predict
+                  the behavior of their examiner, competitors, and potential
+                  clients using big data analytics
+                </em>
+              </p>
+              <h6>Core API Development</h6>
+              <ul>
+                <li>
+                  Built and enhanced Node.js web APIs by designing and writing
+                  Javascript functions and complex GraphQL schema types
+                </li>
+                <li>
+                  Creating and maintaining data in multiple Elasticsearch
+                  indexes via HTTP requests and Node.js APIs.
+                </li>
+                <li>
+                  Leveraging Node’s AWS SDK to perform operations in S3, SQS,
+                  and other services.
+                </li>
+                <li>
+                  Writing extensive unit tests using Jest and Mocha and
+                  performing QA prior to production releases
+                </li>
+                <li>
+                  Tools: Node.js, Typescript, GraphQL // Elasticsearch MySQL //
+                  AWS
+                </li>
+              </ul>
+            </CardContent>
+            <div className="card-footer">
+              <span>July 2018 - May 2019 | St. Louis, MO</span>
+            </div>
+          </Card>
+          <Card className="card">
+            <CardContent className="card-content">
+              <Row className="row">
+                <ImgContainer className="col s12 m2">
+                  <a
+                    href="https://www.wwt.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Img
+                      style={{ maxHeight: '100%' }}
+                      imgStyle={{ objectFit: 'contain' }}
+                      fluid={wwtImg.childImageSharp.fluid}
+                      alt="WWT Logo"
+                    />
+                  </a>
+                </ImgContainer>
+                <div className="card-title">
+                  <a
+                    href="https://www.wwt.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="teal-text hoverline"
+                  >
+                    World Wide Technology
+                  </a>
+                </div>
+                <div className="role brown-text">Senior Developer</div>
+              </Row>
+              <Divider className="divider" variant="middle" />
+              <p className="subtitle">
+                <em className="grey-text">
+                  Technology and supply chain services provider
+                </em>
+              </p>
+              <h6>Software Engineering</h6>
+              <ul>
+                <li>
+                  Supporting and customizing Oracle&apos;s Warehouse Management
+                  system (Inventory (INV) and Shipping (WSH) modules) to fit
+                  user needs and requirements
+                </li>
+                <li>
+                  Writing custom Java code on Oracle&apos;s Mobile Web
+                  Applications (MWA) framework to enhance WMS system.
+                </li>
+                <li>
+                  Enhancing existing web applications written in AngularJS,
+                  Groovy/Grails, and PL/SQL stack.
+                </li>
+                <li>
+                  Created a customer requested file upload web app with a tech
+                  stack in Vue.js, Node.js, Hapi.js, and Oracle PL/SQL
+                </li>
+                <li>
+                  Tools: Oracle EBS // Vue.js, Node.js, Groovy/Grails // Oracle
+                  PL/SQL, Linux, Java, SQL // Cloud Foundry
+                </li>
+              </ul>
+            </CardContent>
+            <div className="card-footer">
+              <span>Jan 2017 - July 2018 | St. Louis, MO</span>
+            </div>
+          </Card>
+          <Card className="card">
+            <CardContent className="card-content">
+              <Row className="row">
+                <ImgContainer className="col s12 m2">
+                  <a
+                    href="https://wwt.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Img
+                      style={{ maxHeight: '100%' }}
+                      imgStyle={{ objectFit: 'contain' }}
+                      fluid={wwtImg.childImageSharp.fluid}
+                      alt="WWT Logo"
+                    />
+                  </a>
+                </ImgContainer>
+                <div className="card-title">
+                  <a
+                    href="https://www.wwt.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="teal-text hoverline"
+                  >
+                    World Wide Technology
+                  </a>
+                </div>
+                <div className="role brown-text">Developer</div>
+              </Row>
+              <Divider className="divider" variant="middle" />
+              <p className="subtitle">
+                <em className="grey-text">
+                  Technology and supply chain services provider
+                </em>
+              </p>
+              <h6>Software Engineering</h6>
+              <ul>
+                <li>
+                  2+ years of programming experience as an Oracle PL/SQL
+                  Developer in Analysis, Design, and Implementation of Business
+                  Applications using the Oracle Relational Database Management
+                  System (RDBMS)
+                </li>
+                <li>
+                  Involved in all phases of the SDLC (Software Development Life
+                  Cycle) from analysis, design, development, testing,
+                  implementation and maintenance with timely delivery against
+                  deadlines
+                </li>
+                <li>
+                  Experience with data flow diagrams, data dictionary, entity
+                  relation modeling, and design techniques
+                </li>
+                <li>
+                  Heavily involved in yearlong Oracle EBS upgrade from 11i to
+                  12.2.4
+                </li>
+                <li>Tools: Oracle EBS // Oracle PL/SQL, Linux, Java, SQL</li>
+              </ul>
+            </CardContent>
+            <div className="card-footer">
+              <span>March 2014 - Dec 2016 | St. Louis, MO</span>
             </div>
           </Card>
         </CardContainer>

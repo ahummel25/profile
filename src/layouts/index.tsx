@@ -1,9 +1,9 @@
-import React, { FC } from "react";
-import Helmet from "react-helmet";
-import { StaticQuery, graphql } from "gatsby";
-import styled from "@emotion/styled";
+import React, { FC } from 'react';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
+import styled from '@emotion/styled';
 
-import "materialize-css/dist/css/materialize.min.css";
+import 'materialize-css/dist/css/materialize.min.css';
 
 interface StaticQueryProps {
   site: {
@@ -40,25 +40,25 @@ const IndexLayout: FC<{}> = ({ children }) => {
           }
         }
       `}
-      render={(data: StaticQueryProps) => (
+      render={(data: StaticQueryProps): JSX.Element => (
         <Main>
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
               {
-                name: "description",
+                name: 'description',
                 content: data.site.siteMetadata.description
               },
-              { name: "keywords", content: data.site.siteMetadata.keywords }
+              { name: 'keywords', content: data.site.siteMetadata.keywords }
             ]}
             link={[
               {
                 href: data.site.siteMetadata.iconUrl,
-                rel: "stylesheet"
+                rel: 'stylesheet'
               },
               {
                 href: data.site.siteMetadata.faUrl,
-                rel: "stylesheet"
+                rel: 'stylesheet'
               }
             ]}
           />

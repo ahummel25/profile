@@ -1,7 +1,8 @@
-import React, { FC } from "react";
-import styled from "@emotion/styled";
-import { SocialIcon } from "react-social-icons";
-import { colors } from "../styles/variables";
+import React, { FC } from 'react';
+import styled from '@emotion/styled';
+import { SocialIcon } from 'react-social-icons';
+
+import { colors } from '../styles/variables';
 
 const GitIconWrapper = styled.div`
   @media screen and (min-width: 376px) and (max-width: 480px) {

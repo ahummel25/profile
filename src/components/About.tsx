@@ -1,8 +1,13 @@
-import React, { FC } from "react";
-import styled from "@emotion/styled";
+import React, { FC } from 'react';
+import styled from '@emotion/styled';
 
-import TitleHeader from "./TitleHeader";
-import { fonts } from "../styles/variables";
+import { fonts } from '../styles/variables';
+
+import TitleHeader from './TitleHeader';
+
+const Section = styled.section`
+  margin-bottom: 20px;
+`;
 
 const Container = styled.div`
   width: 95%;
@@ -27,7 +32,7 @@ const BlockQuote = styled.blockquote`
 
 const About: FC<{}> = (): JSX.Element => (
   <>
-    <section id="about" className="scrollspy">
+    <Section id="about" className="scrollspy">
       <TitleHeader title="About" />
       <Container className="container flow-text">
         <BlockQuote>
@@ -39,9 +44,9 @@ const About: FC<{}> = (): JSX.Element => (
         <p>
           I have over 7 years of experience as a full-stack software engineer
           and have worked at both small startups and large organizations. While
-          I'm a proficient full-stack developer, my expertise is in building
-          scalable backend services (API services, stream processing, and async
-          mechanisms).
+          I&apos;m a proficient full-stack developer, my expertise is in
+          building scalable backend services (API services, stream processing,
+          and async mechanisms).
         </p>
         <p>
           I have an insatiable interest in learning new technologies as well as
@@ -49,7 +54,7 @@ const About: FC<{}> = (): JSX.Element => (
           applications.
         </p>
       </Container>
-    </section>
+    </Section>
   </>
 );
 

@@ -1,13 +1,13 @@
-import React, { FC, useEffect, useState } from "react";
-import styled from "@emotion/styled";
-import Drawer from "@material-ui/core/Drawer";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Divider from "@material-ui/core/Divider";
+import React, { FC, useEffect, useState } from 'react';
+import styled from '@emotion/styled';
+import Drawer from '@material-ui/core/Drawer';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Divider from '@material-ui/core/Divider';
 
-import { useWindowDimensions } from "../hooks";
-import { NavbarProps, NavListProps } from "../interfaces";
-import { colors } from "../styles/variables";
+import { useWindowDimensions } from '../hooks';
+import { NavbarProps, NavListProps } from '../interfaces';
+import { colors } from '../styles/variables';
 
 type StyledLiProps = {
   color: string;
@@ -98,7 +98,7 @@ const DrawerLi = styled.li<StyledLiProps>`
   }
 
   &:hover {
-    border-left: 3px solid ${props => props.color};
+    border-left: 3px solid ${(props): string => props.color};
     animation: hover-on 0.75s;
     animation-fill-mode: forwards;
     will-change: opacity, transform;
@@ -119,46 +119,46 @@ const DrawerLi = styled.li<StyledLiProps>`
     align-items: center;
     padding: 0 10px 0 5px;
     &.icon-aqua {
-      color: ${props => props.color};
+      color: ${(props): string => props.color};
     }
-    &.icon-dark-blue {
-      color: ${props => props.color};
+    &.icon-brown {
+      color: ${(props): string => props.color};
     }
     &.icon-teal {
-      color: ${props => props.color};
+      color: ${(props): string => props.color};
     }
   }
 
   .active {
     background-color: rgb(232, 232, 232);
-    border-left: 3px solid ${props => props.color};
+    border-left: 3px solid ${(props): string => props.color};
     font-weight: 500;
   }
 `;
 
 const navItems = [
   {
-    text: "About",
-    icon: { type: "person", iconClass: "icon-teal", color: "rgb(0, 128, 115)" },
-    ref: "about"
+    text: 'About',
+    icon: { type: 'person', iconClass: 'icon-teal', color: 'rgb(0, 128, 115)' },
+    ref: 'about'
   },
   {
-    text: "Experience",
+    text: 'Experience',
     icon: {
-      type: "trending_up",
-      iconClass: "icon-aqua",
-      color: "rgb(0, 188, 212)"
+      type: 'trending_up',
+      iconClass: 'icon-aqua',
+      color: 'rgb(0, 188, 212)'
     },
-    ref: "experience"
+    ref: 'experience'
   },
   {
-    text: "Projects",
+    text: 'Contact',
     icon: {
-      type: "web",
-      iconClass: "icon-dark-blue",
-      color: "rgb(63, 81, 181)"
+      type: 'mail',
+      iconClass: 'icon-brown',
+      color: 'rgb(121, 85, 72)'
     },
-    ref: "projects"
+    ref: 'contact'
   }
 ];
 
@@ -180,13 +180,15 @@ const RenderFullDrawer: FC<{}> = (): JSX.Element => (
 const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
 
-  const toggleDrawer = (event: React.KeyboardEvent | React.MouseEvent) => {
+  const toggleDrawer = (
+    event: React.KeyboardEvent | React.MouseEvent
+  ): void => {
     event.preventDefault();
 
     if (
-      event.type === "keydown" &&
-      ((event as React.KeyboardEvent).key === "Tab" ||
-        (event as React.KeyboardEvent).key === "Shift")
+      event.type === 'keydown' &&
+      ((event as React.KeyboardEvent).key === 'Tab' ||
+        (event as React.KeyboardEvent).key === 'Shift')
     ) {
       return;
     }
@@ -199,7 +201,7 @@ const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
       <AppBarCustom color="inherit" position="fixed">
         <Toolbar className="tool-bar">
           <a href="/" onClick={toggleDrawer}>
-            <i className={`material-icons icon-green`}>menu</i>
+            <i className="material-icons icon-green">menu</i>
           </a>
           <div className="name-title">
             <a href="/">Andrew Hummel</a>
@@ -228,8 +230,8 @@ const NavBarLists: FC<NavListProps> = ({ setOpen }): JSX.Element => (
         <DrawerLi key={index} color={color}>
           <a
             href={`#${ref}`}
-            className={"waves-effect waves-dark"}
-            onClick={() => {
+            className="waves-effect waves-dark"
+            onClick={(): void => {
               if (setOpen) setOpen(false);
             }}
           >

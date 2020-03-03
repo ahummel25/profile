@@ -1,35 +1,35 @@
 /* eslint-disable max-len */
 
 export const colors = {
-  babyBlue: "#2096F3",
-  brand: "#663399",
-  brandBackground: "#fafafa",
-  darkBlue: "#285171",
-  lilac: "#9d7cbf",
-  lightBrown: "#795548",
-  lightGreen: "#008073",
-  navbarBorder: "#3f6380",
-  accent: "#ffb238",
-  success: "#37b635",
-  warning: "#ec1818",
+  babyBlue: '#2096F3',
+  brand: '#663399',
+  brandBackground: '#fafafa',
+  darkBlue: '#285171',
+  lilac: '#9d7cbf',
+  lightBrown: '#795548',
+  lightGreen: '#008073',
+  navbarBorder: '#3f6380',
+  accent: '#ffb238',
+  success: '#37b635',
+  warning: '#ec1818',
   ui: {
-    bright: "#e0d6eb",
-    light: "#f5f3f7",
-    whisper: "#fbfafc"
+    bright: '#e0d6eb',
+    light: '#f5f3f7',
+    whisper: '#fbfafc'
   },
-  code: "#fcf6f0",
-  profileText: "#285172",
+  code: '#fcf6f0',
+  profileText: '#285172',
   gray: {
-    dark: "hsla(270, 17.119554496%, 0%, 0.92)",
-    copy: "hsla(270, 15.797828016000002%, 0%, 0.88)",
-    calm: "rgba(0, 0, 0, 0.54)"
+    dark: 'hsla(270, 17.119554496%, 0%, 0.92)',
+    copy: 'hsla(270, 15.797828016000002%, 0%, 0.88)',
+    calm: 'rgba(0, 0, 0, 0.54)'
   },
-  white: "#fff",
-  black: "#000"
+  white: '#fff',
+  black: '#000'
 };
 
 export const fonts = {
-  roboto: "Roboto, sans-serif",
+  roboto: 'Roboto, sans-serif',
   helvetica: 'Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif',
   sansSerif:
     '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',

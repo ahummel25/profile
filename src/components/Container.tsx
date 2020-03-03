@@ -1,8 +1,8 @@
-import React, { FC } from "react";
-import styled from "@emotion/styled";
+import React, { FC } from 'react';
+import styled from '@emotion/styled';
 
-import { widths } from "../styles/variables";
-import { getEmSize } from "../styles/mixins";
+import { widths } from '../styles/variables';
+import { getEmSize } from '../styles/mixins';
 
 interface ContainerProps {
   className?: string;

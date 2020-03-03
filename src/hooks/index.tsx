@@ -1,14 +1,36 @@
-import { useEffect, useState } from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import { ImageProfileData } from "../interfaces";
+import { useEffect, useState } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-export const useGetProfileImage = (): ImageProfileData => {
+import { IImages } from '../interfaces';
+
+export const useGetImages = (): IImages => {
   const imgData = useStaticQuery(
     graphql`
       query {
-        file(relativePath: { eq: "me_full.jpg" }) {
+        i11Img: file(relativePath: { eq: "i11.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 60, maxHeight: 60) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        juristatImg: file(relativePath: { eq: "juristat.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 60, maxHeight: 60) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        profileImg: file(relativePath: { eq: "me_full.jpg" }) {
           childImageSharp {
             fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        wwtImg: file(relativePath: { eq: "wwt.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 60, maxHeight: 60) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -20,10 +42,10 @@ export const useGetProfileImage = (): ImageProfileData => {
 };
 
 export const useWindowDimensions = (): { width: number; height: number } => {
-  const getWindowDimensions = () => {
+  const getWindowDimensions = (): { width: number; height: number } => {
     let width = 0;
     let height = 0;
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       const { innerWidth, innerHeight } = window;
       width = innerWidth;
       height = innerHeight;
@@ -40,12 +62,12 @@ export const useWindowDimensions = (): { width: number; height: number } => {
   }>(getWindowDimensions());
 
   useEffect(() => {
-    const handleResize = () => {
+    const handleResize = (): void => {
       setWindowDimensions(getWindowDimensions());
     };
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return (): void => window.removeEventListener('resize', handleResize);
   }, []);
 
   return windowDimensions;
