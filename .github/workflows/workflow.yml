@@ -6,7 +6,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@gh-pages
+      - uses: actions/checkout@intial-branch
       - name: Deploy
         run: yarn deploy
         env:
