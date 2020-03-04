@@ -14,6 +14,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+      - name: Setup Git Configs
+        run: |
+          git config --global user.email "ahummel25@gmail.com"
+          git config --global user.name "Andrew Hummel"
       - name: Yarn install and deploy
         env:
           GATSBY_ENV_TEST: ${{ secrets.GATSBY_ENV_TEST }}
