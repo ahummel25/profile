@@ -18,6 +18,7 @@ jobs:
         run: |
           git config --global user.email "andrew.hummel@inspire11.com"
           git config --global user.name "Andrew Hummel"
+          git remote set-url origin git@github.com:ahummel25/profile.git
       - name: Yarn install and deploy
         env:
           GATSBY_ENV_TEST: ${{ secrets.GATSBY_ENV_TEST }}
