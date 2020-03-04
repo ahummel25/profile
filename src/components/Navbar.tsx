@@ -204,7 +204,7 @@ const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
             <i className="material-icons icon-green">menu</i>
           </a>
           <div className="name-title">
-            <a href="/">Andrew Hummel</a>
+            <a href="/profile">Andrew Hummel</a>
             <span className="brown-text light">Full Stack Developer</span>
           </div>
         </Toolbar>
