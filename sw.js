@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-c30b3775e4db036461fe.js"
+    "url": "webpack-runtime-b4643ab567e4c31dfbf6.js"
   },
   {
     "url": "commons-2a53580760e0741ace39.js"
@@ -40,7 +40,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "2fcf5b8192db7875159944ff870a0166"
+    "revision": "0e0e5967cdf3bd278772d39dbb343281"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
