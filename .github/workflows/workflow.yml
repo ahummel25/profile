@@ -14,6 +14,7 @@ jobs:
         run: |
           git config --global user.email "ahummel25@gmail.com"
           git config --global user.name "Andrew Hummel"
+          git remote set-url origin git@github.com:ahummel25/profile.git
       - name: Setup SSH Keys
         uses: webfactory/ssh-agent@v0.2.0
         with:
@@ -27,5 +28,6 @@ jobs:
           GATSBY_ENV_TEST: ${{ secrets.GATSBY_ENV_TEST }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          echo "GATSBY_ENV_TEST is set to $GATSBY_ENV_TEST"
           yarn install
           yarn deploy
