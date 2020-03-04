@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT }}
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -19,8 +21,8 @@ jobs:
           git config --global user.email "ahummel25@gmail.com"
           git config --global user.name "Andrew Hummel"
       - name: Yarn install and deploy
-        env:
-          GATSBY_ENV_TEST: ${{ secrets.GATSBY_ENV_TEST }}
         run: |
           yarn install
           yarn deploy
+        env:
+          GATSBY_ENV_TEST: ${{ secrets.GATSBY_ENV_TEST }}
