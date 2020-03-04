@@ -26,9 +26,7 @@ jobs:
       - name: Yarn install and deploy
         env:
           GATSBY_ENV_TEST: ${{ secrets.GATSBY_ENV_TEST }}
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
         run: |
-          echo 'Installing and deploying as actor $GITHUB_ACTOR in repo $GITHUB_REPOSITORY'
+          echo Installing and deploying as actor "$GITHUB_ACTOR" in repo "$GITHUB_REPOSITORY"
           yarn install
           yarn deploy
