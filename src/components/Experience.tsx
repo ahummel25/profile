@@ -101,7 +101,7 @@ const ImgContainer = styled.div`
   @media (max-width: 767px) {
     margin-bottom: 10px;
   }
-  max-height: 100%;
+  max-height: 100px;
   height: 60px;
 `;
 
@@ -141,7 +141,7 @@ const Experience: FC<{}> = (): JSX.Element => {
                   </a>
                 </div>
                 <div className="role brown-text">
-                  Full-Stack Software Developer
+                  Full Stack Software Developer
                 </div>
               </Row>
               <Divider className="divider" variant="middle" />

@@ -7,6 +7,13 @@ export const useGetImages = (): IImages => {
   const imgData = useStaticQuery(
     graphql`
       query {
+        awsImg: file(relativePath: { eq: "aws.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         i11Img: file(relativePath: { eq: "i11.png" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 60, maxHeight: 60) {

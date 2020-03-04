@@ -59,7 +59,7 @@ const Contact: FC<{}> = (): JSX.Element => (
           <a
             aria-label="Email Andrew"
             href="mailto:ahummel25@gmail.com"
-            className="teal-text text-link hoverline"
+            className="teal-text hoverline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -81,7 +81,7 @@ const Contact: FC<{}> = (): JSX.Element => (
           <a
             aria-label="Andrew on Github"
             href="https://github.com/ahummel25"
-            className="teal-text text-link hoverline"
+            className="teal-text hoverline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -103,7 +103,7 @@ const Contact: FC<{}> = (): JSX.Element => (
           <a
             aria-label="Andrew on LinkedIn"
             href="https://www.linkedin.com/in/andrew-hummel-7b618719"
-            className="teal-text text-link hoverline"
+            className="teal-text hoverline"
             target="_blank"
             rel="noopener noreferrer"
           >
