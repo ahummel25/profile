@@ -10,21 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.PAT }}
       - name: Setup Git Configs
         run: |
           git config --global user.email "ahummel25@gmail.com"
           git config --global user.name "Andrew Hummel"
           git remote set-url origin git@github.com:ahummel25/profile.git
-      - name: Setup SSH Keys and known_hosts
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          ssh-add - <<< "${{ secrets.SSH_PUBLIC_KEY }}"
+      - name: Setup SSH Keys
+        uses: webfactory/ssh-agent@v0.2.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
