@@ -20,10 +20,11 @@ jobs:
         run: |
           git config --global user.email "ahummel25@gmail.com"
           git config --global user.name "Andrew Hummel"
-          git remote set-url origin git@github.com:ahummel25/profile.git
+          git remote set-url origin https://ahummel25:$GITHUB_TOKEN@github.com/profile
       - name: Yarn install and deploy
         run: |
           yarn install
           yarn deploy
         env:
           GATSBY_ENV_TEST: ${{ secrets.GATSBY_ENV_TEST }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
