@@ -171,8 +171,8 @@ const Experience: FC<{}> = (): JSX.Element => {
                   streaming using AWS SDK
                 </li>
                 <li>
-                  Tools: React, Typescript, SASS // Node.js, Typescript, MySQL
-                  // AWS
+                  Tools: React, Typescript, SASS // Node.js, Typescript, Go,
+                  MySQL // AWS
                 </li>
               </ul>
             </CardContent>
@@ -236,7 +236,7 @@ const Experience: FC<{}> = (): JSX.Element => {
                   performing QA prior to production releases
                 </li>
                 <li>
-                  Tools: Node.js, Typescript, GraphQL // Elasticsearch MySQL //
+                  Tools: Node.js, Typescript, GraphQL // Elasticsearch, MySQL //
                   AWS
                 </li>
               </ul>

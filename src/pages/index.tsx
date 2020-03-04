@@ -23,8 +23,6 @@ const IndexPage = (): JSX.Element => {
     }
   }, []);
 
-  console.log('ENV:', process.env.GATSBY_ENV_TEST);
-
   return (
     <>
       <Global styles={(): SerializedStyles => css(normalize)} />

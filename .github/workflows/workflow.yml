@@ -1,4 +1,4 @@
-name: Install and Deploy Profile
+name: Install and Deploy Profile App
 
 on:
   push:
@@ -27,6 +27,6 @@ jobs:
         env:
           GATSBY_ENV_TEST: ${{ secrets.GATSBY_ENV_TEST }}
         run: |
-          echo Installing and deploying as actor "$GITHUB_ACTOR" in repo "$GITHUB_REPOSITORY"
+          echo Installing and deploying as "$GITHUB_ACTOR" in repo "$GITHUB_REPOSITORY"
           yarn install
           yarn deploy
