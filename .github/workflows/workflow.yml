@@ -16,7 +16,7 @@ jobs:
           node-version: '12.x'
       - name: Setup Git Configs
         run: |
-          git config --global user.email "andrew.hummel@inspire11.com"
+          git config --global user.email "ahummel25@gmail.com"
           git config --global user.name "Andrew Hummel"
           git remote set-url origin git@github.com:ahummel25/profile.git
       - name: Yarn install and deploy
