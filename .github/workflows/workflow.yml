@@ -1,9 +1,6 @@
 name: Inject Environment Variables
 
-on:
-  push:
-    branches:
-      - initial-branch
+on: push
 
 jobs:
   deploy:
