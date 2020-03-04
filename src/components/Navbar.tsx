@@ -213,7 +213,7 @@ const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
         <div className="name-title">
           <a href="/profile">
             <h1>Andrew Hummel</h1>
-            <span>Full Stack Developer</span>
+            <span className="brown-text light">Full Stack Developer</span>
           </a>
         </div>
         <Divider />
