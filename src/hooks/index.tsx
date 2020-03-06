@@ -1,7 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import { IImages } from '../interfaces';
+import { IImages, IWeatherResponse } from '../interfaces';
+import { baseWeatherUrl } from '../services/api';
+import { getFixedFahrenheit } from '../utils';
+
+export const useGetFixedFahrenheit = (temp?: number): string | null => {
+  const fixedTemp = useMemo(() => getFixedFahrenheit(temp), [temp]);
+  return fixedTemp;
+};
 
 export const useGetImages = (): IImages => {
   const imgData = useStaticQuery(
@@ -46,6 +53,30 @@ export const useGetImages = (): IImages => {
     `
   );
   return imgData;
+};
+
+export const useGetWeatherByZip = (
+  zipCode = '60607',
+  units = 'imperial'
+): IWeatherResponse | null => {
+  const [
+    weatherResponse,
+    setWeatherResponse
+  ] = useState<IWeatherResponse | null>(null);
+
+  useEffect((): void => {
+    const getWeatherByZip = async (): Promise<void> => {
+      const response = await fetch(
+        `${baseWeatherUrl}/weather?zip=${zipCode},us&appid=5b1d835b5bf579d2b7f14a0380ba99f9&units=${units}`
+      );
+      const weather: IWeatherResponse = await response.json();
+      setWeatherResponse(weather);
+    };
+
+    getWeatherByZip();
+  }, []);
+
+  return weatherResponse;
 };
 
 export const useWindowDimensions = (): { width: number; height: number } => {

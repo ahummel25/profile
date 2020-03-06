@@ -43,7 +43,7 @@ const About: FC<{}> = (): JSX.Element => (
           </h2>
         </BlockQuote>
         <p>
-          I have over 7 years of experience as a full-stack software engineer
+          I have over 7 years of experience as a full stack software engineer
           and have worked at both small startups and large organizations. As a
           software developer, I enjoy putting my obsessive attention to detail
           to use building out user friendly frontend components and scalable

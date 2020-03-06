@@ -9,3 +9,7 @@ export const handleScrollTo = (elRef: RefObject<HTMLDivElement>): void => {
     });
   }
 };
+
+export const getFixedFahrenheit = (temp?: number): string | null => {
+  return temp ? `${temp.toFixed()}` : null;
+};

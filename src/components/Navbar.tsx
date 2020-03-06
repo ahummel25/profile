@@ -9,6 +9,8 @@ import { useWindowDimensions } from '../hooks';
 import { NavbarProps, NavListProps } from '../interfaces';
 import { colors } from '../styles/variables';
 
+import WeatherCard from './WeatherCard';
+
 type StyledLiProps = {
   color: string;
 };
@@ -174,6 +176,7 @@ const RenderFullDrawer: FC<{}> = (): JSX.Element => (
     </div>
     <Divider />
     <NavBarLists />
+    <WeatherCard />
   </DrawerContainer>
 );
 
@@ -218,6 +221,7 @@ const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
         </div>
         <Divider />
         <NavBarLists setOpen={setOpen} />
+        <WeatherCard />
       </DrawerContainer>
     </>
   );

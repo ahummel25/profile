@@ -78,3 +78,10 @@ export const dimensions = {
 export const heights = {
   header: 140
 };
+
+export const devices = {
+  xs: '599px',
+  sm: '959px',
+  md: '1279px',
+  lg: '1699px'
+};
