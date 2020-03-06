@@ -64,16 +64,21 @@ export const useGetWeatherByZip = (
     setWeatherResponse
   ] = useState<IWeatherResponse | null>(null);
 
-  useEffect((): void => {
+  useEffect(() => {
+    let unmounted = false;
     const getWeatherByZip = async (): Promise<void> => {
       const response = await fetch(
         `${baseWeatherUrl}/weather?zip=${zipCode},us&appid=5b1d835b5bf579d2b7f14a0380ba99f9&units=${units}`
       );
       const weather: IWeatherResponse = await response.json();
-      setWeatherResponse(weather);
+      if (!unmounted) setWeatherResponse(weather);
     };
 
     getWeatherByZip();
+
+    return (): void => {
+      unmounted = true;
+    };
   }, []);
 
   return weatherResponse;

@@ -26,7 +26,7 @@ const Header = styled.div`
 const WeatherImage = styled.img`
   width: 50px;
   height: 50px;
-  margin-right: 20px;
+  margin-right: 15px;
   border-radius: 50%;
   background-color: rgb(211, 211, 211);
 `;
@@ -42,29 +42,29 @@ const Temperature = styled.div`
 `;
 
 const WeatherCard: FC<{}> = (): JSX.Element => {
-  const resp = useGetWeatherByZip();
-  const icon = resp?.weather[0].icon;
+  const response = useGetWeatherByZip();
+  const icon = response?.weather[0].icon;
   const formattedDate = format(new Date(), 'EEE, LLL do');
 
   return (
     <Card>
       <Header>
         <WeatherImage
-          src={`https://openweathermap.org/img/w/${icon}.png`}
+          src={icon ? `https://openweathermap.org/img/w/${icon}.png` : ''}
           alt={icon}
         />
         <Title>{formattedDate}</Title>
       </Header>
 
       <Temperature>
-        <strong>{useGetFixedFahrenheit(resp?.main.temp_max)} &#8457;</strong>|{' '}
-        {useGetFixedFahrenheit(resp?.main.temp_min)} &#8457;
+        <strong>
+          {useGetFixedFahrenheit(response?.main.temp_max)} &#8457;
+        </strong>
+        | {useGetFixedFahrenheit(response?.main.temp_min)} &#8457;
       </Temperature>
 
-      <div>
-        <div>humidity: {resp?.main.humidity} %</div>
-        <div>speed: {resp?.wind.speed} mps</div>
-      </div>
+      <div>humidity: {response?.main.humidity} %</div>
+      <div>speed: {response?.wind.speed} mps</div>
     </Card>
   );
 };
