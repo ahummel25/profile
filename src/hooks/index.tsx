@@ -64,13 +64,13 @@ export const useGetWeatherByCoords = (
   ] = useState<IWeatherResponse | null>(null);
 
   useEffect(() => {
-    let unmounted = false;
+    let mounted = true;
     const getWeatherByCoords = async (): Promise<void> => {
       const {
         coords: { latitude, longitude }
       }: Position = await new Promise((resolve): void => {
-        navigator.geolocation.getCurrentPosition((coordinates: Position) => {
-          resolve(coordinates);
+        navigator.geolocation.getCurrentPosition((position: Position): void => {
+          resolve(position);
         });
       });
 
@@ -78,13 +78,13 @@ export const useGetWeatherByCoords = (
         `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
       );
       const weather: IWeatherResponse = await response.json();
-      if (!unmounted) setWeatherResponse(weather);
+      if (mounted) setWeatherResponse(weather);
     };
 
     getWeatherByCoords();
 
     return (): void => {
-      unmounted = true;
+      mounted = false;
     };
   }, []);
 
