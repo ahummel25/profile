@@ -14,7 +14,7 @@ const NotFoundPage = (): JSX.Element => {
         <Container>
           <h1>404: Page not found.</h1>
           <p>
-            You&apos;ve hit the void. <Link to="/"> Go back.</Link>
+            You&#39;ve hit the void. <Link to="/"> Go back.</Link>
           </p>
           <p>Your current URL is: {url}</p>
         </Container>

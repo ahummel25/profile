@@ -283,12 +283,12 @@ const Experience: FC<{}> = (): JSX.Element => {
               <h6>Software Engineering</h6>
               <ul>
                 <li>
-                  Supporting and customizing Oracle&apos;s Warehouse Management
+                  Supporting and customizing Oracle&#39;s Warehouse Management
                   system (Inventory (INV) and Shipping (WSH) modules) to fit
                   user needs and requirements
                 </li>
                 <li>
-                  Writing custom Java code on Oracle&apos;s Mobile Web
+                  Writing custom Java code on Oracle&#39;s Mobile Web
                   Applications (MWA) framework to enhance WMS system.
                 </li>
                 <li>
