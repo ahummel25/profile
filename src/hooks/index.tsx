@@ -55,8 +55,7 @@ export const useGetImages = (): IImages => {
   return imgData;
 };
 
-export const useGetWeatherByZip = (
-  zipCode = '60607',
+export const useGetWeatherByCoords = (
   units = 'imperial'
 ): IWeatherResponse | null => {
   const [
@@ -66,15 +65,23 @@ export const useGetWeatherByZip = (
 
   useEffect(() => {
     let unmounted = false;
-    const getWeatherByZip = async (): Promise<void> => {
+    const getWeatherByCoords = async (): Promise<void> => {
+      const {
+        coords: { latitude, longitude }
+      }: Position = await new Promise((resolve): void => {
+        navigator.geolocation.getCurrentPosition((coordinates: Position) => {
+          resolve(coordinates);
+        });
+      });
+
       const response = await fetch(
-        `${baseWeatherUrl}/weather?zip=${zipCode},us&appid=5b1d835b5bf579d2b7f14a0380ba99f9&units=${units}`
+        `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.WEATHER_API_KEY}&units=${units}`
       );
       const weather: IWeatherResponse = await response.json();
       if (!unmounted) setWeatherResponse(weather);
     };
 
-    getWeatherByZip();
+    getWeatherByCoords();
 
     return (): void => {
       unmounted = true;
@@ -110,7 +117,9 @@ export const useWindowDimensions = (): { width: number; height: number } => {
     };
 
     window.addEventListener('resize', handleResize);
-    return (): void => window.removeEventListener('resize', handleResize);
+    return (): void => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return windowDimensions;

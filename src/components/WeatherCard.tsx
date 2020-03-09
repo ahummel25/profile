@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled from '@emotion/styled';
 import { format } from 'date-fns';
 
-import { useGetFixedFahrenheit, useGetWeatherByZip } from '../hooks';
+import { useGetFixedFahrenheit, useGetWeatherByCoords } from '../hooks';
 
 const Card = styled.div`
   align-self: center;
@@ -42,7 +42,7 @@ const Temperature = styled.div`
 `;
 
 const WeatherCard: FC<{}> = (): JSX.Element => {
-  const response = useGetWeatherByZip();
+  const response = useGetWeatherByCoords();
   const icon = response?.weather[0].icon;
   const formattedDate = format(new Date(), 'EEE, LLL do');
 
