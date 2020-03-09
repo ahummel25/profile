@@ -58,6 +58,7 @@ export const useGetImages = (): IImages => {
 export const useGetWeatherByCoords = (
   units = 'imperial'
 ): IWeatherResponse | null => {
+  console.log(process.env);
   const [
     weatherResponse,
     setWeatherResponse
