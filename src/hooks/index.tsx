@@ -68,14 +68,28 @@ export const useGetWeatherByCoords = (
     const getWeatherByCoords = async (): Promise<void> => {
       const {
         coords: { latitude, longitude }
-      }: Position = await new Promise((resolve): void => {
-        navigator.geolocation.getCurrentPosition((position: Position): void => {
-          resolve(position);
-        });
+      }: Position = await new Promise((resolve, reject): void => {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position: Position): void => {
+              resolve(position);
+            },
+            (err: PositionError): void => {
+              if (err.code === 1) {
+                reject('Error: Access is denied!');
+              } else if (err.code === 2) {
+                reject('Error: Position is unavailable!');
+              }
+            },
+            { timeout: 60000 }
+          );
+        } else {
+          reject('Sorry, browser does not support geolocation!');
+        }
       });
 
       const response = await fetch(
-        `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
+        `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=5b1d835b5bf579d2b7f14a0380ba99f9&units=${units}`
       );
       const weather: IWeatherResponse = await response.json();
       if (mounted) setWeatherResponse(weather);
