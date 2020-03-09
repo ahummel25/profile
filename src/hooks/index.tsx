@@ -89,7 +89,7 @@ export const useGetWeatherByCoords = (
       });
 
       const response = await fetch(
-        `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.WEATHER_API_KEY}&units=${units}`
+        `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
       );
       const weather: IWeatherResponse = await response.json();
       if (mounted) setWeatherResponse(weather);
