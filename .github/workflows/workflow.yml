@@ -25,7 +25,7 @@ jobs:
           node-version: '12.x'
       - name: Yarn install and deploy
         env:
-          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+          GATSBY_WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: |
           echo Installing and deploying as "$GITHUB_ACTOR" in repo "$GITHUB_REPOSITORY"
           yarn install
