@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { format } from 'date-fns';
 
 import { useGetFixedFahrenheit, useGetWeatherByCoords } from '../hooks';
+import { breakpoints as bp } from '../styles/variables';
 
 const Card = styled.div`
   align-self: center;
@@ -24,6 +25,9 @@ const Header = styled.div`
 `;
 
 const WeatherImage = styled.img`
+  @media (max-width: ${bp.sm}px) {
+    margin-right: 8px;
+  }
   width: 50px;
   height: 50px;
   margin-right: 15px;
