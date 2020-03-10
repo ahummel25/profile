@@ -63,6 +63,41 @@ export const useGetImages = (): IImages => {
             }
           }
         }
+        cssImg: file(relativePath: { eq: "css3.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        sassImg: file(relativePath: { eq: "sass.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 140, maxHeight: 105) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        bootstrapImg: file(relativePath: { eq: "bootstrap.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        materializeImg: file(relativePath: { eq: "materialize.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        styCompImg: file(relativePath: { eq: "styled_components.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   );

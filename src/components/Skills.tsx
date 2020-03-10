@@ -45,10 +45,22 @@ const ImgContainer = styled.div`
   p {
     padding-top: 15px;
   }
+
+  .sass {
+    padding-top: 28px;
+  }
 `;
 
 const Skills: FC<{}> = (): JSX.Element => {
-  const { htmlImg, reactImg } = useGetImages();
+  const {
+    htmlImg,
+    reactImg,
+    cssImg,
+    sassImg,
+    bootstrapImg,
+    materializeImg,
+    styCompImg
+  } = useGetImages();
 
   return (
     <>
@@ -67,7 +79,7 @@ const Skills: FC<{}> = (): JSX.Element => {
                     fluid={htmlImg.childImageSharp.fluid}
                     alt="HTML5 Logo"
                   />
-                  <p> HTML5</p>
+                  <p>HTML5</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
                   <Img
@@ -76,7 +88,60 @@ const Skills: FC<{}> = (): JSX.Element => {
                     fluid={reactImg.childImageSharp.fluid}
                     alt="React Logo"
                   />
-                  <p> JSX</p>
+                  <p>JSX</p>
+                </ImgContainer>
+              </Row>
+            </CardContent>
+          </Card>
+          <Card className="card">
+            <CardContent className="card-content">
+              <h4 className="brown-text light">CSS</h4>
+              <Divider className="divider" variant="middle" />
+              <Row className="row">
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={cssImg.childImageSharp.fluid}
+                    alt="CSS3 Logo"
+                  />
+                  <p>CSS3</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={sassImg.childImageSharp.fluid}
+                    alt="SASS Logo"
+                  />
+                  <p className="sass">SASS</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={bootstrapImg.childImageSharp.fluid}
+                    alt="Bootstrap Logo"
+                  />
+                  <p>Bootstrap</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={materializeImg.childImageSharp.fluid}
+                    alt="Materialize Logo"
+                  />
+                  <p>Materialize</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={styCompImg.childImageSharp.fluid}
+                    alt="Styled Components Logo"
+                  />
+                  <p>Styled Components</p>
                 </ImgContainer>
               </Row>
             </CardContent>
