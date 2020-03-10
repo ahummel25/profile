@@ -112,7 +112,7 @@ const Experience: FC<{}> = (): JSX.Element => {
     <>
       <section id="experience" className="section scrollspy">
         <TitleHeader title="Experience" />
-        <CardContainer>
+        <CardContainer width={860}>
           <Card className="card">
             <CardContent className="card-content">
               <Row className="row">

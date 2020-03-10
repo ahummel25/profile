@@ -3,20 +3,30 @@ import styled from '@emotion/styled';
 
 import { fonts } from '../styles/variables';
 
-const Container = styled.div`
+type ContainerProps = {
+  width?: number;
+};
+
+const Container = styled.div<ContainerProps>`
   width: 95%;
   font-family: ${fonts.roboto};
   font-weight: 300;
   padding: 0 24px;
+  max-width: 1280px;
 
   @media (min-width: 1200px) {
-    width: 860px;
+    width: ${(props): number | undefined => props.width}px;
   }
 `;
 
-const CardContainer: FC<{}> = ({ children }): JSX.Element => (
+const CardContainer: FC<ContainerProps> = ({
+  children,
+  width
+}): JSX.Element => (
   <>
-    <Container className="container">{children}</Container>
+    <Container className="container" width={width}>
+      {children}
+    </Container>
   </>
 );
 

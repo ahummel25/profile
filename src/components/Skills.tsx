@@ -32,7 +32,7 @@ const Row = styled.div`
 
 const ImgContainer = styled.div`
   @media (max-width: 767px) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   font-size: 16px;
   font-weight: 400;
