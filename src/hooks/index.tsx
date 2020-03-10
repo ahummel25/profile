@@ -49,6 +49,20 @@ export const useGetImages = (): IImages => {
             }
           }
         }
+        htmlImg: file(relativePath: { eq: "html5.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        reactImg: file(relativePath: { eq: "react.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   );

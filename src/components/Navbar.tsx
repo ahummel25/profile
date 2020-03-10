@@ -120,13 +120,7 @@ const DrawerLi = styled.li<StyledLiProps>`
     display: flex;
     align-items: center;
     padding: 0 10px 0 5px;
-    &.icon-aqua {
-      color: ${(props): string => props.color};
-    }
-    &.icon-brown {
-      color: ${(props): string => props.color};
-    }
-    &.icon-teal {
+    &.icon-color {
       color: ${(props): string => props.color};
     }
   }
@@ -141,23 +135,32 @@ const DrawerLi = styled.li<StyledLiProps>`
 const navItems = [
   {
     text: 'About',
-    icon: { type: 'person', iconClass: 'icon-teal', color: 'rgb(0, 128, 115)' },
+    icon: {
+      type: 'person',
+      color: 'rgb(0, 128, 115)'
+    },
     ref: 'about'
   },
   {
     text: 'Experience',
     icon: {
       type: 'trending_up',
-      iconClass: 'icon-aqua',
       color: 'rgb(0, 188, 212)'
     },
     ref: 'experience'
   },
   {
+    text: 'Skills',
+    icon: {
+      type: 'equalizer',
+      color: 'rgb(156,38,176)'
+    },
+    ref: 'skills'
+  },
+  {
     text: 'Contact',
     icon: {
       type: 'mail',
-      iconClass: 'icon-brown',
       color: 'rgb(121, 85, 72)'
     },
     ref: 'contact'
@@ -230,7 +233,7 @@ const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
 const NavBarLists: FC<NavListProps> = ({ setOpen }): JSX.Element => (
   <ul>
     {navItems.map(
-      ({ text, icon: { type, iconClass, color }, ref }, index): JSX.Element => (
+      ({ text, icon: { type, color }, ref }, index): JSX.Element => (
         <DrawerLi key={index} color={color}>
           <a
             href={`#${ref}`}
@@ -239,7 +242,7 @@ const NavBarLists: FC<NavListProps> = ({ setOpen }): JSX.Element => (
               if (setOpen) setOpen(false);
             }}
           >
-            <i className={`small material-icons ${iconClass}`}>{type}</i>
+            <i className="small material-icons icon-color">{type}</i>
             {text}
           </a>
         </DrawerLi>
