@@ -59,7 +59,10 @@ const Skills: FC<{}> = (): JSX.Element => {
     sassImg,
     bootstrapImg,
     materializeImg,
-    styCompImg
+    styCompImg,
+    tsImg,
+    jqueryImg,
+    nodeImg
   } = useGetImages();
 
   return (
@@ -88,7 +91,7 @@ const Skills: FC<{}> = (): JSX.Element => {
                     fluid={reactImg.childImageSharp.fluid}
                     alt="React Logo"
                   />
-                  <p>JSX</p>
+                  <p>JSX/TSX</p>
                 </ImgContainer>
               </Row>
             </CardContent>
@@ -142,6 +145,50 @@ const Skills: FC<{}> = (): JSX.Element => {
                     alt="Styled Components Logo"
                   />
                   <p>Styled Components</p>
+                </ImgContainer>
+              </Row>
+            </CardContent>
+          </Card>
+          <Card className="card">
+            <CardContent className="card-content">
+              <h4 className="brown-text light">Javascript</h4>
+              <Divider className="divider" variant="middle" />
+              <Row className="row">
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={reactImg.childImageSharp.fluid}
+                    alt="React Logo"
+                  />
+                  <p>React/React Native</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={tsImg.childImageSharp.fluid}
+                    alt="Typescript Logo"
+                  />
+                  <p>Typescript</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={jqueryImg.childImageSharp.fluid}
+                    alt="jQuery Logo"
+                  />
+                  <p>jQuery</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={nodeImg.childImageSharp.fluid}
+                    alt="Node.js Logo"
+                  />
+                  <p>Node</p>
                 </ImgContainer>
               </Row>
             </CardContent>

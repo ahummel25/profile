@@ -98,6 +98,27 @@ export const useGetImages = (): IImages => {
             }
           }
         }
+        tsImg: file(relativePath: { eq: "typescript.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        jqueryImg: file(relativePath: { eq: "jquery.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        nodeImg: file(relativePath: { eq: "nodejs.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   );
