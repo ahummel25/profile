@@ -60,7 +60,6 @@ const ImgContainer = styled.div`
   a {
     color: rgb(51, 51, 51);
   }
-
   img {
     @media (max-width: ${bp.md}px) {
       margin-top: 10px;
