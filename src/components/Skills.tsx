@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import Divider from '@material-ui/core/Divider';
 
 import { useGetImages } from '../hooks';
+import { breakpoints as bp } from '../styles/variables';
 
 import CardContainer from './CardContainer';
 import TitleHeader from './TitleHeader';
@@ -31,7 +32,7 @@ const Row = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  @media (max-width: 767px) {
+  @media (max-width: ${bp.md}px) {
     margin-bottom: 20px;
   }
   font-size: 16px;

@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
 
+import { breakpoints as bp } from '../styles/variables';
+
 const Header = styled.h3`
   margin: 0 auto;
   background-color: rgb(0, 128, 115);
@@ -9,7 +11,7 @@ const Header = styled.h3`
   margin-bottom: 60px;
   text-transform: uppercase;
 
-  @media (max-width: 992px) {
+  @media (max-width: ${bp.lg}px) {
     padding: 20px 30px;
     margin-bottom: 40px;
   }

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
 
-import { fonts } from '../styles/variables';
+import { fonts, breakpoints as bp } from '../styles/variables';
 
 type ContainerProps = {
   width?: number;
@@ -14,7 +14,7 @@ const Container = styled.div<ContainerProps>`
   padding: 0 24px;
   max-width: 1280px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: ${bp.xl}px) {
     width: ${(props): number | undefined => props.width}px;
   }
 `;

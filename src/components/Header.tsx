@@ -5,12 +5,13 @@ import Img from 'gatsby-image';
 import Navbar from '../components/Navbar';
 import { useGetImages } from '../hooks';
 import { HeaderProps } from '../interfaces';
+import { breakpoints as bp } from '../styles/variables';
 
 const ImgStyled = styled(({ ...rest }) => <Img {...rest} />)`
-  @media (max-width: 599px) {
+  @media (max-width: ${bp.sm}px) {
     margin-top: 60px;
   }
-  @media (min-width: 992px) {
+  @media (min-width: ${bp.lg}px) {
     margin-top: 0;
   }
   margin-top: 64px;

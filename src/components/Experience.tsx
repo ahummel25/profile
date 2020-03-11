@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import Divider from '@material-ui/core/Divider';
 
 import { useGetImages } from '../hooks';
+import { breakpoints as bp } from '../styles/variables';
 
 import TitleHeader from './TitleHeader';
 import CardContainer from './CardContainer';
@@ -26,7 +27,7 @@ const Card = styled.div`
 
 const CardContent = styled.div`
   .card-title {
-    @media (max-width: 767px) {
+    @media (max-width: ${bp.md}px) {
       text-align: center;
     }
     padding-top: 10px;
@@ -82,7 +83,7 @@ const Row = styled.div`
   padding-bottom: 10px;
 
   .role {
-    @media (max-width: 767px) {
+    @media (max-width: ${bp.md}px) {
       position: relative;
       right: initial;
       top: initial;
@@ -98,7 +99,7 @@ const Row = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  @media (max-width: 767px) {
+  @media (max-width: ${bp.md}px) {
     margin-bottom: 10px;
   }
   max-height: 100px;
