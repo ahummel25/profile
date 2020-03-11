@@ -154,6 +154,13 @@ export const useGetImages = (): IImages => {
             }
           }
         }
+        awsImg: file(relativePath: { eq: "aws.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   );

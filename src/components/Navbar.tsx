@@ -158,6 +158,14 @@ const navItems = [
     ref: 'skills'
   },
   {
+    text: 'Certifications',
+    icon: {
+      type: 'star',
+      color: 'rgb(244,67,53)'
+    },
+    ref: 'certifications'
+  },
+  {
     text: 'Contact',
     icon: {
       type: 'mail',

@@ -68,7 +68,8 @@ const Skills: FC<{}> = (): JSX.Element => {
     goImg,
     javaImg,
     mysqlImg,
-    oracleImg
+    oracleImg,
+    awsImg
   } = useGetImages();
 
   return (
@@ -248,6 +249,23 @@ const Skills: FC<{}> = (): JSX.Element => {
                     alt="Oracle Logo"
                   />
                   <p>Oracle</p>
+                </ImgContainer>
+              </Row>
+            </CardContent>
+          </Card>
+          <Card className="card">
+            <CardContent className="card-content">
+              <h4 className="brown-text light">Cloud</h4>
+              <Divider className="divider" variant="middle" />
+              <Row className="row">
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={awsImg.childImageSharp.fluid}
+                    alt="AWS Logo"
+                  />
+                  <p>AWS</p>
                 </ImgContainer>
               </Row>
             </CardContent>
