@@ -49,6 +49,14 @@ const ImgContainer = styled.div`
   position: relative;
   text-align: center;
 
+  .gatsby-image-wrapper {
+    @media (min-width: ${bp.xl}px) {
+      div:nth-child(1) {
+        padding-bottom: 70% !important;
+      }
+    }
+  }
+
   a {
     color: rgb(51, 51, 51);
   }
@@ -59,7 +67,6 @@ const ImgContainer = styled.div`
     }
     margin-top: 25px;
     max-height: 90px;
-    height: 90px;
   }
 
   p {
