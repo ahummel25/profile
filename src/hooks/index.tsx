@@ -119,6 +119,41 @@ export const useGetImages = (): IImages => {
             }
           }
         }
+        pythonImg: file(relativePath: { eq: "python.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        goImg: file(relativePath: { eq: "golang.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        javaImg: file(relativePath: { eq: "java.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        mysqlImg: file(relativePath: { eq: "mysql.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        oracleImg: file(relativePath: { eq: "oracle.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `
   );

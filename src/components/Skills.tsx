@@ -63,7 +63,12 @@ const Skills: FC<{}> = (): JSX.Element => {
     styCompImg,
     tsImg,
     jqueryImg,
-    nodeImg
+    nodeImg,
+    pythonImg,
+    goImg,
+    javaImg,
+    mysqlImg,
+    oracleImg
   } = useGetImages();
 
   return (
@@ -190,6 +195,59 @@ const Skills: FC<{}> = (): JSX.Element => {
                     alt="Node.js Logo"
                   />
                   <p>Node</p>
+                </ImgContainer>
+              </Row>
+            </CardContent>
+          </Card>
+          <Card className="card">
+            <CardContent className="card-content">
+              <h4 className="brown-text light">Back-End</h4>
+              <Divider className="divider" variant="middle" />
+              <Row className="row">
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={pythonImg.childImageSharp.fluid}
+                    alt="Python Logo"
+                  />
+                  <p>Python</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={goImg.childImageSharp.fluid}
+                    alt="Golang Logo"
+                  />
+                  <p>Go</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={javaImg.childImageSharp.fluid}
+                    alt="Java Logo"
+                  />
+                  <p>Java</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={mysqlImg.childImageSharp.fluid}
+                    alt="MySQL Logo"
+                  />
+                  <p>MySQL</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={oracleImg.childImageSharp.fluid}
+                    alt="Oracle Logo"
+                  />
+                  <p>Oracle</p>
                 </ImgContainer>
               </Row>
             </CardContent>
