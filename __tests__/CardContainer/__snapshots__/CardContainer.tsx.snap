@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders correctly 1`] = `
+exports[`CardContainer renders correctly 1`] = `
 .emotion-0 {
   width: 95%;
   font-family: Roboto,sans-serif;

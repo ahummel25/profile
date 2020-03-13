@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Contact from '../../src/components/Contact';
+import Profile from '../../src/components/Profile';
 
-describe('Contact', () => {
+describe('Profile', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Contact />).toJSON();
+    const tree = renderer.create(<Profile />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });

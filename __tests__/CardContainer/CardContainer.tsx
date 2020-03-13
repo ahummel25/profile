@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 
 import CardContainer from '../../src/components/CardContainer';
 
-describe('Header', () => {
+describe('CardContainer', () => {
   it('renders correctly', () => {
     const tree = renderer.create(<CardContainer />).toJSON();
 

@@ -1,6 +1,27 @@
 import { IImages } from '../src/interfaces';
 
-const imgTypes = ['profileImg', 'awsImg'];
+const imgTypes = [
+  'profileImg',
+  'awsImg',
+  'i11Img',
+  'juristatImg',
+  'wwtImg',
+  'htmlImg',
+  'reactImg',
+  'cssImg',
+  'sassImg',
+  'bootstrapImg',
+  'materializeImg',
+  'styCompImg',
+  'tsImg',
+  'jqueryImg',
+  'nodeImg',
+  'pythonImg',
+  'goImg',
+  'javaImg',
+  'mysqlImg',
+  'oracleImg'
+];
 
 const mockImagesResponse: IImages = {};
 

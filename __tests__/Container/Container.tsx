@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 
 import Container from '../../src/components/Container';
 
-describe('Header', () => {
+describe('Container', () => {
   it('renders correctly', () => {
     const tree = renderer.create(<Container />).toJSON();
 

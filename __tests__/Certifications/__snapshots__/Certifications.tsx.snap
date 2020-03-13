@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders correctly 1`] = `
+exports[`Certifications renders correctly 1`] = `
 .emotion-6 {
   margin-bottom: 20px;
   height: 100vh;

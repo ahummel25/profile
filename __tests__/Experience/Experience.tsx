@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Contact from '../../src/components/Contact';
+import Experience from '../../src/components/Experience';
 
-describe('Contact', () => {
+describe('Experience', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Contact />).toJSON();
+    const tree = renderer.create(<Experience />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });

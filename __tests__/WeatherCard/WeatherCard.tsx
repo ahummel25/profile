@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Contact from '../../src/components/Contact';
+import WeatherCard from '../../src/components/WeatherCard';
 
-describe('Contact', () => {
+describe('WeatherCard', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Contact />).toJSON();
+    const tree = renderer.create(<WeatherCard />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
