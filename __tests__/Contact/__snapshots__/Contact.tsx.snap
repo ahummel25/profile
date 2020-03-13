@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+.emotion-2 {
+  margin-bottom: 20px;
+  height: 100vh;
+}
+
+.emotion-0 {
+  margin: 0 auto;
+  background-color: rgb(0,128,115);
+  font-weight: 100;
+  padding: 30px 40px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+@media (max-width:992px) {
+  .emotion-0 {
+    padding: 20px 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.emotion-1 {
+  width: 95%;
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 24px;
+}
+
+.emotion-1 p {
+  margin: 30px 0;
+}
+
+.emotion-1 a:not(.btn-floating) {
+  position: relative;
+  left: 20px;
+}
+
+.emotion-1 .hoverline {
+  border-bottom: 3px solid transparent !important;
+  padding: 3px 3px 3px 3px;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+}
+
+.emotion-1 .hoverline:hover {
+  border-bottom: 3px solid rgb(0,150,136) !important;
+}
+
+.emotion-2 {
+  margin-bottom: 20px;
+  height: 100vh;
+}
+
+.emotion-0 {
+  margin: 0 auto;
+  background-color: rgb(0,128,115);
+  font-weight: 100;
+  padding: 30px 40px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+@media (max-width:992px) {
+  .emotion-0 {
+    padding: 20px 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.emotion-1 {
+  width: 95%;
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 24px;
+}
+
+.emotion-1 p {
+  margin: 30px 0;
+}
+
+.emotion-1 a:not(.btn-floating) {
+  position: relative;
+  left: 20px;
+}
+
+.emotion-1 .hoverline {
+  border-bottom: 3px solid transparent !important;
+  padding: 3px 3px 3px 3px;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+}
+
+.emotion-1 .hoverline:hover {
+  border-bottom: 3px solid rgb(0,150,136) !important;
+}
+
+<section
+  className="section scrollspy emotion-2"
+  id="contact"
+>
+  <h3
+    className="page-title white-text emotion-0"
+  >
+    Contact
+  </h3>
+  <div
+    className="container emotion-1"
+  >
+    <p>
+      <a
+        aria-label="Email Andrew"
+        className="btn-floating btn-large waves-effect waves-light brown tooltipped"
+        data-position="top"
+        data-tooltip="Email Andrew"
+        href="mailto:ahummel25@gmail.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          className="fa fa-envelope"
+        />
+      </a>
+      <a
+        aria-label="Email Andrew"
+        className="teal-text hoverline"
+        href="mailto:ahummel25@gmail.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        ahummel25@gmail.com
+      </a>
+    </p>
+    <p>
+      <a
+        aria-label="View Andrew on GitHub"
+        className="btn-floating btn-large waves-effect waves-light brown tooltipped"
+        data-position="top"
+        data-tooltip="View Andrew on Github"
+        href="https://github.com/ahummel25"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          className="fa fa-github"
+        />
+      </a>
+      <a
+        aria-label="Andrew on Github"
+        className="teal-text hoverline"
+        href="https://github.com/ahummel25"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        github.com/ahummel25
+      </a>
+    </p>
+    <p>
+      <a
+        aria-label="View Andrew on LinkedIn"
+        className="btn-floating btn-large waves-effect waves-light brown tooltipped"
+        data-position="top"
+        data-tooltip="View Andrew on LinkedIn"
+        href="https://www.linkedin.com/in/andrew-hummel-7b618719"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i
+          className="fa fa-linkedin"
+        />
+      </a>
+      <a
+        aria-label="Andrew on LinkedIn"
+        className="teal-text hoverline"
+        href="https://www.linkedin.com/in/andrew-hummel-7b618719"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        linkedin.com/andrew-hummel
+      </a>
+    </p>
+  </div>
+</section>
+`;

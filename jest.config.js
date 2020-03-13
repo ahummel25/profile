@@ -21,7 +21,9 @@ module.exports = {
     }
   },
   testURL: 'http://localhost',
-  setupFiles: ['<rootDir>/loadershim.js'],
+  setupFiles: ['<rootDir>/__mocks__/setup-mocks.ts'],
+  setupFilesAfterEnv: ['<rootDir>/setup-test-env.js'],
+  snapshotSerializers: ['jest-emotion'],
   verbose: true,
   preset: 'ts-jest',
   testMatch: null
