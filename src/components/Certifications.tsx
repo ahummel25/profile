@@ -51,7 +51,7 @@ const ImgContainer = styled.div`
 
   .gatsby-image-wrapper {
     @media (min-width: ${bp.xl}px) {
-      div:nth-child(1) {
+      div:first-of-type {
         padding-bottom: 70% !important;
       }
     }

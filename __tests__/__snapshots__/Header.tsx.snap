@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<section
+  className="section scrollspy"
+  id="header"
+  style={
+    Object {
+      "display": "contents",
+    }
+  }
+>
+  <div
+    className="MuiDrawer-root MuiDrawer-docked css-1uttx8n"
+  >
+    <div
+      className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+    >
+      <div
+        className="name-title"
+      >
+        <a
+          href="/profile"
+        >
+          <h1>
+            Andrew 
+            <br />
+             Hummel
+          </h1>
+          <span
+            className="brown-text light"
+          >
+            Full Stack Developer
+          </span>
+        </a>
+      </div>
+      <hr
+        className="MuiDivider-root"
+      />
+      <ul>
+        <li
+          className="css-19ff2z1"
+          color="rgb(0, 128, 115)"
+        >
+          <a
+            className="waves-effect waves-dark"
+            href="#about"
+            onClick={[Function]}
+          >
+            <i
+              className="small material-icons icon-color"
+            >
+              person
+            </i>
+            About
+          </a>
+        </li>
+        <li
+          className="css-1gblma6"
+          color="rgb(0, 188, 212)"
+        >
+          <a
+            className="waves-effect waves-dark"
+            href="#experience"
+            onClick={[Function]}
+          >
+            <i
+              className="small material-icons icon-color"
+            >
+              trending_up
+            </i>
+            Experience
+          </a>
+        </li>
+        <li
+          className="css-1lyki0f"
+          color="rgb(156,38,176)"
+        >
+          <a
+            className="waves-effect waves-dark"
+            href="#skills"
+            onClick={[Function]}
+          >
+            <i
+              className="small material-icons icon-color"
+            >
+              equalizer
+            </i>
+            Skills
+          </a>
+        </li>
+        <li
+          className="css-1j8bumt"
+          color="rgb(244,67,53)"
+        >
+          <a
+            className="waves-effect waves-dark"
+            href="#certifications"
+            onClick={[Function]}
+          >
+            <i
+              className="small material-icons icon-color"
+            >
+              star
+            </i>
+            Certifications
+          </a>
+        </li>
+        <li
+          className="css-djjvk3"
+          color="rgb(121, 85, 72)"
+        >
+          <a
+            className="waves-effect waves-dark"
+            href="#contact"
+            onClick={[Function]}
+          >
+            <i
+              className="small material-icons icon-color"
+            >
+              mail
+            </i>
+            Contact
+          </a>
+        </li>
+      </ul>
+      <div
+        className="css-1pvvq55"
+      >
+        <div
+          className="css-31ceef"
+        >
+          <img
+            alt="04n"
+            className="css-ays64o"
+            src="https://openweathermap.org/img/w/04n.png"
+          />
+          <div
+            className="css-11b29mu"
+          >
+            Thu, Mar 12th
+          </div>
+        </div>
+        <div
+          className="css-jim3c1"
+        >
+          <strong>
+            56
+             ℉
+          </strong>
+          | 
+          49
+           ℉
+        </div>
+        <div>
+          humidity: 
+          82
+           %
+        </div>
+        <div>
+          speed: 
+          5.82
+           mps
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-19iflly gatsby-image-wrapper"
+    style={
+      Object {
+        "overflow": "hidden",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      aria-hidden={true}
+      style={
+        Object {
+          "paddingBottom": "63.83896477354421%",
+          "width": "100%",
+        }
+      }
+    />
+    <img
+      alt=""
+      aria-hidden={true}
+      src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEj"
+      style={
+        Object {
+          "height": "100%",
+          "left": 0,
+          "objectFit": "cover",
+          "objectPosition": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "top": 0,
+          "transitionDelay": "500ms",
+          "width": "100%",
+        }
+      }
+    />
+    <picture>
+      <source
+        sizes="(max-width: 800px) 100vw, 800px"
+        srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+      />
+      <img
+        alt="Profile Shot"
+        loading="lazy"
+        onLoad={[Function]}
+        sizes="(max-width: 800px) 100vw, 800px"
+        src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
+        srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+        style={
+          Object {
+            "height": "100%",
+            "left": 0,
+            "objectFit": "cover",
+            "objectPosition": "center",
+            "opacity": 0,
+            "position": "absolute",
+            "top": 0,
+            "transition": "opacity 500ms",
+            "width": "100%",
+          }
+        }
+      />
+    </picture>
+    <noscript
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+				  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Profile Shot\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+        }
+      }
+    />
+  </div>
+</section>
+`;
