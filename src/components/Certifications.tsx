@@ -66,7 +66,6 @@ const ImgContainer = styled.div`
       margin-top: 10px;
     }
     margin-top: 25px;
-    margin-bottom: 20px;
     max-height: 90px;
   }
 
