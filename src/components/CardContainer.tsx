@@ -14,7 +14,7 @@ const Container = styled.div<ContainerProps>`
   padding: 0 24px;
   max-width: 1280px;
 
-  @media (min-width: ${bp.xl}px) {
+  @media (min-width: ${bp.xxl}px) {
     width: ${(props): number | undefined => props.width}px;
   }
 `;

@@ -50,7 +50,7 @@ const ImgContainer = styled.div`
   text-align: center;
 
   .gatsby-image-wrapper {
-    @media (min-width: ${bp.xl}px) {
+    @media (min-width: ${bp.xxl}px) {
       div:first-of-type {
         padding-bottom: 70% !important;
       }
@@ -66,15 +66,13 @@ const ImgContainer = styled.div`
       margin-top: 10px;
     }
     margin-top: 25px;
+    margin-bottom: 20px;
     max-height: 90px;
   }
 
   p {
     @media (max-width: ${bp.md}px) {
       padding-top: 20px;
-    }
-    @media (max-width: ${bp.xl}px) {
-      padding-top: 10px;
     }
   }
 `;

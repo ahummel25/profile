@@ -48,7 +48,9 @@ const ImgContainer = styled.div`
   }
 
   .sass {
-    padding-top: 28px;
+    @media (max-width: ${bp.xl}px) {
+      padding-top: 30px;
+    }
   }
 `;
 

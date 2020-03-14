@@ -15,6 +15,7 @@ const mockUseGetWeatherByCoords = mocked(useGetWeatherByCoords, true);
 describe('useGetWeatherByCoords', () => {
   const latitude = -87.66;
   const longitude = 41.89;
+  const mockWeatherApiUrl = `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
 
   afterEach(() => {
     fetchMock.restore();
@@ -23,7 +24,6 @@ describe('useGetWeatherByCoords', () => {
   it('should return data with a successful request', () => {
     mockUseGetWeatherByCoords.mockImplementation(() => mockWeatherResponse);
     const response = renderHook(() => useGetWeatherByCoords());
-    const mockWeatherApiUrl = `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
 
     fetchMock.mock(mockWeatherApiUrl, mockWeatherResponse);
     expect(response.result.current).toEqual(mockWeatherResponse);
@@ -32,7 +32,6 @@ describe('useGetWeatherByCoords', () => {
   it('should return no data with an error', () => {
     mockUseGetWeatherByCoords.mockImplementation(() => null);
     const response = renderHook(() => useGetWeatherByCoords());
-    const mockWeatherApiUrl = `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
 
     const mockErrorResponse = fetchMock.mock(mockWeatherApiUrl, {
       status: 500,
