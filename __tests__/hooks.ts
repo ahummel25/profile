@@ -21,14 +21,12 @@ describe('useGetWeatherByCoords', () => {
   });
 
   it('should return data with a successful request', () => {
-    mockUseGetWeatherByCoords.mockImplementation(() => ({
-      ...mockWeatherResponse
-    }));
+    mockUseGetWeatherByCoords.mockImplementation(() => mockWeatherResponse);
     const response = renderHook(() => useGetWeatherByCoords());
     const mockWeatherApiUrl = `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
 
-    fetchMock.mock(mockWeatherApiUrl, { ...mockWeatherResponse });
-    expect(response.result.current).toEqual({ ...mockWeatherResponse });
+    fetchMock.mock(mockWeatherApiUrl, mockWeatherResponse);
+    expect(response.result.current).toEqual(mockWeatherResponse);
   });
 
   it('should return no data with an error', () => {
