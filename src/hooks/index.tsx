@@ -181,9 +181,9 @@ export const useGetWeatherByCoords = (
             },
             (err: PositionError): void => {
               if (err.code === 1) {
-                reject('Error: Access is denied!');
+                reject(new Error('Error: Access is denied!'));
               } else if (err.code === 2) {
-                reject('Error: Position is unavailable!');
+                reject(new Error('Error: Position is unavailable!'));
               }
             },
             { timeout: 60000 }

@@ -24,6 +24,10 @@ describe('Navbar', () => {
     jest.clearAllMocks();
   });
 
+  afterEach(() => {
+    mockUseWindowDimensions.mockClear();
+  });
+
   it('renders correctly', () => {
     const tree = renderer
       .create(<Navbar setDrawerWidth={setDrawerWidth} />)
@@ -34,7 +38,6 @@ describe('Navbar', () => {
 
   it('renders correctly with mobile version of drawer', () => {
     let tree;
-    // const toggleDrawer = jest.fn().mockImplementation();
 
     mockUseWindowDimensions.mockImplementation(() => ({
       width: 799,
