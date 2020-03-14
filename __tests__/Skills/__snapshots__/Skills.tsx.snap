@@ -226,10 +226,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="HTML5 Logo"
@@ -238,10 +238,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -261,14 +261,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"HTML5 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"HTML5 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -321,10 +321,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="React Logo"
@@ -333,10 +333,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -356,14 +356,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"React Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"React Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -436,10 +436,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="CSS3 Logo"
@@ -448,10 +448,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -471,14 +471,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"CSS3 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"CSS3 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -531,10 +531,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="SASS Logo"
@@ -543,10 +543,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -566,14 +566,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"SASS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"SASS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -628,10 +628,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="Bootstrap Logo"
@@ -640,10 +640,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -663,14 +663,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Bootstrap Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Bootstrap Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -723,10 +723,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="Materialize Logo"
@@ -735,10 +735,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -758,14 +758,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Materialize Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Materialize Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -818,10 +818,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="Styled Components Logo"
@@ -830,10 +830,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -853,14 +853,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Styled Components Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Styled Components Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -933,10 +933,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="React Logo"
@@ -945,10 +945,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -968,14 +968,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"React Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"React Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1028,10 +1028,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="Typescript Logo"
@@ -1040,10 +1040,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1063,14 +1063,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Typescript Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Typescript Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1123,10 +1123,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="jQuery Logo"
@@ -1135,10 +1135,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1158,14 +1158,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"jQuery Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"jQuery Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1218,10 +1218,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="Node.js Logo"
@@ -1230,10 +1230,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1253,14 +1253,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Node.js Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Node.js Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1333,10 +1333,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="Python Logo"
@@ -1345,10 +1345,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1368,14 +1368,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Python Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Python Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1428,10 +1428,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="Golang Logo"
@@ -1440,10 +1440,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1463,14 +1463,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Golang Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Golang Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1523,10 +1523,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="Java Logo"
@@ -1535,10 +1535,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1558,14 +1558,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Java Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Java Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1618,10 +1618,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="MySQL Logo"
@@ -1630,10 +1630,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1653,14 +1653,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"MySQL Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"MySQL Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1713,10 +1713,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="Oracle Logo"
@@ -1725,10 +1725,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1748,14 +1748,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Oracle Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Oracle Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1828,10 +1828,10 @@ exports[`Skills renders correctly 1`] = `
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                 />
                 <img
                   alt="AWS Logo"
@@ -1840,10 +1840,10 @@ exports[`Skills renders correctly 1`] = `
                   sizes="(max-width: 800px) 100vw, 800px"
                   src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
                   srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1863,14 +1863,14 @@ exports[`Skills renders correctly 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-					/static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"AWS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
+                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"AWS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />

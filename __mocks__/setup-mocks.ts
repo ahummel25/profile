@@ -4,8 +4,8 @@ jest.mock('../src/hooks', () => ({
     ...mockImagesResponse
   }),
   useWindowDimensions: (): { width: number; height: number } => ({
-    height: 100,
-    width: 100
+    height: 799,
+    width: 799
   }),
   useGetWeatherByCoords: (): IWeatherResponse => ({
     coord: {

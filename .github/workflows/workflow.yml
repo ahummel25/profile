@@ -23,6 +23,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+      - name: Yarn test
+        run: yarn test
       - name: Yarn install and deploy
         env:
           GATSBY_WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}

@@ -902,35 +902,30 @@ exports[`Navbar renders correctly 1`] = `
         className="emotion-7"
       >
         <img
-          alt="04n"
           className="emotion-5"
-          src="https://openweathermap.org/img/w/04n.png"
+          src=""
         />
         <div
           className="emotion-6"
         >
-          Fri, Mar 13th
+          Sat, Mar 14th
         </div>
       </div>
       <div
         className="emotion-8"
       >
         <strong>
-          56
            ℉
         </strong>
         | 
-        49
          ℉
       </div>
       <div>
         humidity: 
-        82
          %
       </div>
       <div>
         speed: 
-        5.82
          mps
       </div>
     </div>
