@@ -23,12 +23,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+      - name: Yarn Install
+        run: yarn install
       - name: Yarn test
-        run: yarn test
-      - name: Yarn install and deploy
+        run: yarn test -u
+      - name: Yarn deploy
         env:
           GATSBY_WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: |
-          echo Installing and deploying as "$GITHUB_ACTOR" in repo "$GITHUB_REPOSITORY"
-          yarn install
+          echo Deploying as "$GITHUB_ACTOR" in repo "$GITHUB_REPOSITORY"
           yarn deploy
