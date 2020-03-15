@@ -1138,8 +1138,10 @@ Array [
   padding-top: 15px;
 }
 
-.emotion-1 .sass {
-  padding-top: 28px;
+@media (max-width:1024px) {
+  .emotion-1 .sass {
+    padding-top: 30px;
+  }
 }
 
 .emotion-0 {
@@ -1214,8 +1216,10 @@ Array [
   padding-top: 15px;
 }
 
-.emotion-1 .sass {
-  padding-top: 28px;
+@media (max-width:1024px) {
+  .emotion-1 .sass {
+    padding-top: 30px;
+  }
 }
 
 <section
@@ -3050,12 +3054,6 @@ Array [
   }
 }
 
-@media (max-width:1200px) {
-  .emotion-1 p {
-    padding-top: 10px;
-  }
-}
-
 .emotion-0 {
   margin: 0 auto;
   background-color: rgb(0,128,115);
@@ -3154,12 +3152,6 @@ Array [
 @media (max-width:768px) {
   .emotion-1 p {
     padding-top: 20px;
-  }
-}
-
-@media (max-width:1200px) {
-  .emotion-1 p {
-    padding-top: 10px;
   }
 }
 

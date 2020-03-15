@@ -9,6 +9,8 @@ jest.mock('../../src/hooks', () => ({
 }));
 
 import React from 'react';
+import AppBar from '@material-ui/core/AppBar';
+import Drawer from '@material-ui/core/Drawer';
 import renderer, { act } from 'react-test-renderer';
 import { mocked } from 'ts-jest/utils';
 
@@ -18,6 +20,7 @@ import { useWindowDimensions } from '../../src/hooks';
 const mockUseWindowDimensions = mocked(useWindowDimensions, true);
 
 describe('Navbar', () => {
+  const DRAWER_WIDTH = 190;
   const setDrawerWidth = jest.fn();
 
   beforeEach(() => {
@@ -49,7 +52,29 @@ describe('Navbar', () => {
     });
 
     // @ts-ignore
+    expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(DRAWER_WIDTH);
+
+    // @ts-ignore
+    const lis = tree.root.findAllByType('li');
+    expect(lis.length).toBe(0);
+
+    // @ts-ignore
+    const mobileAppBar = tree.root.findAllByType(AppBar);
+
+    expect(mobileAppBar.length).toBe(1);
+    expect(mobileAppBar[0].props.color).toBe('inherit');
+    expect(mobileAppBar[0].props.position).toBe('fixed');
+
+    // @ts-ignore
+    const mobileDrawer = tree.root.findAllByType(Drawer);
+    expect(mobileDrawer.length).toBe(1);
+    expect(mobileDrawer[0].props.onClose).toBeTruthy();
+    expect(mobileDrawer[0].props.open).toBe(false);
+    expect(mobileDrawer[0].props.children[2].props.setOpen).toBeTruthy();
+
+    // @ts-ignore
     expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
+
     // @ts-ignore
     expect(tree.toJSON().children[0].children[0].props.onClick).toBeTruthy();
   });
@@ -67,7 +92,15 @@ describe('Navbar', () => {
     });
 
     // @ts-ignore
+    expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(DRAWER_WIDTH);
+
+    // @ts-ignore
+    const lis = tree.root.findAllByType('li');
+    expect(lis.length).toBe(5);
+
+    // @ts-ignore
     expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
+
     // @ts-ignore
     expect(tree.toJSON().children[0].children[0].props).toStrictEqual({
       className: 'name-title'

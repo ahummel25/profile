@@ -102,12 +102,6 @@ exports[`Certifications renders correctly 1`] = `
   }
 }
 
-@media (max-width:1200px) {
-  .emotion-1 p {
-    padding-top: 10px;
-  }
-}
-
 .emotion-6 {
   margin-bottom: 20px;
   height: 100vh;
@@ -206,12 +200,6 @@ exports[`Certifications renders correctly 1`] = `
 @media (max-width:768px) {
   .emotion-1 p {
     padding-top: 20px;
-  }
-}
-
-@media (max-width:1200px) {
-  .emotion-1 p {
-    padding-top: 10px;
   }
 }
 

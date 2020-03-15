@@ -26,6 +26,7 @@ describe('useGetWeatherByCoords', () => {
     const response = renderHook(() => useGetWeatherByCoords());
 
     fetchMock.mock(mockWeatherApiUrl, mockWeatherResponse);
+    expect(mockUseGetWeatherByCoords).toHaveBeenCalled();
     expect(response.result.current).toEqual(mockWeatherResponse);
   });
 
@@ -38,6 +39,7 @@ describe('useGetWeatherByCoords', () => {
       error: 'Something went wrong!'
     });
 
+    expect(mockUseGetWeatherByCoords).toHaveBeenCalled();
     expect(response.result.current).toBe(null);
     // @ts-ignore
     expect(mockErrorResponse.routes[0].response.status).toBe(500);

@@ -73,8 +73,10 @@ exports[`Skills renders correctly 1`] = `
   padding-top: 15px;
 }
 
-.emotion-1 .sass {
-  padding-top: 28px;
+@media (max-width:1024px) {
+  .emotion-1 .sass {
+    padding-top: 30px;
+  }
 }
 
 .emotion-0 {
@@ -149,8 +151,10 @@ exports[`Skills renders correctly 1`] = `
   padding-top: 15px;
 }
 
-.emotion-1 .sass {
-  padding-top: 28px;
+@media (max-width:1024px) {
+  .emotion-1 .sass {
+    padding-top: 30px;
+  }
 }
 
 <section
