@@ -1,3 +1,4 @@
+jest.mock('rc-util/lib/Portal');
 jest.mock('../../src/hooks', () => ({
   useGetFixedFahrenheit: jest.fn(),
   useGetImages: jest.fn(),
@@ -40,7 +41,7 @@ describe('Navbar', () => {
   });
 
   it('renders correctly with mobile version of drawer', () => {
-    let tree;
+    let tree = {};
 
     mockUseWindowDimensions.mockImplementation(() => ({
       width: 799,
@@ -51,6 +52,10 @@ describe('Navbar', () => {
       tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
     });
 
+    expect(mockUseWindowDimensions).toHaveBeenCalled();
+
+    // @ts-ignore
+    expect(tree.root.props.setDrawerWidth).toHaveBeenCalled();
     // @ts-ignore
     expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(DRAWER_WIDTH);
 
@@ -60,7 +65,6 @@ describe('Navbar', () => {
 
     // @ts-ignore
     const mobileAppBar = tree.root.findAllByType(AppBar);
-
     expect(mobileAppBar.length).toBe(1);
     expect(mobileAppBar[0].props.color).toBe('inherit');
     expect(mobileAppBar[0].props.position).toBe('fixed');
@@ -77,6 +81,15 @@ describe('Navbar', () => {
 
     // @ts-ignore
     expect(tree.toJSON().children[0].children[0].props.onClick).toBeTruthy();
+
+    const mockEvent = {
+      preventDefault: jest.fn()
+    };
+
+    act(() => {
+      // @ts-ignore
+      tree.toJSON().children[0].children[0].props.onClick(mockEvent);
+    });
   });
 
   it('renders correctly with full version of drawer', () => {
@@ -91,6 +104,10 @@ describe('Navbar', () => {
       tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
     });
 
+    expect(mockUseWindowDimensions).toHaveBeenCalled();
+
+    // @ts-ignore
+    expect(tree.root.props.setDrawerWidth).toHaveBeenCalled();
     // @ts-ignore
     expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(DRAWER_WIDTH);
 
@@ -100,7 +117,6 @@ describe('Navbar', () => {
 
     // @ts-ignore
     expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
-
     // @ts-ignore
     expect(tree.toJSON().children[0].children[0].props).toStrictEqual({
       className: 'name-title'
