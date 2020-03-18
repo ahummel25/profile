@@ -1,4 +1,3 @@
-jest.mock('rc-util/lib/Portal');
 jest.mock('../../src/hooks', () => ({
   useGetFixedFahrenheit: jest.fn(),
   useGetImages: jest.fn(),
@@ -81,15 +80,6 @@ describe('Navbar', () => {
 
     // @ts-ignore
     expect(tree.toJSON().children[0].children[0].props.onClick).toBeTruthy();
-
-    const mockEvent = {
-      preventDefault: jest.fn()
-    };
-
-    act(() => {
-      // @ts-ignore
-      tree.toJSON().children[0].children[0].props.onClick(mockEvent);
-    });
   });
 
   it('renders correctly with full version of drawer', () => {
