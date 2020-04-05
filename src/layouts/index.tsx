@@ -43,6 +43,9 @@ const IndexLayout: FC<{}> = ({ children }) => {
       render={(data: StaticQueryProps): JSX.Element => (
         <Main>
           <Helmet
+            htmlAttributes={{
+              lang: 'en'
+            }}
             title={data.site.siteMetadata.title}
             meta={[
               {

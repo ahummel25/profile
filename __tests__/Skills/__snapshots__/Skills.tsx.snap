@@ -229,23 +229,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/html.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/html.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/html.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/html.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/html.jpg 1391w"
                 />
                 <img
                   alt="HTML5 Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/html.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/html.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/html.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/html.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/html.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/html.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -264,15 +264,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"HTML5 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/html.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/html.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/html.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/html.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/html.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/html.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/html.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/html.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/html.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/html.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/html.jpg\\" alt=\\"HTML5 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -324,23 +324,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/react.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/react.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/react.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/react.jpg 1391w"
                 />
                 <img
                   alt="React Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/react.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/react.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/react.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/react.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -359,15 +359,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"React Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/react.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/react.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/react.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/react.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/react.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/react.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/react.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/react.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg\\" alt=\\"React Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -439,23 +439,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/css.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/css.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/css.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/css.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/css.jpg 1391w"
                 />
                 <img
                   alt="CSS3 Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/css.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/css.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/css.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/css.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/css.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/css.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -474,15 +474,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"CSS3 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/css.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/css.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/css.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/css.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/css.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/css.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/css.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/css.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/css.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/css.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/css.jpg\\" alt=\\"CSS3 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -534,23 +534,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/sass.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/sass.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/sass.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/sass.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/sass.jpg 1391w"
                 />
                 <img
                   alt="SASS Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/sass.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/sass.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/sass.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/sass.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/sass.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/sass.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -569,15 +569,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"SASS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/sass.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/sass.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/sass.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/sass.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/sass.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/sass.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/sass.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/sass.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/sass.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/sass.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/sass.jpg\\" alt=\\"SASS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -631,23 +631,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/bootstrap.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/bootstrap.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/bootstrap.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/bootstrap.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/bootstrap.jpg 1391w"
                 />
                 <img
                   alt="Bootstrap Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/bootstrap.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/bootstrap.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/bootstrap.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/bootstrap.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/bootstrap.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/bootstrap.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -666,15 +666,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Bootstrap Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/bootstrap.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/bootstrap.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/bootstrap.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/bootstrap.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/bootstrap.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/bootstrap.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/bootstrap.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/bootstrap.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/bootstrap.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/bootstrap.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/bootstrap.jpg\\" alt=\\"Bootstrap Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -726,23 +726,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/materialize.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/materialize.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/materialize.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/materialize.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/materialize.jpg 1391w"
                 />
                 <img
                   alt="Materialize Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/materialize.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/materialize.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/materialize.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/materialize.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/materialize.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/materialize.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -761,15 +761,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Materialize Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/materialize.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/materialize.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/materialize.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/materialize.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/materialize.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/materialize.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/materialize.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/materialize.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/materialize.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/materialize.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/materialize.jpg\\" alt=\\"Materialize Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -821,23 +821,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/styComp.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/styComp.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/styComp.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/styComp.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/styComp.jpg 1391w"
                 />
                 <img
                   alt="Styled Components Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/styComp.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/styComp.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/styComp.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/styComp.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/styComp.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/styComp.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -856,15 +856,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Styled Components Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/styComp.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/styComp.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/styComp.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/styComp.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/styComp.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/styComp.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/styComp.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/styComp.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/styComp.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/styComp.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/styComp.jpg\\" alt=\\"Styled Components Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -936,23 +936,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/react.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/react.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/react.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/react.jpg 1391w"
                 />
                 <img
                   alt="React Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/react.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/react.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/react.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/react.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -971,15 +971,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"React Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/react.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/react.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/react.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/react.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/react.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/react.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/react.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/react.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/react.jpg\\" alt=\\"React Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1031,23 +1031,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/ts.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/ts.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/ts.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/ts.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/ts.jpg 1391w"
                 />
                 <img
                   alt="Typescript Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/ts.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/ts.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/ts.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/ts.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/ts.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/ts.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1066,15 +1066,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Typescript Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/ts.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/ts.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/ts.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/ts.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/ts.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/ts.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/ts.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/ts.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/ts.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/ts.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/ts.jpg\\" alt=\\"Typescript Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1126,23 +1126,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/jquery.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/jquery.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/jquery.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/jquery.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/jquery.jpg 1391w"
                 />
                 <img
                   alt="jQuery Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/jquery.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/jquery.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/jquery.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/jquery.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/jquery.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/jquery.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1161,15 +1161,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"jQuery Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/jquery.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/jquery.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/jquery.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/jquery.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/jquery.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/jquery.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/jquery.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/jquery.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/jquery.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/jquery.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/jquery.jpg\\" alt=\\"jQuery Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1221,23 +1221,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/node.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/node.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/node.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/node.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/node.jpg 1391w"
                 />
                 <img
                   alt="Node.js Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/node.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/node.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/node.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/node.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/node.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/node.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1256,15 +1256,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Node.js Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/node.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/node.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/node.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/node.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/node.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/node.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/node.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/node.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/node.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/node.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/node.jpg\\" alt=\\"Node.js Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1336,23 +1336,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/python.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/python.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/python.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/python.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/python.jpg 1391w"
                 />
                 <img
                   alt="Python Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/python.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/python.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/python.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/python.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/python.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/python.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1371,15 +1371,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Python Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/python.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/python.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/python.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/python.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/python.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/python.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/python.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/python.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/python.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/python.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/python.jpg\\" alt=\\"Python Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1431,23 +1431,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/go.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/go.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/go.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/go.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/go.jpg 1391w"
                 />
                 <img
                   alt="Golang Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/go.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/go.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/go.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/go.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/go.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/go.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1466,15 +1466,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Golang Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/go.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/go.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/go.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/go.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/go.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/go.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/go.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/go.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/go.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/go.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/go.jpg\\" alt=\\"Golang Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1526,23 +1526,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/java.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/java.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/java.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/java.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/java.jpg 1391w"
                 />
                 <img
                   alt="Java Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/java.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/java.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/java.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/java.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/java.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/java.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1561,15 +1561,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Java Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/java.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/java.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/java.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/java.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/java.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/java.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/java.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/java.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/java.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/java.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/java.jpg\\" alt=\\"Java Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1621,23 +1621,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/mysql.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/mysql.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/mysql.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/mysql.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/mysql.jpg 1391w"
                 />
                 <img
                   alt="MySQL Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/mysql.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/mysql.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/mysql.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/mysql.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/mysql.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/mysql.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1656,15 +1656,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"MySQL Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/mysql.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/mysql.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/mysql.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/mysql.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/mysql.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/mysql.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/mysql.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/mysql.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/mysql.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/mysql.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/mysql.jpg\\" alt=\\"MySQL Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1716,23 +1716,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/oracle.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/oracle.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/oracle.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/oracle.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/oracle.jpg 1391w"
                 />
                 <img
                   alt="Oracle Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/oracle.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/oracle.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/oracle.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/oracle.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/oracle.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/oracle.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1751,15 +1751,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Oracle Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/oracle.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/oracle.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/oracle.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/oracle.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/oracle.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/oracle.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/oracle.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/oracle.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/oracle.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/oracle.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/oracle.jpg\\" alt=\\"Oracle Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />
@@ -1831,23 +1831,23 @@ exports[`Skills renders correctly 1`] = `
               <picture>
                 <source
                   sizes="(max-width: 800px) 100vw, 800px"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/aws.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/aws.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/aws.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/aws.jpg 1391w"
                 />
                 <img
                   alt="AWS Logo"
                   loading="lazy"
                   onLoad={[Function]}
                   sizes="(max-width: 800px) 100vw, 800px"
-                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                  src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg"
+                  srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/aws.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/aws.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/aws.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/aws.jpg 1391w"
                   style={
                     Object {
                       "height": "100%",
@@ -1866,15 +1866,15 @@ exports[`Skills renders correctly 1`] = `
               <noscript
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"AWS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/aws.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/aws.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/aws.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/aws.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/aws.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/aws.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/aws.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/aws.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg\\" alt=\\"AWS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                   }
                 }
               />

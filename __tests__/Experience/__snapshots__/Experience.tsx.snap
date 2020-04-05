@@ -345,23 +345,23 @@ exports[`Experience renders correctly 1`] = `
                 <picture>
                   <source
                     sizes="(max-width: 800px) 100vw, 800px"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/i11.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/i11.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/i11.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/i11.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/i11.jpg 1391w"
                   />
                   <img
                     alt="Inspire11 Logo"
                     loading="lazy"
                     onLoad={[Function]}
                     sizes="(max-width: 800px) 100vw, 800px"
-                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/i11.jpg"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/i11.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/i11.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/i11.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/i11.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/i11.jpg 1391w"
                     style={
                       Object {
                         "height": "100%",
@@ -380,15 +380,15 @@ exports[`Experience renders correctly 1`] = `
                 <noscript
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Inspire11 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/i11.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/i11.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/i11.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/i11.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/i11.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/i11.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/i11.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/i11.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/i11.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/i11.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/i11.jpg\\" alt=\\"Inspire11 Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                     }
                   }
                 />
@@ -511,23 +511,23 @@ exports[`Experience renders correctly 1`] = `
                 <picture>
                   <source
                     sizes="(max-width: 800px) 100vw, 800px"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/juristat.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/juristat.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/juristat.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/juristat.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/juristat.jpg 1391w"
                   />
                   <img
                     alt="Juristat Logo"
                     loading="lazy"
                     onLoad={[Function]}
                     sizes="(max-width: 800px) 100vw, 800px"
-                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/juristat.jpg"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/juristat.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/juristat.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/juristat.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/juristat.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/juristat.jpg 1391w"
                     style={
                       Object {
                         "height": "100%",
@@ -546,15 +546,15 @@ exports[`Experience renders correctly 1`] = `
                 <noscript
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"Juristat Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/juristat.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/juristat.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/juristat.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/juristat.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/juristat.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/juristat.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/juristat.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/juristat.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/juristat.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/juristat.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/juristat.jpg\\" alt=\\"Juristat Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                     }
                   }
                 />
@@ -677,23 +677,23 @@ exports[`Experience renders correctly 1`] = `
                 <picture>
                   <source
                     sizes="(max-width: 800px) 100vw, 800px"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/wwt.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/wwt.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/wwt.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/wwt.jpg 1391w"
                   />
                   <img
                     alt="WWT Logo"
                     loading="lazy"
                     onLoad={[Function]}
                     sizes="(max-width: 800px) 100vw, 800px"
-                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/wwt.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/wwt.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/wwt.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/wwt.jpg 1391w"
                     style={
                       Object {
                         "height": "100%",
@@ -712,15 +712,15 @@ exports[`Experience renders correctly 1`] = `
                 <noscript
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"WWT Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/wwt.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/wwt.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/wwt.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/wwt.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/wwt.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/wwt.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/wwt.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/wwt.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg\\" alt=\\"WWT Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                     }
                   }
                 />
@@ -843,23 +843,23 @@ exports[`Experience renders correctly 1`] = `
                 <picture>
                   <source
                     sizes="(max-width: 800px) 100vw, 800px"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/wwt.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/wwt.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/wwt.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/wwt.jpg 1391w"
                   />
                   <img
                     alt="WWT Logo"
                     loading="lazy"
                     onLoad={[Function]}
                     sizes="(max-width: 800px) 100vw, 800px"
-                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/wwt.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/wwt.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/wwt.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/wwt.jpg 1391w"
                     style={
                       Object {
                         "height": "100%",
@@ -878,15 +878,15 @@ exports[`Experience renders correctly 1`] = `
                 <noscript
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"WWT Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/wwt.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/wwt.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/wwt.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/wwt.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/wwt.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/wwt.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/wwt.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/wwt.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/wwt.jpg\\" alt=\\"WWT Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                     }
                   }
                 />

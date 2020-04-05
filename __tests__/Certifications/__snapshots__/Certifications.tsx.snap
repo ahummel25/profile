@@ -280,23 +280,23 @@ exports[`Certifications renders correctly 1`] = `
                 <picture>
                   <source
                     sizes="(max-width: 800px) 100vw, 800px"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/aws.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/aws.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/aws.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/aws.jpg 1391w"
                   />
                   <img
                     alt="AWS Logo"
                     loading="lazy"
                     onLoad={[Function]}
                     sizes="(max-width: 800px) 100vw, 800px"
-                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg"
-                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w"
+                    src="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg"
+                    srcSet="/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/aws.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/aws.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/aws.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/aws.jpg 1391w"
                     style={
                       Object {
                         "height": "100%",
@@ -315,15 +315,15 @@ exports[`Certifications renders correctly 1`] = `
                 <noscript
                   dangerouslySetInnerHTML={
                     Object {
-                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/my_mock_image.jpg 200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/my_mock_image.jpg 400w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg 800w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/my_mock_image.jpg 1200w,
-                    /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/my_mock_image.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/my_mock_image.jpg\\" alt=\\"AWS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                      "__html": "<picture><source srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/aws.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/aws.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/aws.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/aws.jpg 1391w\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 800px) 100vw, 800px\\" srcset=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/fd013/aws.jpg 200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/25252/aws.jpg 400w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg 800w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/0ff54/aws.jpg 1200w,
+						  /static/a68ec0a3134b8610c476cd0fa3c0cf7e/6d185/aws.jpg 1391w\\" src=\\"/static/a68ec0a3134b8610c476cd0fa3c0cf7e/2f1b1/aws.jpg\\" alt=\\"AWS Logo\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
                     }
                   }
                 />

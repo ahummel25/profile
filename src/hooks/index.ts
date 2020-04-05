@@ -189,7 +189,7 @@ export const useGetWeatherByCoords = (
             { timeout: 60000 }
           );
         } else {
-          reject('Sorry, browser does not support geolocation!');
+          reject(new Error('Sorry, browser does not support geolocation!'));
         }
       });
 

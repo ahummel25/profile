@@ -24,10 +24,10 @@ module.exports = {
         name: 'Andrew Hummel Profile',
         short_name: 'Profile',
         start_url: '/',
-        background_color: '#285171',
-        theme_color: '#285171',
+        background_color: '#F3F3F3',
+        theme_color: '#F3F3F3',
         display: 'standalone',
-        icon: `${__dirname}/src/images/favicon-32x32.png`
+        icon: `${__dirname}/src/images/favicon.png`
       }
     },
     {
