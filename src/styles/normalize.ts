@@ -1,4 +1,4 @@
-import { RobotoSansSerif } from '../global-fonts';
+// import { RobotoSansSerif } from '../global-fonts';
 
 export default `
   html,
@@ -11,9 +11,9 @@ export default `
   }
 
   @font-face {
-	font-family: 'Roboto-thin';
+	font-family: "Roboto-thin";
 	font-style: normal;
 	font-weight: 100;
-	src: url(${RobotoSansSerif}) format('woff2');
+	src: url('../global-fonts/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2') format('woff2');
   }
 `;

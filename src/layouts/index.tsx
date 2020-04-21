@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 
 import 'materialize-css/dist/css/materialize.min.css';
-import '../global-fonts';
 
 interface StaticQueryProps {
   site: {
