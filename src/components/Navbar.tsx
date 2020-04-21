@@ -29,6 +29,7 @@ const DrawerContainer = styled(({ ...rest }) => <Drawer {...rest} />)`
     h1 {
       color: ${colors.lightGreen};
       font-family: ${fonts.roboto};
+      font-weight: 100;
       font-size: 30.45px;
       margin: 0 0 5px 0;
     }
