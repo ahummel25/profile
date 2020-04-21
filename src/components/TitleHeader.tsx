@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
 
-import { breakpoints as bp } from '../styles/variables';
+import { breakpoints as bp, fonts } from '../styles/variables';
 
 const Header = styled.h3`
+  font-family: ${fonts.roboto};
   margin: 0 auto;
   background-color: rgb(0, 128, 115);
   font-weight: 100;
