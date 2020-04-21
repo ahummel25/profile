@@ -22,9 +22,8 @@ exports[`Header renders correctly 1`] = `
 
 .emotion-10 .name-title h1 {
   color: #008073;
-  font-family: Roboto,sans-serif;
+  font-family: Roboto-thin;
   font-size: 30.45px;
-  font-weight: 100;
   margin: 0 0 5px 0;
 }
 
@@ -430,9 +429,8 @@ exports[`Header renders correctly 1`] = `
 
 .emotion-10 .name-title h1 {
   color: #008073;
-  font-family: Roboto,sans-serif;
+  font-family: Roboto-thin;
   font-size: 30.45px;
-  font-weight: 100;
   margin: 0 0 5px 0;
 }
 
