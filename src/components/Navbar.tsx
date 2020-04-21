@@ -7,7 +7,7 @@ import Divider from '@material-ui/core/Divider';
 
 import { useWindowDimensions } from '../hooks';
 import { NavbarProps, NavListProps } from '../interfaces';
-import { colors } from '../styles/variables';
+import { colors, fonts } from '../styles/variables';
 
 import WeatherCard from './WeatherCard';
 
@@ -28,7 +28,7 @@ const DrawerContainer = styled(({ ...rest }) => <Drawer {...rest} />)`
   .name-title {
     h1 {
       color: ${colors.lightGreen};
-      font-family: Roboto-thin;
+      font-family: ${fonts.roboto};
       font-size: 30.45px;
       margin: 0 0 5px 0;
     }
