@@ -61,7 +61,7 @@ const CardContent = styled.div`
   }
 
   h6 {
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 1.1rem;

@@ -6,6 +6,8 @@ module.exports = {
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
     siteUrl: 'https://ahummel25.github.io/profile',
     iconUrl: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+    robotoFontsUrl:
+      'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i',
     faUrl:
       'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
     author: {

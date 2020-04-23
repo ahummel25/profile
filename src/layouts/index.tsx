@@ -16,6 +16,7 @@ interface StaticQueryProps {
       title: string;
       description: string;
       keywords: string;
+      robotoFontsUrl: string;
     };
   };
 }
@@ -36,6 +37,7 @@ const IndexLayout: FC<{}> = ({ children }) => {
               iconUrl
               title
               description
+              robotoFontsUrl
             }
           }
         }
@@ -57,6 +59,10 @@ const IndexLayout: FC<{}> = ({ children }) => {
             link={[
               {
                 href: data.site.siteMetadata.iconUrl,
+                rel: 'stylesheet'
+              },
+              {
+                href: data.site.siteMetadata.robotoFontsUrl,
                 rel: 'stylesheet'
               },
               {

@@ -12,7 +12,7 @@ const Section = styled.section`
 
 const Container = styled.div`
   width: 95%;
-  font-family: ${fonts.roboto};
+  font-family: ${fonts.robotoSansSerif};
   font-weight: 300;
   padding: 0 24px;
 `;

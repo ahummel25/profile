@@ -29,7 +29,7 @@ export const colors = {
 };
 
 export const fonts = {
-  roboto: 'Roboto, sans-serif',
+  robotoSansSerif: 'Roboto, sans-serif',
   helvetica: 'Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif',
   sansSerif:
     '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',

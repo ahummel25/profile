@@ -24,6 +24,10 @@ exports[`Experience renders correctly 1`] = `
   font-weight: 300;
   padding: 0 24px;
   max-width: 1280px;
+  -webkit-letter-spacing: 0.25px;
+  -moz-letter-spacing: 0.25px;
+  -ms-letter-spacing: 0.25px;
+  letter-spacing: 0.25px;
 }
 
 @media (min-width:1200px) {
@@ -87,7 +91,7 @@ exports[`Experience renders correctly 1`] = `
 }
 
 .emotion-3 h6 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 300;
   -webkit-letter-spacing: 1px;
   -moz-letter-spacing: 1px;
@@ -162,6 +166,10 @@ exports[`Experience renders correctly 1`] = `
   font-weight: 300;
   padding: 0 24px;
   max-width: 1280px;
+  -webkit-letter-spacing: 0.25px;
+  -moz-letter-spacing: 0.25px;
+  -ms-letter-spacing: 0.25px;
+  letter-spacing: 0.25px;
 }
 
 @media (min-width:1200px) {
@@ -225,7 +233,7 @@ exports[`Experience renders correctly 1`] = `
 }
 
 .emotion-3 h6 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 300;
   -webkit-letter-spacing: 1px;
   -moz-letter-spacing: 1px;

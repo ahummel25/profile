@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { breakpoints as bp, fonts } from '../styles/variables';
 
 const Header = styled.h3`
-  font-family: ${fonts.roboto};
+  font-family: ${fonts.robotoSansSerif};
   margin: 0 auto;
   background-color: rgb(0, 128, 115);
   font-weight: 100;

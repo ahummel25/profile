@@ -9,10 +9,11 @@ type ContainerProps = {
 
 const Container = styled.div<ContainerProps>`
   width: 95%;
-  font-family: ${fonts.roboto};
+  font-family: ${fonts.robotoSansSerif};
   font-weight: 300;
   padding: 0 24px;
   max-width: 1280px;
+  letter-spacing: 0.25px;
 
   @media (min-width: ${bp.xxl}px) {
     width: ${(props): number | undefined => props.width}px;
