@@ -39,4 +39,4 @@ jobs:
           GATSBY_WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: |
           echo Deploying as "$GITHUB_ACTOR" in repo "$GITHUB_REPOSITORY"
-          npm deploy
+          npm run deploy
