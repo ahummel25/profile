@@ -1,19 +1,19 @@
-import React, { FC, useEffect, useState } from "react";
-import styled from "@emotion/styled";
-import Drawer from "@material-ui/core/Drawer";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Divider from "@material-ui/core/Divider";
+import React, { FC, useEffect, useState } from 'react';
+import styled from '@emotion/styled';
+import Drawer from '@material-ui/core/Drawer';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Divider from '@material-ui/core/Divider';
 
-import { useWindowDimensions } from "../hooks";
-import { NavbarProps } from "../interfaces";
-import { colors } from "../styles/variables";
+import { useWindowDimensions } from '../hooks';
+import { NavbarProps, NavListProps } from '../interfaces';
+import { colors, fonts } from '../styles/variables';
+
+import WeatherCard from './WeatherCard';
 
 type StyledLiProps = {
   color: string;
 };
-
-type RefsToForward = Pick<NavbarProps, "refsToForward">;
 
 const DRAWER_WIDTH = 190;
 const MAX_WINDOW_WIDTH = 992;
@@ -28,8 +28,9 @@ const DrawerContainer = styled(({ ...rest }) => <Drawer {...rest} />)`
   .name-title {
     h1 {
       color: ${colors.lightGreen};
-      font-size: 30.45px;
+      font-family: ${fonts.robotoSansSerif};
       font-weight: 100;
+      font-size: 30.45px;
       margin: 0 0 5px 0;
     }
 
@@ -100,7 +101,7 @@ const DrawerLi = styled.li<StyledLiProps>`
   }
 
   &:hover {
-    border-left: 3px solid ${props => props.color};
+    border-left: 3px solid ${(props): string => props.color};
     animation: hover-on 0.75s;
     animation-fill-mode: forwards;
     will-change: opacity, transform;
@@ -120,56 +121,65 @@ const DrawerLi = styled.li<StyledLiProps>`
     display: flex;
     align-items: center;
     padding: 0 10px 0 5px;
-    &.icon-aqua {
-      color: ${props => props.color};
-    }
-    &.icon-dark-blue {
-      color: ${props => props.color};
-    }
-    &.icon-teal {
-      color: ${props => props.color};
+    &.icon-color {
+      color: ${(props): string => props.color};
     }
   }
 
   .active {
     background-color: rgb(232, 232, 232);
-    border-left: 3px solid ${props => props.color};
+    border-left: 3px solid ${(props): string => props.color};
     font-weight: 500;
   }
 `;
 
 const navItems = [
   {
-    text: "About",
-    icon: { type: "person", iconClass: "icon-teal", color: "rgb(0, 128, 115)" },
-    ref: "about"
+    text: 'About',
+    icon: {
+      type: 'person',
+      color: 'rgb(0, 128, 115)'
+    },
+    ref: 'about'
   },
   {
-    text: "Experience",
+    text: 'Experience',
     icon: {
-      type: "trending_up",
-      iconClass: "icon-aqua",
-      color: "rgb(0, 188, 212)"
+      type: 'trending_up',
+      color: 'rgb(0, 188, 212)'
     },
-    ref: "experience"
+    ref: 'experience'
   },
   {
-    text: "Projects",
+    text: 'Skills',
     icon: {
-      type: "web",
-      iconClass: "icon-dark-blue",
-      color: "rgb(63, 81, 181)"
+      type: 'equalizer',
+      color: 'rgb(156,38,176)'
     },
-    ref: "projects"
+    ref: 'skills'
+  },
+  {
+    text: 'Certifications',
+    icon: {
+      type: 'star',
+      color: 'rgb(244,67,53)'
+    },
+    ref: 'certifications'
+  },
+  {
+    text: 'Contact',
+    icon: {
+      type: 'mail',
+      color: 'rgb(121, 85, 72)'
+    },
+    ref: 'contact'
   }
 ];
 
-const RenderFullDrawer: FC<RefsToForward> = ({
-  refsToForward
-}): JSX.Element => (
+const RenderFullDrawer: FC<{}> = (): JSX.Element => (
   <DrawerContainer variant="permanent" anchor="left">
     <div className="name-title">
-      <a href="/">
+      <a href="/profile">
         <h1>
           Andrew <br /> Hummel
         </h1>
@@ -177,22 +187,23 @@ const RenderFullDrawer: FC<RefsToForward> = ({
       </a>
     </div>
     <Divider />
-    <NavBarLists refsToForward={refsToForward} />
+    <NavBarLists />
+    <WeatherCard />
   </DrawerContainer>
 );
 
-const RenderMobileDrawer: FC<RefsToForward> = ({
-  refsToForward
-}): JSX.Element => {
+const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
 
-  const toggleDrawer = (event: React.KeyboardEvent | React.MouseEvent) => {
+  const toggleDrawer = (
+    event: React.KeyboardEvent | React.MouseEvent
+  ): void => {
     event.preventDefault();
 
     if (
-      event.type === "keydown" &&
-      ((event as React.KeyboardEvent).key === "Tab" ||
-        (event as React.KeyboardEvent).key === "Shift")
+      event.type === 'keydown' &&
+      ((event as React.KeyboardEvent).key === 'Tab' ||
+        (event as React.KeyboardEvent).key === 'Shift')
     ) {
       return;
     }
@@ -204,92 +215,52 @@ const RenderMobileDrawer: FC<RefsToForward> = ({
     <>
       <AppBarCustom color="inherit" position="fixed">
         <Toolbar className="tool-bar">
-          <a href="/" onClick={toggleDrawer}>
-            <i className={`material-icons icon-green`}>menu</i>
+          <a href="/profile" onClick={toggleDrawer}>
+            <i className="material-icons icon-green">menu</i>
           </a>
           <div className="name-title">
-            <a href="/">Andrew Hummel</a>
+            <a href="/profile">Andrew Hummel</a>
             <span className="brown-text light">Full Stack Developer</span>
           </div>
         </Toolbar>
       </AppBarCustom>
       <DrawerContainer anchor="left" open={open} onClose={toggleDrawer}>
         <div className="name-title">
-          <a href="/">
+          <a href="/profile">
             <h1>Andrew Hummel</h1>
-            <span>Full Stack Developer</span>
+            <span className="brown-text light">Full Stack Developer</span>
           </a>
         </div>
         <Divider />
-        <NavBarLists refsToForward={refsToForward} />
+        <NavBarLists setOpen={setOpen} />
+        <WeatherCard />
       </DrawerContainer>
     </>
   );
 };
 
-const NavBarLists: FC<RefsToForward> = ({ refsToForward }): JSX.Element => {
-  const [itemClicked, setItemClicked] = useState<{ activeItem: number | null }>(
-    {
-      activeItem: null
-    }
-  );
+const NavBarLists: FC<NavListProps> = ({ setOpen }): JSX.Element => (
+  <ul>
+    {navItems.map(
+      ({ text, icon: { type, color }, ref }, index): JSX.Element => (
+        <DrawerLi key={index} color={color}>
+          <a
+            href={`#${ref}`}
+            className="waves-effect waves-dark"
+            onClick={(): void => {
+              if (setOpen) setOpen(false);
+            }}
+          >
+            <i className="small material-icons icon-color">{type}</i>
+            {text}
+          </a>
+        </DrawerLi>
+      )
+    )}
+  </ul>
+);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPos = window.scrollY;
-
-      if (scrollPos >= 100 && scrollPos < 200) {
-        setItemClicked({ activeItem: 0 });
-      }
-
-      if (scrollPos >= 200) {
-        setItemClicked({ activeItem: 1 });
-      }
-
-      if (scrollPos < 100) {
-        setItemClicked({ activeItem: null });
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  return (
-    <ul>
-      {navItems.map(
-        (
-          { text, icon: { type, iconClass, color }, ref },
-          index
-        ): JSX.Element => {
-          return (
-            <DrawerLi key={index} color={color}>
-              <a
-                className={`waves-effect waves-dark ${
-                  itemClicked.activeItem === index ? "active" : ""
-                }`}
-                onClick={(
-                  event: React.KeyboardEvent | React.MouseEvent
-                ): void => {
-                  setItemClicked({ activeItem: index });
-                  refsToForward[ref].onClickHandler();
-                }}
-              >
-                <i className={`small material-icons ${iconClass}`}>{type}</i>
-                {text}
-              </a>
-            </DrawerLi>
-          );
-        }
-      )}
-    </ul>
-  );
-};
-
-const Navbar: FC<NavbarProps> = ({
-  refsToForward,
-  setDrawerWidth
-}): JSX.Element => {
+const Navbar: FC<NavbarProps> = ({ setDrawerWidth }): JSX.Element => {
   const { width } = useWindowDimensions();
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
 
@@ -301,15 +272,7 @@ const Navbar: FC<NavbarProps> = ({
     setShowMobileNav(width < MAX_WINDOW_WIDTH);
   }, [width]);
 
-  return (
-    <>
-      {showMobileNav ? (
-        <RenderMobileDrawer refsToForward={refsToForward} />
-      ) : (
-        <RenderFullDrawer refsToForward={refsToForward} />
-      )}
-    </>
-  );
+  return <>{showMobileNav ? <RenderMobileDrawer /> : <RenderFullDrawer />}</>;
 };
 
 export default Navbar;

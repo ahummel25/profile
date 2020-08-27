@@ -1,61 +1,40 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from 'react';
+import { Global, css, SerializedStyles } from '@emotion/core';
 
-import Page from "../components/Page";
-import Profile from "../components/Profile";
-import IndexLayout from "../layouts";
-import Header from "../components/Header";
-import LayoutMain from "../components/LayoutMain";
-import { handleScrollTo } from "../utils";
-
-/*interface StaticQueryProps {
-  site: {
-    siteMetadata: {
-      author: {
-        name: string;
-      };
-      iconUrl: string;
-      title: string;
-      description: string;
-      keywords: string;
-    };
-  };
-}*/
+import Page from '../components/Page';
+import Profile from '../components/Profile';
+import IndexLayout from '../layouts';
+import Header from '../components/Header';
+import LayoutMain from '../components/LayoutMain';
+import normalize from '../styles/normalize';
 
 const IndexPage = (): JSX.Element => {
   const [drawerWidth, setDrawerWidth] = useState<number>(0);
-  const aboutRef = useRef<HTMLDivElement | null>(null);
-  const experienceRef = useRef<HTMLDivElement | null>(null);
-  const projectsRef = useRef<HTMLDivElement | null>(null);
-  const refsToForward = {
-    about: {
-      ref: aboutRef,
-      onClickHandler: () => {
-        handleScrollTo(aboutRef);
-      }
-    },
-    experience: {
-      ref: experienceRef,
-      onClickHandler: () => {
-        handleScrollTo(experienceRef);
-      }
-    },
-    projects: {
-      ref: projectsRef,
-      onClickHandler: () => {
-        handleScrollTo(projectsRef);
-      }
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      import('materialize-css').then((M): void => {
+        const scrollSpyElems = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scrollSpyElems);
+
+        const toolTipElems = document.querySelectorAll('.tooltipped');
+        M.Tooltip.init(toolTipElems);
+      });
     }
-  };
+  }, []);
 
   return (
-    <IndexLayout>
-      <LayoutMain paddingLeft={drawerWidth}>
-        <Header refsToForward={refsToForward} setDrawerWidth={setDrawerWidth} />
-        <Page>
-          <Profile refsToForward={refsToForward} />
-        </Page>
-      </LayoutMain>
-    </IndexLayout>
+    <>
+      <Global styles={(): SerializedStyles => css(normalize)} />
+      <IndexLayout>
+        <LayoutMain paddingLeft={drawerWidth}>
+          <Page>
+            <Header setDrawerWidth={setDrawerWidth} />
+            <Profile />
+          </Page>
+        </LayoutMain>
+      </IndexLayout>
+    </>
   );
 };
 

@@ -1,17 +1,12 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react';
+import styled from '@emotion/styled';
 
 const StyledPage = styled.div`
-  display: block;
-  height: 100%;
+  display: contents;
 `;
 
-interface PageProps {
-  className?: string;
-}
-
-const Page: React.FC<PageProps> = ({ children, className }): JSX.Element => (
-  <StyledPage className={className}>{children}</StyledPage>
+const Page: React.FC<{}> = ({ children }): JSX.Element => (
+  <StyledPage>{children}</StyledPage>
 );
 
 export default Page;

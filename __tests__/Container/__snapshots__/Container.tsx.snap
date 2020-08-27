@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container renders correctly 1`] = `
+.emotion-0 {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-width: 60em;
+}
+
+.emotion-0 {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-width: 60em;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
