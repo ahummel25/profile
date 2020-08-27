@@ -3,7 +3,7 @@ name: Install and Deploy Profile App
 on:
   push:
     branches:
-      - initial-branch
+      - master
 
 jobs:
   deploy:

@@ -19,9 +19,7 @@ const Header = styled.h3`
 `;
 
 const TitleHeader: FC<{ title: string }> = ({ title }): JSX.Element => (
-  <>
-    <Header className="page-title white-text">{title}</Header>
-  </>
+  <Header className="page-title white-text">{title}</Header>
 );
 
 export default TitleHeader;
