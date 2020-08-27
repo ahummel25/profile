@@ -1,11 +1,54 @@
-import { MutableRefObject } from "react";
-import { FluidObject } from "gatsby-image";
-export interface ImageProfileData {
-  file: {
+import { MutableRefObject } from 'react';
+import { FluidObject } from 'gatsby-image';
+export interface IImages {
+  [key: string]: {
     childImageSharp: {
       fluid: FluidObject;
     };
   };
+}
+
+export interface IWeatherResponse {
+  coord: {
+    lon: number;
+    lat: number;
+  };
+  weather: {
+    id: number;
+    main: string;
+    description: string;
+    icon: string;
+  }[];
+  base: string;
+  main: {
+    temp: number;
+    feels_like: number;
+    temp_min: number;
+    temp_max: number;
+    pressure: number;
+    humidity: number;
+  };
+  visibility: number;
+  wind: {
+    speed: number;
+    deg: number;
+    gust: number;
+  };
+  clouds: {
+    all: number;
+  };
+  dt: number;
+  sys: {
+    type: number;
+    id: number;
+    country: string;
+    sunrise: number;
+    sunset: number;
+  };
+  timezone: number;
+  id: number;
+  name: string;
+  cod: number;
 }
 
 export interface ForwardedRefsProps {
@@ -32,18 +75,14 @@ export interface DropDownListProps {
   links: LinkProps[];
 }
 
-export interface HeaderProps extends ForwardedRefsProps {
+export interface HeaderProps {
   setDrawerWidth: (drawerWidth: number) => void;
 }
 
-export interface NavbarProps extends ForwardedRefsProps {
+export interface NavbarProps {
   setDrawerWidth: (drawerWidth: number) => void;
 }
 
-export interface TitleProps extends ForwardedRefsProps {
-  title: string;
+export interface NavListProps {
+  setOpen?: (open: boolean) => void;
 }
-
-export interface HamburgerProps extends ForwardedRefsProps {}
-export interface IndexLayoutProps extends ForwardedRefsProps {}
-export interface ProfileProps extends ForwardedRefsProps {}

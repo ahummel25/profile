@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"module": "commonjs",
 		"target": "esnext",
-		"jsx": "preserve",
+		"jsx": "react",
 		"lib": [
 			"dom",
 			"es2015",
@@ -20,6 +20,7 @@
 		"preserveConstEnums": true
 	},
 	"include": [
-		"./src/**/*"
+		"./src/**/*",
+		"./__tests__/**/*"
 	]
 }

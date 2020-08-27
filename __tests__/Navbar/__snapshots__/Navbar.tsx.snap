@@ -1,0 +1,936 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+.emotion-10 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-10 ul {
+  margin: 0;
+}
+
+.emotion-10 .name-title {
+  background: #fafafa;
+  display: inline-block;
+  min-height: 100px;
+  text-align: left;
+  padding: 30px 0 30px 30px;
+  width: 190px;
+}
+
+.emotion-10 .name-title h1 {
+  color: #008073;
+  font-family: Roboto,sans-serif;
+  font-weight: 100;
+  font-size: 30.45px;
+  margin: 0 0 5px 0;
+}
+
+.emotion-10 .name-title span {
+  color: rgb(51,51,51);
+  font-size: 14px;
+}
+
+.emotion-0 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0:hover {
+  border-left: 3px solid rgb(0,128,115);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-0 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-0 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-0 i.icon-color {
+  color: rgb(0,128,115);
+}
+
+.emotion-0 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(0,128,115);
+  font-weight: 500;
+}
+
+.emotion-1 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1:hover {
+  border-left: 3px solid rgb(0,188,212);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-1 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-1 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-1 i.icon-color {
+  color: rgb(0,188,212);
+}
+
+.emotion-1 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(0,188,212);
+  font-weight: 500;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2:hover {
+  border-left: 3px solid rgb(156,38,176);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-2 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-2 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-2 i.icon-color {
+  color: rgb(156,38,176);
+}
+
+.emotion-2 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(156,38,176);
+  font-weight: 500;
+}
+
+.emotion-3 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3:hover {
+  border-left: 3px solid rgb(244,67,53);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-3 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-3 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-3 i.icon-color {
+  color: rgb(244,67,53);
+}
+
+.emotion-3 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(244,67,53);
+  font-weight: 500;
+}
+
+.emotion-4 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4:hover {
+  border-left: 3px solid rgb(121,85,72);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-4 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-4 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-4 i.icon-color {
+  color: rgb(121,85,72);
+}
+
+.emotion-4 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(121,85,72);
+  font-weight: 500;
+}
+
+.emotion-9 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  bottom: 10px;
+  padding: 8px 0 0 8px;
+  position: absolute;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 12px;
+  background-color: rgb(245,245,245);
+  height: 150px;
+  width: 90%;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.emotion-5 {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: rgb(211,211,211);
+}
+
+@media (max-width:576px) {
+  .emotion-5 {
+    margin-right: 8px;
+  }
+}
+
+.emotion-6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.emotion-8 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.emotion-10 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-10 ul {
+  margin: 0;
+}
+
+.emotion-10 .name-title {
+  background: #fafafa;
+  display: inline-block;
+  min-height: 100px;
+  text-align: left;
+  padding: 30px 0 30px 30px;
+  width: 190px;
+}
+
+.emotion-10 .name-title h1 {
+  color: #008073;
+  font-family: Roboto,sans-serif;
+  font-weight: 100;
+  font-size: 30.45px;
+  margin: 0 0 5px 0;
+}
+
+.emotion-10 .name-title span {
+  color: rgb(51,51,51);
+  font-size: 14px;
+}
+
+.emotion-0 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0:hover {
+  border-left: 3px solid rgb(0,128,115);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-0 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-0 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-0 i.icon-color {
+  color: rgb(0,128,115);
+}
+
+.emotion-0 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(0,128,115);
+  font-weight: 500;
+}
+
+.emotion-1 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1:hover {
+  border-left: 3px solid rgb(0,188,212);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-1 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-1 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-1 i.icon-color {
+  color: rgb(0,188,212);
+}
+
+.emotion-1 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(0,188,212);
+  font-weight: 500;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2:hover {
+  border-left: 3px solid rgb(156,38,176);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-2 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-2 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-2 i.icon-color {
+  color: rgb(156,38,176);
+}
+
+.emotion-2 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(156,38,176);
+  font-weight: 500;
+}
+
+.emotion-3 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3:hover {
+  border-left: 3px solid rgb(244,67,53);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-3 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-3 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-3 i.icon-color {
+  color: rgb(244,67,53);
+}
+
+.emotion-3 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(244,67,53);
+  font-weight: 500;
+}
+
+.emotion-4 {
+  cursor: pointer;
+  padding: 0;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4:hover {
+  border-left: 3px solid rgb(121,85,72);
+  -webkit-animation: hover-on 0.75s;
+  animation: hover-on 0.75s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity,transform;
+}
+
+.emotion-4 a {
+  color: rgb(51,51,51);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0 8px 10px;
+  width: 100%;
+}
+
+.emotion-4 i {
+  color: rgb(51,51,51);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px 0 5px;
+}
+
+.emotion-4 i.icon-color {
+  color: rgb(121,85,72);
+}
+
+.emotion-4 .active {
+  background-color: rgb(232,232,232);
+  border-left: 3px solid rgb(121,85,72);
+  font-weight: 500;
+}
+
+.emotion-9 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  bottom: 10px;
+  padding: 8px 0 0 8px;
+  position: absolute;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 12px;
+  background-color: rgb(245,245,245);
+  height: 150px;
+  width: 90%;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.emotion-5 {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: rgb(211,211,211);
+}
+
+@media (max-width:576px) {
+  .emotion-5 {
+    margin-right: 8px;
+  }
+}
+
+.emotion-6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.emotion-8 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+<div
+  className="MuiDrawer-root MuiDrawer-docked emotion-10"
+>
+  <div
+    className="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+  >
+    <div
+      className="name-title"
+    >
+      <a
+        href="/profile"
+      >
+        <h1>
+          Andrew 
+          <br />
+           Hummel
+        </h1>
+        <span
+          className="brown-text light"
+        >
+          Full Stack Developer
+        </span>
+      </a>
+    </div>
+    <hr
+      className="MuiDivider-root"
+    />
+    <ul>
+      <li
+        className="emotion-0"
+        color="rgb(0, 128, 115)"
+      >
+        <a
+          className="waves-effect waves-dark"
+          href="#about"
+          onClick={[Function]}
+        >
+          <i
+            className="small material-icons icon-color"
+          >
+            person
+          </i>
+          About
+        </a>
+      </li>
+      <li
+        className="emotion-1"
+        color="rgb(0, 188, 212)"
+      >
+        <a
+          className="waves-effect waves-dark"
+          href="#experience"
+          onClick={[Function]}
+        >
+          <i
+            className="small material-icons icon-color"
+          >
+            trending_up
+          </i>
+          Experience
+        </a>
+      </li>
+      <li
+        className="emotion-2"
+        color="rgb(156,38,176)"
+      >
+        <a
+          className="waves-effect waves-dark"
+          href="#skills"
+          onClick={[Function]}
+        >
+          <i
+            className="small material-icons icon-color"
+          >
+            equalizer
+          </i>
+          Skills
+        </a>
+      </li>
+      <li
+        className="emotion-3"
+        color="rgb(244,67,53)"
+      >
+        <a
+          className="waves-effect waves-dark"
+          href="#certifications"
+          onClick={[Function]}
+        >
+          <i
+            className="small material-icons icon-color"
+          >
+            star
+          </i>
+          Certifications
+        </a>
+      </li>
+      <li
+        className="emotion-4"
+        color="rgb(121, 85, 72)"
+      >
+        <a
+          className="waves-effect waves-dark"
+          href="#contact"
+          onClick={[Function]}
+        >
+          <i
+            className="small material-icons icon-color"
+          >
+            mail
+          </i>
+          Contact
+        </a>
+      </li>
+    </ul>
+    <div
+      className="emotion-9"
+    >
+      <div
+        className="emotion-7"
+      >
+        <img
+          className="emotion-5"
+          src=""
+        />
+        <div
+          className="emotion-6"
+        >
+          Thu, Aug 27th
+        </div>
+      </div>
+      <div
+        className="emotion-8"
+      >
+        <strong>
+           ℉
+        </strong>
+        | 
+         ℉
+      </div>
+      <div>
+        humidity: 
+         %
+      </div>
+      <div>
+        speed: 
+         mps
+      </div>
+    </div>
+  </div>
+</div>
+`;

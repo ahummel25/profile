@@ -1,11 +1,21 @@
 {
-	"extends": "react-app",
 	"env": {
-		"browser": false,
-		"node": true,
+		"browser": true,
 		"es6": true,
-		"jest": true
+		"jest": true,
+		"node": true
 	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:import/errors",
+		"plugin:import/typescript",
+		"plugin:import/warnings",
+		"plugin:prettierx/@typescript-eslint",
+		"plugin:prettierx/react",
+		"plugin:prettierx/standardx",
+		"plugin:react/recommended"
+	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaFeatures": {
@@ -17,36 +27,40 @@
 		"ecmaVersion": 7,
 		"sourceType": "module"
 	},
+	"plugins": [
+		"@typescript-eslint",
+		"graphql",
+		"import",
+		"prettierx",
+		"react",
+		"react-hooks"
+	],
 	"rules": {
+		"@typescript-eslint/ban-ts-ignore": "warn",
+		"@typescript-eslint/camelcase": "off",
+		"@typescript-eslint/explicit-function-return-type": "error",
+		"@typescript-eslint/indent": "off",
+		"@typescript-eslint/interface-name-prefix": "off",
+		"@typescript-eslint/prefer-interface": "off",
 		"comma-dangle": [
 			"error",
 			"never"
 		],
-		"valid-jsdoc": [
+		"func-names": [
+			"error",
+			"never"
+		],
+		"import/named": 2,
+		"import/order": [
 			"error",
 			{
-				"requireReturn": true,
-				"requireReturnType": true,
-				"requireParamDescription": true,
-				"requireReturnDescription": true,
-				"preferType": {
-					"String": "string",
-					"object": "Object"
-				}
+				"newlines-between": "always"
 			}
 		],
-		"require-jsdoc": [
+		"max-nested-callbacks": [
 			"error",
-			{
-				"require": {
-					"FunctionDeclaration": true,
-					"MethodDefinition": true,
-					"ClassDeclaration": true
-				}
-			}
+			5
 		],
-		"no-var": 1,
-		"no-eval": "error",
 		"no-console": [
 			"warn",
 			{
@@ -55,6 +69,27 @@
 					"info"
 				]
 			}
+		],
+		"no-eval": "error",
+		"no-unused-vars": [
+			"error",
+			{
+				"vars": "all",
+				"args": "after-used",
+				"ignoreRestSiblings": false
+			}
+		],
+		"no-use-before-define": [
+			"error",
+			{
+				"classes": true,
+				"functions": true
+			}
+		],
+		"no-var": "error",
+		"one-var": [
+			"error",
+			"never"
 		],
 		"padded-blocks": [
 			"error",
@@ -66,20 +101,71 @@
 				"allowNamedFunctions": true
 			}
 		],
-		"func-names": [
-			"error",
-			"never"
-		],
-		"no-use-before-define": [
-			"error",
+		"prefer-template": "error",
+		"prettierx/options": [
+			2,
 			{
-				"functions": true,
-				"classes": true
+				"alignObjectProperties": false,
+				"jsxSingleQuote": false,
+				"semi": true,
+				"singleQuote": true,
+				"spaceBeforeFunctionParen": true
 			}
 		],
-		"max-nested-callbacks": [
+		"react-hooks/rules-of-hooks": "error",
+		"react/jsx-curly-brace-presence": [
 			"error",
-			5
+			{
+				"children": "never",
+				"props": "never"
+			}
+		],
+		"react/jsx-filename-extension": [
+			2,
+			{
+				"extensions": [
+					".js",
+					".jsx",
+					".ts",
+					".tsx"
+				]
+			}
+		],
+		"react/no-danger": "off",
+		"react/no-find-dom-node": "off",
+		"react/prop-types": [
+			0
+		],
+		"require-jsdoc": [
+			"error",
+			{
+				"require": {
+					"ClassDeclaration": true,
+					"FunctionDeclaration": true,
+					"MethodDefinition": true
+				}
+			}
+		],
+		"valid-jsdoc": [
+			"error",
+			{
+				"preferType": {
+					"String": "string",
+					"object": "Object"
+				},
+				"requireParamDescription": true,
+				"requireReturn": true,
+				"requireReturnDescription": true,
+				"requireReturnType": true
+			}
 		]
+	},
+	"settings": {
+		"prettierx": {
+			"usePrettierrc": false
+		},
+		"react": {
+			"version": "detect"
+		}
 	}
 }

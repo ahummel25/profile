@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer renders correctly 1`] = `
+.emotion-0 {
+  width: 95%;
+  font-family: Roboto,sans-serif;
+  font-weight: 300;
+  padding: 0 24px;
+  max-width: 1280px;
+  -webkit-letter-spacing: 0.25px;
+  -moz-letter-spacing: 0.25px;
+  -ms-letter-spacing: 0.25px;
+  letter-spacing: 0.25px;
+}
+
+@media (min-width:1200px) {
+  .emotion-0 {
+    width: px;
+  }
+}
+
+.emotion-0 {
+  width: 95%;
+  font-family: Roboto,sans-serif;
+  font-weight: 300;
+  padding: 0 24px;
+  max-width: 1280px;
+  -webkit-letter-spacing: 0.25px;
+  -moz-letter-spacing: 0.25px;
+  -ms-letter-spacing: 0.25px;
+  letter-spacing: 0.25px;
+}
+
+@media (min-width:1200px) {
+  .emotion-0 {
+    width: px;
+  }
+}
+
+<div
+  className="container emotion-0"
+/>
+`;

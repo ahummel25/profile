@@ -1,8 +1,9 @@
-import React, { FC } from "react";
-import styled from "@emotion/styled";
+import React, { FC } from 'react';
+import styled from '@emotion/styled';
 
-import { LayoutMainProps } from "../interfaces";
-import background from "../images/bg.png";
+import { LayoutMainProps } from '../interfaces';
+import background from '../images/bg.png';
+import { breakpoints as bp } from '../styles/variables';
 
 interface MainProps {
   paddingLeft: number;
@@ -12,9 +13,9 @@ const StyledLayoutMain = styled.main<MainProps>`
   background: url(${background});
   display: flex;
   flex-direction: column;
-  padding-left: ${props => props.paddingLeft}px;
+  padding-left: ${(props): number => props.paddingLeft}px;
 
-  @media (max-width: 992px) {
+  @media (max-width: ${bp.lg}px) {
     padding-left: 0;
   }
 `;
