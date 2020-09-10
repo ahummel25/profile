@@ -16,6 +16,16 @@
 		"plugin:prettierx/standardx",
 		"plugin:react/recommended"
 	],
+	"overrides": [
+		{
+			"files": [
+				"./__tests__/**/*"
+			],
+			"rules": {
+				"@typescript-eslint/ban-ts-ignore": "off"
+			}
+		}
+	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaFeatures": {

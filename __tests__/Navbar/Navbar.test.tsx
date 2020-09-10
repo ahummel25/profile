@@ -40,42 +40,31 @@ describe('Navbar', () => {
   });
 
   it('renders correctly with mobile version of drawer', () => {
-    let tree = {};
-
     mockUseWindowDimensions.mockImplementation(() => ({
       width: 799,
       height: 799
     }));
 
-    act(() => {
-      tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
-    });
+    const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
 
     expect(mockUseWindowDimensions).toHaveBeenCalled();
 
-    // @ts-ignore
     expect(tree.root.props.setDrawerWidth).toHaveBeenCalled();
-    // @ts-ignore
     expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(DRAWER_WIDTH);
 
-    // @ts-ignore
     const lis = tree.root.findAllByType('li');
     expect(lis.length).toBe(0);
 
-    // @ts-ignore
     const mobileAppBar = tree.root.findAllByType(AppBar);
     expect(mobileAppBar.length).toBe(1);
     expect(mobileAppBar[0].props.color).toBe('inherit');
     expect(mobileAppBar[0].props.position).toBe('fixed');
 
-    // @ts-ignore
     const mobileDrawer = tree.root.findAllByType(Drawer);
     expect(mobileDrawer.length).toBe(1);
     expect(mobileDrawer[0].props.onClose).toBeTruthy();
     expect(mobileDrawer[0].props.open).toBe(false);
     expect(mobileDrawer[0].props.children[2].props.setOpen).toBeTruthy();
-
-    // @ts-ignore
     expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
 
     // @ts-ignore
