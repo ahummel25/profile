@@ -11,7 +11,7 @@ jest.mock('../../src/hooks', () => ({
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Drawer from '@material-ui/core/Drawer';
-import renderer, { act } from 'react-test-renderer';
+import renderer from 'react-test-renderer';
 import { mocked } from 'ts-jest/utils';
 
 import Navbar from '../../src/components/Navbar';
@@ -23,11 +23,8 @@ describe('Navbar', () => {
   const DRAWER_WIDTH = 190;
   const setDrawerWidth = jest.fn();
 
-  beforeEach(() => {
-    jest.clearAllMocks();
-  });
-
   afterEach(() => {
+    expect(mockUseWindowDimensions).toHaveBeenCalled();
     mockUseWindowDimensions.mockClear();
   });
 
@@ -47,9 +44,7 @@ describe('Navbar', () => {
 
     const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
 
-    expect(mockUseWindowDimensions).toHaveBeenCalled();
-
-    expect(tree.root.props.setDrawerWidth).toHaveBeenCalled();
+    expect(tree.root.props.setDrawerWidth).toHaveBeenCalledWith(DRAWER_WIDTH);
     expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(DRAWER_WIDTH);
 
     const lis = tree.root.findAllByType('li');
@@ -72,35 +67,27 @@ describe('Navbar', () => {
   });
 
   it('renders correctly with full version of drawer', () => {
-    let tree;
-
     mockUseWindowDimensions.mockImplementation(() => ({
       width: 1200,
       height: 1200
     }));
 
-    act(() => {
-      tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
-    });
+    const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
 
-    expect(mockUseWindowDimensions).toHaveBeenCalled();
-
-    // @ts-ignore
-    expect(tree.root.props.setDrawerWidth).toHaveBeenCalled();
-    // @ts-ignore
+    expect(tree.root.props.setDrawerWidth).toHaveBeenCalledWith(DRAWER_WIDTH);
     expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(DRAWER_WIDTH);
 
-    // @ts-ignore
     const lis = tree.root.findAllByType('li');
     expect(lis.length).toBe(5);
 
-    // @ts-ignore
     expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
+
+    const treeJson = tree.toJSON();
     // @ts-ignore
-    expect(tree.toJSON().children[0].children[0].props).toStrictEqual({
+    expect(treeJson.children[0].children[0].props).toStrictEqual({
       className: 'name-title'
     });
     // @ts-ignore
-    expect(tree.toJSON().children[0].children[0].props.onClick).toBeFalsy();
+    expect(treeJson.children[0].children[0].props.onClick).toBeFalsy();
   });
 });

@@ -11,7 +11,7 @@ import normalize from '../styles/normalize';
 const IndexPage = (): JSX.Element => {
   const [drawerWidth, setDrawerWidth] = useState<number>(0);
 
-  useEffect(() => {
+  useEffect((): void => {
     if (typeof window !== 'undefined') {
       import('materialize-css').then((M): void => {
         const scrollSpyElems = document.querySelectorAll('.scrollspy');

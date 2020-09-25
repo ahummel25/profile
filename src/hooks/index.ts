@@ -168,8 +168,7 @@ export const useGetWeatherByCoords = (
     setWeatherResponse
   ] = useState<IWeatherResponse | null>(null);
 
-  useEffect(() => {
-    let mounted = true;
+  useEffect((): void => {
     const getWeatherByCoords = async (): Promise<void> => {
       const {
         coords: { latitude, longitude }
@@ -193,20 +192,14 @@ export const useGetWeatherByCoords = (
         }
       });
 
-      if (mounted) {
-        const response = await fetch(
-          `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
-        );
-        const weather: IWeatherResponse = await response.json();
-        setWeatherResponse(weather);
-      }
+      const response = await fetch(
+        `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
+      );
+      const weather: IWeatherResponse = await response.json();
+      setWeatherResponse(weather);
     };
 
     getWeatherByCoords();
-
-    return (): void => {
-      mounted = false;
-    };
   }, []);
 
   return weatherResponse;
@@ -232,7 +225,7 @@ export const useWindowDimensions = (): { width: number; height: number } => {
     height: number;
   }>(getWindowDimensions());
 
-  useEffect(() => {
+  useEffect((): (() => void) => {
     const handleResize = (): void => {
       setWindowDimensions(getWindowDimensions());
     };

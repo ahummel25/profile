@@ -264,11 +264,11 @@ const Navbar: FC<NavbarProps> = ({ setDrawerWidth }): JSX.Element => {
   const { width } = useWindowDimensions();
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
 
-  useEffect(() => {
+  useEffect((): void => {
     setDrawerWidth(DRAWER_WIDTH);
   }, [setDrawerWidth]);
 
-  useEffect(() => {
+  useEffect((): void => {
     setShowMobileNav(width < MAX_WINDOW_WIDTH);
   }, [width]);
 
