@@ -207,8 +207,6 @@ const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
     ) {
       return;
     }
-
-    setOpen(!open);
   };
 
   return (
@@ -250,18 +248,6 @@ const NavBarLists: FC<NavListProps> = ({ setOpen }): JSX.Element => (
             className="waves-effect waves-dark"
             onClick={(): void => {
               if (setOpen) setOpen(false);
-              const elem = document.getElementById(`#${ref}`);
-              const Waves = window.Waves;
-              const waveElement = document.getElementsByClassName(
-                'waves-ripple'
-              );
-              const waveAlreadyAttached = waveElement[0]?.classList.contains(
-                'waves-ripple'
-              );
-
-              if (elem && !waveAlreadyAttached) {
-                Waves.attach(elem);
-              }
             }}
           >
             <i className="small material-icons icon-color">{type}</i>
