@@ -11,6 +11,10 @@ import { colors, fonts } from '../styles/variables';
 
 import WeatherCard from './WeatherCard';
 
+if (typeof window !== 'undefined') {
+  require('materialize-css');
+}
+
 type StyledLiProps = {
   color: string;
 };
@@ -263,12 +267,6 @@ const NavBarLists: FC<NavListProps> = ({ setOpen }): JSX.Element => (
 const Navbar: FC<NavbarProps> = ({ setDrawerWidth }): JSX.Element => {
   const { width } = useWindowDimensions();
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
-
-  useEffect((): void => {
-    if (typeof window !== 'undefined') {
-      import('materialize-css');
-    }
-  }, []);
 
   useEffect((): void => {
     setDrawerWidth(DRAWER_WIDTH);
