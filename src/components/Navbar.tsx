@@ -249,10 +249,23 @@ const NavBarLists: FC<NavListProps> = ({ setOpen }): JSX.Element => (
       ({ text, icon: { type, color }, ref }, index): JSX.Element => (
         <DrawerLi key={index} color={color}>
           <a
+            id={`#${ref}`}
             href={`#${ref}`}
             className="waves-effect waves-dark"
             onClick={(): void => {
               if (setOpen) setOpen(false);
+              const elem = document.getElementById(`#${ref}`);
+              const Waves = window.Waves;
+              const waveElement = document.getElementsByClassName(
+                'waves-ripple'
+              );
+              const waveAlreadyAttached = waveElement[0]?.classList.contains(
+                'waves-ripple'
+              );
+
+              if (elem && !waveAlreadyAttached) {
+                Waves.attach(elem);
+              }
             }}
           >
             <i className="small material-icons icon-color">{type}</i>
