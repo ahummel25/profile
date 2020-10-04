@@ -4,7 +4,6 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Divider from '@material-ui/core/Divider';
-import 'materialize-css';
 
 import { useWindowDimensions } from '../hooks';
 import { NavbarProps, NavListProps } from '../interfaces';
@@ -264,6 +263,12 @@ const NavBarLists: FC<NavListProps> = ({ setOpen }): JSX.Element => (
 const Navbar: FC<NavbarProps> = ({ setDrawerWidth }): JSX.Element => {
   const { width } = useWindowDimensions();
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+
+  useEffect((): void => {
+    if (typeof window !== 'undefined') {
+      import('materialize-css');
+    }
+  }, []);
 
   useEffect((): void => {
     setDrawerWidth(DRAWER_WIDTH);
