@@ -207,6 +207,8 @@ const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
     ) {
       return;
     }
+
+    setOpen(!open);
   };
 
   return (
@@ -243,7 +245,6 @@ const NavBarLists: FC<NavListProps> = ({ setOpen }): JSX.Element => (
       ({ text, icon: { type, color }, ref }, index): JSX.Element => (
         <DrawerLi key={index} color={color}>
           <a
-            id={`#${ref}`}
             href={`#${ref}`}
             className="waves-effect waves-dark"
             onClick={(): void => {
