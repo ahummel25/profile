@@ -11,10 +11,6 @@ import { colors, fonts } from '../styles/variables';
 
 import WeatherCard from './WeatherCard';
 
-if (typeof window !== 'undefined') {
-  require('materialize-css');
-}
-
 type StyledLiProps = {
   color: string;
 };

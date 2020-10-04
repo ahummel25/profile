@@ -19,6 +19,14 @@ const IndexPage = (): JSX.Element => {
 
         const toolTipElems = document.querySelectorAll('.tooltipped');
         M.Tooltip.init(toolTipElems);
+
+        const wavesElems = document.querySelectorAll('.waves-effect');
+
+        const Waves = window.Waves;
+
+        wavesElems.forEach((wavesElem): void => {
+          Waves.attach(wavesElem);
+        });
       });
     }
   }, []);
