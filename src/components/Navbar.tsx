@@ -4,6 +4,7 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Divider from '@material-ui/core/Divider';
+import 'materialize-css';
 
 import { useWindowDimensions } from '../hooks';
 import { NavbarProps, NavListProps } from '../interfaces';
@@ -127,7 +128,7 @@ const DrawerLi = styled.li<StyledLiProps>`
   }
 
   .active {
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(250, 250, 250);
     border-left: 3px solid ${(props): string => props.color};
     font-weight: 500;
   }

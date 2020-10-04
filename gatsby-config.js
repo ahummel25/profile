@@ -21,6 +21,13 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-178744864-1',
+        head: true
+      }
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Andrew Hummel Profile',
