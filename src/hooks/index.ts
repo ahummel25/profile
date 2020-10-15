@@ -175,7 +175,7 @@ export const useGetWeatherByCoords = (
       }: Position = await new Promise((resolve, reject): void => {
         console.debug('Here 2');
         if (navigator.geolocation) {
-          console.debug('Here 2');
+          console.debug('Here 3');
           navigator.geolocation.getCurrentPosition(
             (position: Position): void => {
               console.debug('Here 4');
