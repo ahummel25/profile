@@ -173,12 +173,16 @@ export const useGetWeatherByCoords = (
       const {
         coords: { latitude, longitude }
       }: Position = await new Promise((resolve, reject): void => {
+        console.debug('Here 2');
         if (navigator.geolocation) {
+          console.debug('Here 2');
           navigator.geolocation.getCurrentPosition(
             (position: Position): void => {
+              console.debug('Here 4');
               resolve(position);
             },
             (err: PositionError): void => {
+              console.debug('Here 5');
               if (err.code === 1) {
                 reject(new Error('Error: Access is denied!'));
               } else if (err.code === 2) {
@@ -192,13 +196,17 @@ export const useGetWeatherByCoords = (
         }
       });
 
+      console.debug('Here 6');
       const response = await fetch(
         `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
       );
+      console.debug('Here 7');
       const weather: IWeatherResponse = await response.json();
+      console.debug('Here 8');
       setWeatherResponse(weather);
     };
 
+    console.debug('Here 1');
     getWeatherByCoords();
   }, []);
 
