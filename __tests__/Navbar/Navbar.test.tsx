@@ -9,32 +9,16 @@ jest.mock('../../src/hooks', () => ({
 }));
 
 jest.mock('react-dom', () => {
-  const react = jest.requireActual('react');
   const reactDom = jest.requireActual('react-dom');
   return {
     ...reactDom,
-    createPortal: (
-      element: HTMLElement
-    ):
-      | DetailedReactHTMLElement<HTMLAttributes<HTMLElement>, HTMLElement>
-      | HTMLElement => {
-      if (!element.style) {
-        return react.cloneElement(element, {
-          style: { webkitTransition: '' }
-        });
-      }
-      return element;
-    }
+    createPortal: (element: ReactNode): ReactNode => element
   };
 });
 
 jest.mock('@material-ui/core/Fade');
 
-import React, {
-  DetailedReactHTMLElement,
-  HTMLAttributes,
-  ReactHTMLElement
-} from 'react';
+import React, { ReactNode, ReactHTMLElement } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Drawer from '@material-ui/core/Drawer';
 import renderer, { act } from 'react-test-renderer';
@@ -129,10 +113,7 @@ describe('Navbar', () => {
         height: 1200
       }));
 
-      const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />, {
-        createNodeMock: (node: ReactHTMLElement<HTMLElement>) =>
-          document.createElement(node.type)
-      });
+      const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
 
       expect(tree.root.props.setDrawerWidth).toHaveBeenCalledWith(DRAWER_WIDTH);
       expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(
