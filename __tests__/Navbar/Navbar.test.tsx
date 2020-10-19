@@ -8,10 +8,36 @@ jest.mock('../../src/hooks', () => ({
   useGetWeatherByCoords: jest.fn()
 }));
 
-import React from 'react';
+jest.mock('react-dom', () => {
+  const react = jest.requireActual('react');
+  const reactDom = jest.requireActual('react-dom');
+  return {
+    ...reactDom,
+    createPortal: (
+      element: HTMLElement
+    ):
+      | DetailedReactHTMLElement<HTMLAttributes<HTMLElement>, HTMLElement>
+      | HTMLElement => {
+      if (!element.style) {
+        return react.cloneElement(element, {
+          style: { webkitTransition: '' }
+        });
+      }
+      return element;
+    }
+  };
+});
+
+jest.mock('@material-ui/core/Fade');
+
+import React, {
+  DetailedReactHTMLElement,
+  HTMLAttributes,
+  ReactHTMLElement
+} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Drawer from '@material-ui/core/Drawer';
-import renderer from 'react-test-renderer';
+import renderer, { act } from 'react-test-renderer';
 import { mocked } from 'ts-jest/utils';
 
 import Navbar from '../../src/components/Navbar';
@@ -23,11 +49,6 @@ describe('Navbar', () => {
   const DRAWER_WIDTH = 190;
   const setDrawerWidth = jest.fn();
 
-  afterEach(() => {
-    expect(mockUseWindowDimensions).toHaveBeenCalled();
-    mockUseWindowDimensions.mockClear();
-  });
-
   it('renders correctly', () => {
     const tree = renderer
       .create(<Navbar setDrawerWidth={setDrawerWidth} />)
@@ -36,58 +57,100 @@ describe('Navbar', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders correctly with mobile version of drawer', () => {
-    mockUseWindowDimensions.mockImplementation(() => ({
-      width: 799,
-      height: 799
-    }));
+  describe('Mobile Navbar', () => {
+    afterEach(() => {
+      expect(mockUseWindowDimensions).toHaveBeenCalled();
+      mockUseWindowDimensions.mockClear();
+    });
+    it('renders correctly with mobile version of drawer', () => {
+      mockUseWindowDimensions.mockImplementation(() => ({
+        width: 799,
+        height: 799
+      }));
 
-    const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
+      const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />, {
+        createNodeMock: (node: ReactHTMLElement<HTMLElement>) =>
+          document.createElement(node.type)
+      });
 
-    expect(tree.root.props.setDrawerWidth).toHaveBeenCalledWith(DRAWER_WIDTH);
-    expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(DRAWER_WIDTH);
+      expect(tree.root.props.setDrawerWidth).toHaveBeenCalledWith(DRAWER_WIDTH);
+      expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(
+        DRAWER_WIDTH
+      );
 
-    const lis = tree.root.findAllByType('li');
-    expect(lis.length).toBe(0);
+      let lis = tree.root.findAllByType('li');
+      expect(lis.length).toBe(0);
 
-    const mobileAppBar = tree.root.findAllByType(AppBar);
-    expect(mobileAppBar.length).toBe(1);
-    expect(mobileAppBar[0].props.color).toBe('inherit');
-    expect(mobileAppBar[0].props.position).toBe('fixed');
+      const mobileAppBar = tree.root.findAllByType(AppBar);
+      expect(mobileAppBar.length).toBe(1);
+      expect(mobileAppBar[0].props.color).toBe('inherit');
+      expect(mobileAppBar[0].props.position).toBe('fixed');
 
-    const mobileDrawer = tree.root.findAllByType(Drawer);
-    expect(mobileDrawer.length).toBe(1);
-    expect(mobileDrawer[0].props.onClose).toBeTruthy();
-    expect(mobileDrawer[0].props.open).toBe(false);
-    expect(mobileDrawer[0].props.children[2].props.setOpen).toBeTruthy();
-    expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
+      const mobileDrawer = tree.root.findAllByType(Drawer);
+      expect(mobileDrawer.length).toBe(1);
+      expect(mobileDrawer[0].props.onClose).toBeTruthy();
+      expect(mobileDrawer[0].props.open).toBe(false);
+      expect(mobileDrawer[0].props.children[2].props.setOpen).toBeTruthy();
+      expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
 
-    // @ts-ignore
-    expect(tree.toJSON().children[0].children[0].props.onClick).toBeTruthy();
+      // @ts-ignore
+      expect(tree.toJSON().children[0].children[0].props.onClick).toBeTruthy();
+
+      const as = tree.root.findAllByType('a');
+      const e = { preventDefault: jest.fn() };
+
+      // Open mobile drawer
+      act(() => {
+        as[0].props.onClick(e);
+      });
+
+      expect(mobileDrawer[0].props.open).toBe(true);
+
+      lis = tree.root.findAllByType('li');
+      expect(lis.length).toBe(5);
+
+      // Click an li and close mobile drawer
+      act(() => {
+        lis[0].props.children.props.onClick();
+      });
+
+      expect(mobileDrawer[0].props.open).toBe(false);
+    });
   });
 
-  it('renders correctly with full version of drawer', () => {
-    mockUseWindowDimensions.mockImplementation(() => ({
-      width: 1200,
-      height: 1200
-    }));
-
-    const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
-
-    expect(tree.root.props.setDrawerWidth).toHaveBeenCalledWith(DRAWER_WIDTH);
-    expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(DRAWER_WIDTH);
-
-    const lis = tree.root.findAllByType('li');
-    expect(lis.length).toBe(5);
-
-    expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
-
-    const treeJson = tree.toJSON();
-    // @ts-ignore
-    expect(treeJson.children[0].children[0].props).toStrictEqual({
-      className: 'name-title'
+  describe('Desktop Navbar', () => {
+    afterEach(() => {
+      expect(mockUseWindowDimensions).toHaveBeenCalled();
+      mockUseWindowDimensions.mockClear();
     });
-    // @ts-ignore
-    expect(treeJson.children[0].children[0].props.onClick).toBeFalsy();
+    it('renders correctly with full version of drawer', () => {
+      mockUseWindowDimensions.mockImplementation(() => ({
+        width: 1200,
+        height: 1200
+      }));
+
+      const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />, {
+        createNodeMock: (node: ReactHTMLElement<HTMLElement>) =>
+          document.createElement(node.type)
+      });
+
+      expect(tree.root.props.setDrawerWidth).toHaveBeenCalledWith(DRAWER_WIDTH);
+      expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(
+        DRAWER_WIDTH
+      );
+
+      const lis = tree.root.findAllByType('li');
+      expect(lis.length).toBe(5);
+
+      expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
+
+      const treeJson = tree.toJSON();
+      // @ts-ignore
+      expect(treeJson.children[0].children[0].props).toStrictEqual({
+        className: 'name-title'
+      });
+      // @ts-ignore
+      expect(treeJson.children[0].children[0].props.onClick).toBeFalsy();
+    });
   });
 });
