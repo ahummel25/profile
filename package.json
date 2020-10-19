@@ -18,7 +18,7 @@
     "lint": "eslint src/ --ext .js,.ts,.jsx,.tsx",
     "lint-fix": "eslint {src,__tests__}/ --ext .js,.ts,.jsx,.tsx --fix",
     "start": "npm run dev",
-    "test": "jest -u --coverage",
+    "test": "jest --coverage",
     "type-check": "tsc"
   },
   "engines": {
