@@ -53,7 +53,7 @@ describe('Navbar', () => {
       }));
 
       const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />, {
-        createNodeMock: (node: ReactHTMLElement<HTMLElement>) =>
+        createNodeMock: (node: ReactHTMLElement<HTMLElement>): HTMLElement =>
           document.createElement(node.type)
       });
 
@@ -75,7 +75,7 @@ describe('Navbar', () => {
       expect(mobileDrawer[0].props.onClose).toBeTruthy();
       expect(mobileDrawer[0].props.open).toBe(false);
       expect(mobileDrawer[0].props.children[2].props.setOpen).toBeTruthy();
-      expect(tree.root.props.setDrawerWidth).toBe(setDrawerWidth);
+      expect(typeof tree.root.props.setDrawerWidth).toBe('function');
 
       // @ts-ignore
       expect(tree.toJSON().children[0].children[0].props.onClick).toBeTruthy();
