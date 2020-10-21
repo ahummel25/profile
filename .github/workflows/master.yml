@@ -36,6 +36,7 @@ jobs:
 
       - name: NPM Deploy
         env:
+          GATSBY_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
           GATSBY_WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: |
           echo Deploying as "$GITHUB_ACTOR" in repo "$GITHUB_REPOSITORY"
