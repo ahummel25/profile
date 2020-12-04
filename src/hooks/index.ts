@@ -1,3 +1,5 @@
+import console from 'console';
+
 import { useEffect, useMemo, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -163,40 +165,46 @@ export const useGetImages = (): IImages => {
 export const useGetWeatherByCoords = (
   units = 'imperial'
 ): IWeatherResponse | null => {
+  let latitude = 0;
+  let longitude = 0;
   const [
     weatherResponse,
     setWeatherResponse
   ] = useState<IWeatherResponse | null>(null);
 
+  const positionOptions = { timeout: 60000, enableHighAccuracy: true };
+
   useEffect((): void => {
     const getWeatherByCoords = async (): Promise<void> => {
-      const {
-        coords: { latitude, longitude }
-      }: Position = await new Promise((resolve, reject): void => {
+      const { coords }: Position = await new Promise((resolve): void => {
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(
             (position: Position): void => {
               resolve(position);
             },
             (err: PositionError): void => {
-              if (err.code === 1) {
-                reject(new Error('Error: Access is denied!'));
-              } else if (err.code === 2) {
-                reject(new Error('Error: Position is unavailable!'));
-              }
+              console.debug(
+                `Error code ${err.code} while calling getCurrentPosition: ${err.message}`
+              );
             },
-            { timeout: 60000 }
+            positionOptions
           );
         } else {
-          reject(new Error('Sorry, browser does not support geolocation!'));
+          console.debug('Sorry, your browser does not support geolocation!');
         }
       });
 
-      const response = await fetch(
-        `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
-      );
-      const weather: IWeatherResponse = await response.json();
-      setWeatherResponse(weather);
+      latitude = coords?.latitude;
+      longitude = coords?.longitude;
+
+      if (latitude && longitude) {
+        const response = await fetch(
+          `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
+        );
+        const weather: IWeatherResponse = await response.json();
+
+        setWeatherResponse(weather);
+      }
     };
 
     getWeatherByCoords();
