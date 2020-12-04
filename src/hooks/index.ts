@@ -1,5 +1,3 @@
-import console from 'console';
-
 import { useEffect, useMemo, useState } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
