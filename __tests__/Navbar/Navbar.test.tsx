@@ -16,6 +16,7 @@ jest.mock('react-dom', () => {
   };
 });
 
+// https://github.com/mui-org/material-ui/issues/12237
 jest.mock('@material-ui/core/Fade');
 
 import React, { ReactNode, ReactHTMLElement } from 'react';
