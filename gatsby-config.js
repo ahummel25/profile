@@ -20,10 +20,12 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_ID,
-        head: true
+        trackingIds: [process.env.GATSBY_GOOGLE_ANALYTICS_ID],
+        pluginConfig: {
+          head: true
+        }
       }
     },
     {
