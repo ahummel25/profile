@@ -183,18 +183,14 @@ export const useGetWeatherByCoords = (
               resolve(position);
             },
             (err: PositionError): void => {
-              if (typeof window !== 'undefined') {
-                console.debug(
-                  `Error code ${err.code} while calling getCurrentPosition: ${err.message}`
-                );
-              }
+              console.debug(
+                `Error code ${err.code} while calling getCurrentPosition: ${err.message}`
+              );
             },
             positionOptions
           );
         } else {
-          if (typeof window !== 'undefined') {
-            console.debug('Sorry, your browser does not support geolocation!');
-          }
+          console.debug('Sorry, your browser does not support geolocation!');
         }
       });
 
