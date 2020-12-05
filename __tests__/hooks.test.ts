@@ -80,6 +80,7 @@ describe('useGetWeatherByCoords', () => {
     const fetchCalled = fetchMock.called(mockWeatherApiUrl);
 
     expect(fetchCalled).toBe(false);
+    expect(response?.result.current).toBe(null);
   });
 
   it('should not fetch weather if geolocation is not supported in the browser', async () => {
@@ -93,5 +94,6 @@ describe('useGetWeatherByCoords', () => {
     const fetchCalled = fetchMock.called(mockWeatherApiUrl);
 
     expect(fetchCalled).toBe(false);
+    expect(response?.result.current).toBe(null);
   });
 });
