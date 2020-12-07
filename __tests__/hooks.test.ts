@@ -36,7 +36,7 @@ const mockGeolocation = (
     )
 });
 
-describe('useGetWeatherByCoords success', () => {
+describe('useGetWeatherByCoords', () => {
   afterEach(() => {
     fetchMock.restore();
     cleanup();
@@ -58,7 +58,7 @@ describe('useGetWeatherByCoords success', () => {
     expect(response?.result.current).toStrictEqual(mockWeatherResponse);
   });
 
-  it('should return no data with a the call to the weather API fails', async () => {
+  it('should return no data when the call to the weather API fails', async () => {
     // @ts-ignore
     navigator.geolocation = mockGeolocation(latitude2);
 
@@ -93,9 +93,9 @@ describe('useGetWeatherByCoords success', () => {
       response = renderHook(() => useGetWeatherByCoords());
     });
 
-    const fetchCalled = fetchMock.called(mockWeatherApiUrl1);
+    const fetchCalls = fetchMock.calls();
 
-    expect(fetchCalled).toBe(false);
+    expect(fetchCalls.length).toBe(0);
     expect(response?.result.current).toBe(null);
   });
 
@@ -107,9 +107,9 @@ describe('useGetWeatherByCoords success', () => {
       response = renderHook(() => useGetWeatherByCoords());
     });
 
-    const fetchCalled = fetchMock.called(mockWeatherApiUrl1);
+    const fetchCalls = fetchMock.calls();
 
-    expect(fetchCalled).toBe(false);
+    expect(fetchCalls.length).toBe(0);
     expect(response?.result.current).toBe(null);
   });
 });
