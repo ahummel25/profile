@@ -163,8 +163,6 @@ export const useGetImages = (): IImages => {
 export const useGetWeatherByCoords = (
   units = 'imperial'
 ): IWeatherResponse | null => {
-  let latitude = 0;
-  let longitude = 0;
   const [
     weatherResponse,
     setWeatherResponse
@@ -192,16 +190,20 @@ export const useGetWeatherByCoords = (
         }
       });
 
-      latitude = coords?.latitude;
-      longitude = coords?.longitude;
+      const latitude = coords?.latitude;
+      const longitude = coords?.longitude;
 
       if (latitude && longitude) {
-        const response = await fetch(
-          `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
-        );
-        const weather: IWeatherResponse = await response.json();
+        try {
+          const response = await fetch(
+            `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=${units}`
+          );
+          const weather: IWeatherResponse = await response.json();
 
-        setWeatherResponse(weather);
+          setWeatherResponse(weather);
+        } catch (err) {
+          console.debug(`Error calling weather API: ${err.message}`);
+        }
       }
     };
 

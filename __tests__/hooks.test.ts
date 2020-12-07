@@ -12,72 +12,88 @@ import { useGetWeatherByCoords } from '../src/hooks';
 
 jest.unmock('../src/hooks');
 
-describe('useGetWeatherByCoords', () => {
-  const latitude = -87.66;
-  const longitude = 41.89;
-  const mockWeatherApiUrl = `${baseWeatherUrl}/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
-  let response: RenderHookResult<string, unknown> | undefined;
+const latitude1 = -87.66;
+const latitude2 = -88.66;
+const longitude = 41.89;
+const mockWeatherApiUrl1 = `${baseWeatherUrl}/weather?lat=${latitude1}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
+const mockWeatherApiUrl2 = `${baseWeatherUrl}/weather?lat=${latitude2}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
+let response: RenderHookResult<string, unknown> | undefined;
 
+const mockGeolocation = (
+  latitude: number
+): { [getCurrentPosition: string]: jest.Mock } => ({
+  getCurrentPosition: jest
+    .fn()
+    .mockImplementationOnce((success: (s: Record<string, unknown>) => void) =>
+      Promise.resolve(
+        success({
+          coords: {
+            latitude,
+            longitude
+          }
+        })
+      )
+    )
+});
+
+describe('useGetWeatherByCoords success', () => {
   afterEach(() => {
     fetchMock.restore();
     cleanup();
   });
 
   it('should return data with a successful request', async () => {
-    const mockGeolocation = {
-      getCurrentPosition: jest
-        .fn()
-        .mockImplementationOnce(
-          (success: (s: Record<string, unknown>) => void) =>
-            Promise.resolve(
-              success({
-                coords: {
-                  latitude,
-                  longitude
-                }
-              })
-            )
-        )
-    };
-
     // @ts-ignore
-    navigator.geolocation = mockGeolocation;
+    navigator.geolocation = mockGeolocation(latitude1);
 
-    fetchMock.mock(mockWeatherApiUrl, mockWeatherResponse);
+    fetchMock.mock(mockWeatherApiUrl1, mockWeatherResponse);
 
     await act(async () => {
       response = renderHook(() => useGetWeatherByCoords());
     });
 
-    const fetchCalled = fetchMock.called(mockWeatherApiUrl);
+    const fetchCalled = fetchMock.called(mockWeatherApiUrl1);
 
     expect(fetchCalled).toBe(true);
     expect(response?.result.current).toStrictEqual(mockWeatherResponse);
   });
 
-  it('should not fetch weather if navigator getCurrentPosition call fails', async () => {
-    const mockGeolocation = {
-      getCurrentPosition: jest
-        .fn()
-        .mockImplementationOnce(
-          (
-            _success: (s: Record<string, unknown>) => void,
-            error: (err: Record<string, unknown>) => void
-          ) =>
-            Promise.resolve(
-              error({ code: 1, message: 'Geolocation access is denied!' })
-            )
-        )
-    };
-
+  it('should return no data with a the call to the weather API fails', async () => {
     // @ts-ignore
-    navigator.geolocation = mockGeolocation;
+    navigator.geolocation = mockGeolocation(latitude2);
+
+    fetchMock.mock(mockWeatherApiUrl2, () => {
+      throw new Error('fetch failed');
+    });
 
     await act(async () => {
       response = renderHook(() => useGetWeatherByCoords());
     });
 
-    const fetchCalled = fetchMock.called(mockWeatherApiUrl);
+    const fetchCalled = fetchMock.called(mockWeatherApiUrl2);
+
+    expect(fetchCalled).toBe(true);
+    expect(response?.result.current).toBe(null);
+  });
+
+  it('should not fetch weather if navigator getCurrentPosition call fails', async () => {
+    navigator.geolocation.getCurrentPosition = jest
+      .fn()
+      .mockImplementationOnce(
+        (
+          _success: (s: Record<string, unknown>) => void,
+          error: (err: Record<string, unknown>) => void
+        ) =>
+          Promise.resolve(
+            error({ code: 1, message: 'Geolocation access is denied!' })
+          )
+      );
+
+    await act(async () => {
+      response = renderHook(() => useGetWeatherByCoords());
+    });
+
+    const fetchCalled = fetchMock.called(mockWeatherApiUrl1);
 
     expect(fetchCalled).toBe(false);
     expect(response?.result.current).toBe(null);
@@ -91,7 +107,7 @@ describe('useGetWeatherByCoords', () => {
       response = renderHook(() => useGetWeatherByCoords());
     });
 
-    const fetchCalled = fetchMock.called(mockWeatherApiUrl);
+    const fetchCalled = fetchMock.called(mockWeatherApiUrl1);
 
     expect(fetchCalled).toBe(false);
     expect(response?.result.current).toBe(null);
