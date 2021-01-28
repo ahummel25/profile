@@ -90,7 +90,7 @@ const Certifications: FC<{}> = (): JSX.Element => {
               <Row className="row">
                 <ImgContainer className="col s4 m2">
                   <a
-                    href="https://drive.google.com/open?id=12J6DihgPFkvlGzN49jJjPrsNZwrQjyIr"
+                    href="https://www.youracclaim.com/badges/018dda7d-8dc3-4192-b636-52706f01ad13/public_url"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
