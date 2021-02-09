@@ -50,7 +50,7 @@ exports[`Certifications renders correctly 1`] = `
 }
 
 .emotion-3 {
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 }
 
 .emotion-3 .divider {
@@ -156,7 +156,7 @@ exports[`Certifications renders correctly 1`] = `
 }
 
 .emotion-3 {
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 }
 
 .emotion-3 .divider {
@@ -229,7 +229,7 @@ exports[`Certifications renders correctly 1`] = `
       className="card emotion-4"
     >
       <div
-        className="card-content emotion-3"
+        className="emotion-3"
       >
         <h4
           className="brown-text light"

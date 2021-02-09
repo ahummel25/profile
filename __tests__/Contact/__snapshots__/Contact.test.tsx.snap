@@ -41,7 +41,7 @@ exports[`Contact renders correctly 1`] = `
 }
 
 .emotion-1 .hoverline {
-  border-bottom: 3px solid transparent !important;
+  border-bottom: 3px solid transparent;
   padding: 3px 3px 3px 3px;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
@@ -50,7 +50,7 @@ exports[`Contact renders correctly 1`] = `
 }
 
 .emotion-1 .hoverline:hover {
-  border-bottom: 3px solid rgb(0,150,136) !important;
+  border-bottom: 3px solid rgb(0,150,136);
 }
 
 .emotion-2 {
@@ -93,7 +93,7 @@ exports[`Contact renders correctly 1`] = `
 }
 
 .emotion-1 .hoverline {
-  border-bottom: 3px solid transparent !important;
+  border-bottom: 3px solid transparent;
   padding: 3px 3px 3px 3px;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
@@ -102,7 +102,7 @@ exports[`Contact renders correctly 1`] = `
 }
 
 .emotion-1 .hoverline:hover {
-  border-bottom: 3px solid rgb(0,150,136) !important;
+  border-bottom: 3px solid rgb(0,150,136);
 }
 
 <section

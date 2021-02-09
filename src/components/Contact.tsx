@@ -27,14 +27,14 @@ const Container = styled.div`
   }
 
   .hoverline {
-    border-bottom: 3px solid transparent !important;
+    border-bottom: 3px solid transparent;
     padding: 3px 3px 3px 3px;
     transition: 0.25s all;
     -moz-transition: 0.25s all;
     -webkit-transition: 0.25s all;
 
     &:hover {
-      border-bottom: 3px solid rgb(0, 150, 136) !important;
+      border-bottom: 3px solid rgb(0, 150, 136);
     }
   }
 `;

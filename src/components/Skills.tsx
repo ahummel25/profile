@@ -22,7 +22,7 @@ const CardContent = styled.div`
     padding-bottom: 15px;
   }
 
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 `;
 
 const Row = styled.div`
@@ -80,7 +80,7 @@ const Skills: FC<{}> = (): JSX.Element => {
         <TitleHeader title="Skills" />
         <CardContainer>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">HTML</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
@@ -106,7 +106,7 @@ const Skills: FC<{}> = (): JSX.Element => {
             </CardContent>
           </Card>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">CSS</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
@@ -159,7 +159,7 @@ const Skills: FC<{}> = (): JSX.Element => {
             </CardContent>
           </Card>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">Javascript</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
@@ -203,7 +203,7 @@ const Skills: FC<{}> = (): JSX.Element => {
             </CardContent>
           </Card>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">Back-End</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
@@ -256,7 +256,7 @@ const Skills: FC<{}> = (): JSX.Element => {
             </CardContent>
           </Card>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">Cloud</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
