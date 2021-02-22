@@ -44,7 +44,13 @@ const ImgContainer = styled.div`
   height: 90px;
 
   p {
-    padding-top: 15px;
+    padding-top: 5px;
+  }
+
+  @media (max-width: ${bp.md}px) {
+    p[data-react='native'] {
+      padding-top: 0;
+    }
   }
 
   .sass {
@@ -179,7 +185,7 @@ const Skills: FC<{}> = (): JSX.Element => {
                     fluid={reactImg.childImageSharp.fluid}
                     alt="React Logo"
                   />
-                  <p>React Native</p>
+                  <p data-react="native">React Native</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
                   <Img
