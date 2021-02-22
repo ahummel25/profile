@@ -1152,7 +1152,13 @@ Array [
 }
 
 .emotion-1 p {
-  padding-top: 15px;
+  padding-top: 5px;
+}
+
+@media (max-width:768px) {
+  .emotion-1 p[data-react='native'] {
+    padding-top: 0;
+  }
 }
 
 @media (max-width:1024px) {
@@ -1235,7 +1241,13 @@ Array [
 }
 
 .emotion-1 p {
-  padding-top: 15px;
+  padding-top: 5px;
+}
+
+@media (max-width:768px) {
+  .emotion-1 p[data-react='native'] {
+    padding-top: 0;
+  }
 }
 
 @media (max-width:1024px) {
@@ -2166,7 +2178,9 @@ Array [
                   }
                 />
               </div>
-              <p>
+              <p
+                data-react="native"
+              >
                 React Native
               </p>
             </div>
