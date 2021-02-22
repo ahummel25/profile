@@ -34,6 +34,9 @@ const Row = styled.div`
 const ImgContainer = styled.div`
   @media (max-width: ${bp.md}px) {
     margin-bottom: 20px;
+    p[data-react='native'] {
+      padding-top: 0;
+    }
   }
   font-size: 16px;
   font-weight: 400;
@@ -45,12 +48,6 @@ const ImgContainer = styled.div`
 
   p {
     padding-top: 5px;
-  }
-
-  @media (max-width: ${bp.md}px) {
-    p[data-react='native'] {
-      padding-top: 0;
-    }
   }
 
   .sass {
