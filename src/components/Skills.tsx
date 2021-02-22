@@ -170,7 +170,16 @@ const Skills: FC<{}> = (): JSX.Element => {
                     fluid={reactImg.childImageSharp.fluid}
                     alt="React Logo"
                   />
-                  <p>React/React Native</p>
+                  <p>React</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={reactImg.childImageSharp.fluid}
+                    alt="React Logo"
+                  />
+                  <p>React Native</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
                   <Img
