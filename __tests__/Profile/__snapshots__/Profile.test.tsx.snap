@@ -182,7 +182,7 @@ Array [
 }
 
 .emotion-3 .hoverline {
-  border-bottom: 3px solid transparent !important;
+  border-bottom: 3px solid transparent;
   padding: 3px 3px 0 3px;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
@@ -191,11 +191,11 @@ Array [
 }
 
 .emotion-3 .hoverline:hover {
-  border-bottom: 3px solid rgb(0,150,136) !important;
+  border-bottom: 3px solid rgb(0,150,136);
 }
 
-.emotion-3 .grey-text {
-  color: rgb(102,102,102) !important;
+.emotion-3 .text-description {
+  color: rgb(102,102,102);
 }
 
 .emotion-3 .subtitle {
@@ -324,7 +324,7 @@ Array [
 }
 
 .emotion-3 .hoverline {
-  border-bottom: 3px solid transparent !important;
+  border-bottom: 3px solid transparent;
   padding: 3px 3px 0 3px;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
@@ -333,11 +333,11 @@ Array [
 }
 
 .emotion-3 .hoverline:hover {
-  border-bottom: 3px solid rgb(0,150,136) !important;
+  border-bottom: 3px solid rgb(0,150,136);
 }
 
-.emotion-3 .grey-text {
-  color: rgb(102,102,102) !important;
+.emotion-3 .text-description {
+  color: rgb(102,102,102);
 }
 
 .emotion-3 .subtitle {
@@ -544,7 +544,7 @@ Array [
             className="subtitle"
           >
             <em
-              className="grey-text"
+              className="text-description"
             >
               Innovative, software consulting firm implementing cutting-edge solutions combining technology, strategy, and change management to meet and exceed client needs
             </em>
@@ -710,7 +710,7 @@ Array [
             className="subtitle"
           >
             <em
-              className="grey-text"
+              className="text-description"
             >
               Legal software company allowing patent prosecutors to predict the behavior of their examiner, competitors, and potential clients using big data analytics
             </em>
@@ -876,7 +876,7 @@ Array [
             className="subtitle"
           >
             <em
-              className="grey-text"
+              className="text-description"
             >
               Technology and supply chain services provider
             </em>
@@ -1042,7 +1042,7 @@ Array [
             className="subtitle"
           >
             <em
-              className="grey-text"
+              className="text-description"
             >
               Technology and supply chain services provider
             </em>
@@ -1118,7 +1118,7 @@ Array [
 }
 
 .emotion-4 {
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 }
 
 .emotion-4 .divider {
@@ -1201,7 +1201,7 @@ Array [
 }
 
 .emotion-4 {
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 }
 
 .emotion-4 .divider {
@@ -1260,7 +1260,7 @@ Array [
         className="card emotion-5"
       >
         <div
-          className="card-content emotion-4"
+          className="emotion-4"
         >
           <h4
             className="brown-text light"
@@ -1470,7 +1470,7 @@ Array [
         className="card emotion-5"
       >
         <div
-          className="card-content emotion-4"
+          className="emotion-4"
         >
           <h4
             className="brown-text light"
@@ -1967,7 +1967,7 @@ Array [
         className="card emotion-5"
       >
         <div
-          className="card-content emotion-4"
+          className="emotion-4"
         >
           <h4
             className="brown-text light"
@@ -2462,7 +2462,7 @@ Array [
         className="card emotion-5"
       >
         <div
-          className="card-content emotion-4"
+          className="emotion-4"
         >
           <h4
             className="brown-text light"
@@ -2957,7 +2957,7 @@ Array [
         className="card emotion-5"
       >
         <div
-          className="card-content emotion-4"
+          className="emotion-4"
         >
           <h4
             className="brown-text light"
@@ -3106,7 +3106,7 @@ Array [
 }
 
 .emotion-3 {
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 }
 
 .emotion-3 .divider {
@@ -3212,7 +3212,7 @@ Array [
 }
 
 .emotion-3 {
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 }
 
 .emotion-3 .divider {
@@ -3298,7 +3298,7 @@ Array [
         className="card emotion-4"
       >
         <div
-          className="card-content emotion-3"
+          className="emotion-3"
         >
           <h4
             className="brown-text light"
@@ -3457,7 +3457,7 @@ Array [
 }
 
 .emotion-1 .hoverline {
-  border-bottom: 3px solid transparent !important;
+  border-bottom: 3px solid transparent;
   padding: 3px 3px 3px 3px;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
@@ -3466,7 +3466,7 @@ Array [
 }
 
 .emotion-1 .hoverline:hover {
-  border-bottom: 3px solid rgb(0,150,136) !important;
+  border-bottom: 3px solid rgb(0,150,136);
 }
 
 .emotion-0 {
@@ -3509,7 +3509,7 @@ Array [
 }
 
 .emotion-1 .hoverline {
-  border-bottom: 3px solid transparent !important;
+  border-bottom: 3px solid transparent;
   padding: 3px 3px 3px 3px;
   -webkit-transition: 0.25s all;
   transition: 0.25s all;
@@ -3518,7 +3518,7 @@ Array [
 }
 
 .emotion-1 .hoverline:hover {
-  border-bottom: 3px solid rgb(0,150,136) !important;
+  border-bottom: 3px solid rgb(0,150,136);
 }
 
 <section
