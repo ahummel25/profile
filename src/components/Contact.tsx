@@ -46,7 +46,7 @@ const Contact: FC<{}> = (): JSX.Element => (
       <TitleHeader title="Contact" />
       <Container className="container">
         <p>
-          <a
+          <OutboundLink
             aria-label="Email Andrew"
             href="mailto:ahummel25@gmail.com"
             className="btn-floating btn-large waves-effect waves-light brown tooltipped"
@@ -56,8 +56,8 @@ const Contact: FC<{}> = (): JSX.Element => (
             rel="noopener noreferrer"
           >
             <i className="fa fa-envelope"></i>
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink
             aria-label="Email Andrew"
             href="mailto:ahummel25@gmail.com"
             className="teal-text hoverline"
@@ -65,10 +65,10 @@ const Contact: FC<{}> = (): JSX.Element => (
             rel="noopener noreferrer"
           >
             ahummel25@gmail.com
-          </a>
+          </OutboundLink>
         </p>
         <p>
-          <a
+          <OutboundLink
             aria-label="View Andrew on GitHub"
             href="https://github.com/ahummel25"
             className="btn-floating btn-large waves-effect waves-light brown tooltipped"
@@ -78,8 +78,8 @@ const Contact: FC<{}> = (): JSX.Element => (
             rel="noopener noreferrer"
           >
             <i className="fa fa-github"></i>
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink
             aria-label="Andrew on Github"
             href="https://github.com/ahummel25"
             className="teal-text hoverline"
@@ -87,7 +87,7 @@ const Contact: FC<{}> = (): JSX.Element => (
             rel="noopener noreferrer"
           >
             github.com/ahummel25
-          </a>
+          </OutboundLink>
         </p>
         <p>
           <OutboundLink
@@ -101,7 +101,7 @@ const Contact: FC<{}> = (): JSX.Element => (
           >
             <i className="fa fa-linkedin"></i>
           </OutboundLink>
-          <a
+          <OutboundLink
             aria-label="Andrew on LinkedIn"
             href="https://www.linkedin.com/in/andrew-hummel-7b618719"
             className="teal-text hoverline"
@@ -109,7 +109,7 @@ const Contact: FC<{}> = (): JSX.Element => (
             rel="noopener noreferrer"
           >
             linkedin.com/andrew-hummel
-          </a>
+          </OutboundLink>
         </p>
       </Container>
     </Section>
