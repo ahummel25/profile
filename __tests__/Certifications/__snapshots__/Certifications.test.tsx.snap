@@ -50,7 +50,7 @@ exports[`Certifications renders correctly 1`] = `
 }
 
 .emotion-3 {
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 }
 
 .emotion-3 .divider {
@@ -156,7 +156,7 @@ exports[`Certifications renders correctly 1`] = `
 }
 
 .emotion-3 {
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 }
 
 .emotion-3 .divider {
@@ -229,7 +229,7 @@ exports[`Certifications renders correctly 1`] = `
       className="card emotion-4"
     >
       <div
-        className="card-content emotion-3"
+        className="emotion-3"
       >
         <h4
           className="brown-text light"
@@ -246,7 +246,7 @@ exports[`Certifications renders correctly 1`] = `
             className="col s4 m2 emotion-1"
           >
             <a
-              href="https://drive.google.com/open?id=12J6DihgPFkvlGzN49jJjPrsNZwrQjyIr"
+              href="https://www.youracclaim.com/badges/018dda7d-8dc3-4192-b636-52706f01ad13/public_url"
               rel="noopener noreferrer"
               target="_blank"
             >
