@@ -18,7 +18,8 @@ const IndexPage = (): JSX.Element => {
         M.ScrollSpy.init(scrollSpyElems);
 
         const toolTipElems = document.querySelectorAll('.tooltipped');
-        M.Tooltip.init(toolTipElems);
+        const toolTipOptions = { enterDelay: 200 };
+        M.Tooltip.init(toolTipElems, toolTipOptions);
 
         const wavesElems = document.querySelectorAll('.waves-effect');
 
