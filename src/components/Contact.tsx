@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 import { fonts } from '../styles/variables';
 
@@ -89,7 +90,7 @@ const Contact: FC<{}> = (): JSX.Element => (
           </a>
         </p>
         <p>
-          <a
+          <OutboundLink
             aria-label="View Andrew on LinkedIn"
             href="https://www.linkedin.com/in/andrew-hummel-7b618719"
             className="btn-floating btn-large waves-effect waves-light brown tooltipped"
@@ -99,7 +100,7 @@ const Contact: FC<{}> = (): JSX.Element => (
             rel="noopener noreferrer"
           >
             <i className="fa fa-linkedin"></i>
-          </a>
+          </OutboundLink>
           <a
             aria-label="Andrew on LinkedIn"
             href="https://www.linkedin.com/in/andrew-hummel-7b618719"

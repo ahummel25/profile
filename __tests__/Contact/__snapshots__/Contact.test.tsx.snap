@@ -172,6 +172,7 @@ exports[`Contact renders correctly 1`] = `
         data-position="top"
         data-tooltip="View Andrew on LinkedIn"
         href="https://www.linkedin.com/in/andrew-hummel-7b618719"
+        onClick={[Function]}
         rel="noopener noreferrer"
         target="_blank"
       >
