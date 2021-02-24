@@ -3565,6 +3565,7 @@ Array [
           data-position="top"
           data-tooltip="Email Andrew"
           href="mailto:ahummel25@gmail.com"
+          onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -3576,6 +3577,7 @@ Array [
           aria-label="Email Andrew"
           className="teal-text hoverline"
           href="mailto:ahummel25@gmail.com"
+          onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -3589,6 +3591,7 @@ Array [
           data-position="top"
           data-tooltip="View Andrew on Github"
           href="https://github.com/ahummel25"
+          onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -3600,6 +3603,7 @@ Array [
           aria-label="Andrew on Github"
           className="teal-text hoverline"
           href="https://github.com/ahummel25"
+          onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -3625,6 +3629,7 @@ Array [
           aria-label="Andrew on LinkedIn"
           className="teal-text hoverline"
           href="https://www.linkedin.com/in/andrew-hummel-7b618719"
+          onClick={[Function]}
           rel="noopener noreferrer"
           target="_blank"
         >
