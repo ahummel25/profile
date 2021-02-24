@@ -3,7 +3,7 @@ module.exports = {
     title: 'Andrew Hummel | Full Stack Developer',
     description: 'Andrew Hummel Profile',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
-    siteUrl: 'https://ahummel25.github.io/profile',
+    siteUrl: 'https://www.andrewhummel.dev',
     iconUrl: 'https://fonts.googleapis.com/icon?family=Material+Icons',
     robotoFontsUrl:
       'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i',
@@ -15,7 +15,7 @@ module.exports = {
       email: 'ahummel25@gmail.com'
     }
   },
-  pathPrefix: '/profile',
+  pathPrefix: '/',
   plugins: [
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -82,7 +82,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://ahummel25.github.io/profile'
+        siteUrl: 'https://www.andrewhummel.dev'
       }
     },
     'gatsby-plugin-emotion',

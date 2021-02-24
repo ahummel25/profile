@@ -1,5 +1,5 @@
 jest.mock('../src/hooks', () => ({
-  useGetFixedFahrenheit: (temp: number): string => `${temp.toFixed()}`,
+  useGetFixedFahrenheit: (temp: number): string => temp.toFixed(),
   useGetImages: (): IImages => mockImagesResponse,
   useWindowDimensions: (): { width: number; height: number } => ({
     height: 799,

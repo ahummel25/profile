@@ -22,7 +22,7 @@ const CardContent = styled.div`
     padding-bottom: 15px;
   }
 
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 `;
 
 const Row = styled.div`
@@ -34,6 +34,9 @@ const Row = styled.div`
 const ImgContainer = styled.div`
   @media (max-width: ${bp.md}px) {
     margin-bottom: 20px;
+    p[data-react='native'] {
+      padding-top: 0;
+    }
   }
   font-size: 16px;
   font-weight: 400;
@@ -44,7 +47,7 @@ const ImgContainer = styled.div`
   height: 90px;
 
   p {
-    padding-top: 15px;
+    padding-top: 5px;
   }
 
   .sass {
@@ -80,7 +83,7 @@ const Skills: FC<{}> = (): JSX.Element => {
         <TitleHeader title="Skills" />
         <CardContainer>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">HTML</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
@@ -106,7 +109,7 @@ const Skills: FC<{}> = (): JSX.Element => {
             </CardContent>
           </Card>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">CSS</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
@@ -159,7 +162,7 @@ const Skills: FC<{}> = (): JSX.Element => {
             </CardContent>
           </Card>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">Javascript</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
@@ -170,7 +173,16 @@ const Skills: FC<{}> = (): JSX.Element => {
                     fluid={reactImg.childImageSharp.fluid}
                     alt="React Logo"
                   />
-                  <p>React/React Native</p>
+                  <p>React</p>
+                </ImgContainer>
+                <ImgContainer className="col s4 m2">
+                  <Img
+                    style={{ maxHeight: '100%' }}
+                    imgStyle={{ objectFit: 'contain' }}
+                    fluid={reactImg.childImageSharp.fluid}
+                    alt="React Logo"
+                  />
+                  <p data-react="native">React Native</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
                   <Img
@@ -203,7 +215,7 @@ const Skills: FC<{}> = (): JSX.Element => {
             </CardContent>
           </Card>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">Back-End</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
@@ -256,7 +268,7 @@ const Skills: FC<{}> = (): JSX.Element => {
             </CardContent>
           </Card>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">Cloud</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">

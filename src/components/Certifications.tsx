@@ -30,7 +30,7 @@ const CardContent = styled.div`
     padding-bottom: 15px;
   }
 
-  padding: 20px 20px 60px 20px !important;
+  padding: 20px 20px 60px 20px;
 `;
 
 const Row = styled.div`
@@ -84,13 +84,13 @@ const Certifications: FC<{}> = (): JSX.Element => {
         <TitleHeader title="Certifications" />
         <CardContainer>
           <Card className="card">
-            <CardContent className="card-content">
+            <CardContent>
               <h4 className="brown-text light">Certifications</h4>
               <Divider className="divider" variant="middle" />
               <Row className="row">
                 <ImgContainer className="col s4 m2">
                   <a
-                    href="https://drive.google.com/open?id=12J6DihgPFkvlGzN49jJjPrsNZwrQjyIr"
+                    href="https://www.youracclaim.com/badges/018dda7d-8dc3-4192-b636-52706f01ad13/public_url"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

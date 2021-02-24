@@ -172,23 +172,25 @@ export const useGetWeatherByCoords = (
 
   useEffect((): void => {
     const getWeatherByCoords = async (): Promise<void> => {
-      const { coords }: Position = await new Promise((resolve): void => {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(
-            (position: Position): void => {
-              resolve(position);
-            },
-            (err: PositionError): void => {
-              console.debug(
-                `Error code ${err.code} while calling getCurrentPosition: ${err.message}`
-              );
-            },
-            positionOptions
-          );
-        } else {
-          console.debug('Sorry, your browser does not support geolocation!');
+      const { coords }: GeolocationPosition = await new Promise(
+        (resolve): void => {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+              (position: GeolocationPosition): void => {
+                resolve(position);
+              },
+              (err: GeolocationPositionError): void => {
+                console.debug(
+                  `Error code ${err.code} while calling getCurrentPosition: ${err.message}`
+                );
+              },
+              positionOptions
+            );
+          } else {
+            console.debug('Sorry, your browser does not support geolocation!');
+          }
         }
-      });
+      );
 
       const latitude = coords?.latitude;
       const longitude = coords?.longitude;
