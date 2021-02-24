@@ -15,7 +15,7 @@ module.exports = {
       email: 'ahummel25@gmail.com'
     }
   },
-  pathPrefix: '/profile',
+  pathPrefix: '/',
   plugins: [
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
