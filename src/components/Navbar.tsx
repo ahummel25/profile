@@ -179,7 +179,7 @@ const navItems = [
 const RenderFullDrawer: FC<{}> = (): JSX.Element => (
   <DrawerContainer variant="permanent" anchor="left">
     <div className="name-title">
-      <a href="/profile">
+      <a href="/">
         <h1>
           Andrew <br /> Hummel
         </h1>
@@ -215,18 +215,18 @@ const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
     <>
       <AppBarCustom color="inherit" position="fixed">
         <Toolbar className="tool-bar">
-          <a href="/profile" onClick={toggleDrawer}>
+          <a href="/" onClick={toggleDrawer}>
             <i className="material-icons icon-green">menu</i>
           </a>
           <div className="name-title">
-            <a href="/profile">Andrew Hummel</a>
+            <a href="/">Andrew Hummel</a>
             <span className="brown-text light">Full Stack Developer</span>
           </div>
         </Toolbar>
       </AppBarCustom>
       <DrawerContainer anchor="left" open={open} onClose={toggleDrawer}>
         <div className="name-title">
-          <a href="/profile">
+          <a href="/">
             <h1>Andrew Hummel</h1>
             <span className="brown-text light">Full Stack Developer</span>
           </a>

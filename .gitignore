@@ -1,6 +1,7 @@
 .cache
 node_modules
-public
+public/*
+!public/CNAME
 
 # coverage
 coverage/*

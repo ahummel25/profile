@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 
 import Page from '../components/Page';
@@ -6,8 +6,11 @@ import Container from '../components/Container';
 import IndexLayout from '../layouts';
 
 const NotFoundPage = (): JSX.Element => {
-  let url = '';
-  if (typeof window !== 'undefined') url = window.location.href;
+  const [url, setUrl] = useState<string>('');
+
+  useEffect((): void => {
+    if (typeof window !== 'undefined') setUrl(window.location.href);
+  }, []);
   return (
     <IndexLayout>
       <Page>
