@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Global, css, SerializedStyles } from '@emotion/core';
+import { Global, css, SerializedStyles } from '@emotion/react';
 
 import Page from '../components/Page';
 import Profile from '../components/Profile';

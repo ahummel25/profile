@@ -13,7 +13,7 @@ exports[`LayoutMain renders correctly 1`] = `
   padding-left: 190px;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .emotion-0 {
     padding-left: 0;
   }
@@ -31,7 +31,7 @@ exports[`LayoutMain renders correctly 1`] = `
   padding-left: 190px;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .emotion-0 {
     padding-left: 0;
   }

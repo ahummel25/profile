@@ -4,14 +4,14 @@ exports[`Skills renders correctly 1`] = `
 .emotion-0 {
   font-family: Roboto,sans-serif;
   margin: 0 auto;
-  background-color: rgb(0,128,115);
+  background-color: rgb(0, 128, 115);
   font-weight: 100;
   padding: 30px 40px;
   margin-bottom: 60px;
   text-transform: uppercase;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .emotion-0 {
     padding: 20px 30px;
     margin-bottom: 40px;
@@ -24,13 +24,10 @@ exports[`Skills renders correctly 1`] = `
   font-weight: 300;
   padding: 0 24px;
   max-width: 1280px;
-  -webkit-letter-spacing: 0.25px;
-  -moz-letter-spacing: 0.25px;
-  -ms-letter-spacing: 0.25px;
   letter-spacing: 0.25px;
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .emotion-34 {
     width: px;
   }
@@ -68,7 +65,7 @@ exports[`Skills renders correctly 1`] = `
   height: 90px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-1 {
     margin-bottom: 20px;
   }
@@ -82,7 +79,9 @@ exports[`Skills renders correctly 1`] = `
   padding-top: 5px;
 }
 
-@media (max-width:1024px) {
+
+
+@media (max-width: 1024px) {
   .emotion-1 .sass {
     padding-top: 30px;
   }
@@ -91,14 +90,14 @@ exports[`Skills renders correctly 1`] = `
 .emotion-0 {
   font-family: Roboto,sans-serif;
   margin: 0 auto;
-  background-color: rgb(0,128,115);
+  background-color: rgb(0, 128, 115);
   font-weight: 100;
   padding: 30px 40px;
   margin-bottom: 60px;
   text-transform: uppercase;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .emotion-0 {
     padding: 20px 30px;
     margin-bottom: 40px;
@@ -111,13 +110,10 @@ exports[`Skills renders correctly 1`] = `
   font-weight: 300;
   padding: 0 24px;
   max-width: 1280px;
-  -webkit-letter-spacing: 0.25px;
-  -moz-letter-spacing: 0.25px;
-  -ms-letter-spacing: 0.25px;
   letter-spacing: 0.25px;
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .emotion-34 {
     width: px;
   }
@@ -155,7 +151,7 @@ exports[`Skills renders correctly 1`] = `
   height: 90px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-1 {
     margin-bottom: 20px;
   }
@@ -169,7 +165,9 @@ exports[`Skills renders correctly 1`] = `
   padding-top: 5px;
 }
 
-@media (max-width:1024px) {
+
+
+@media (max-width: 1024px) {
   .emotion-1 .sass {
     padding-top: 30px;
   }
@@ -212,6 +210,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -307,6 +306,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -422,6 +422,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -517,6 +518,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -614,6 +616,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -709,6 +712,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -804,6 +808,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -919,6 +924,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1014,6 +1020,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1111,6 +1118,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1206,6 +1214,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1301,6 +1310,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1416,6 +1426,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1511,6 +1522,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1606,6 +1618,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1701,6 +1714,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1796,6 +1810,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }
@@ -1911,6 +1926,7 @@ exports[`Skills renders correctly 1`] = `
               style={
                 Object {
                   "maxHeight": "100%",
+                  "maxWidth": null,
                   "overflow": "hidden",
                   "position": "relative",
                 }

@@ -3,7 +3,7 @@ module.exports = {
     __PATH_PREFIX__: '',
     'ts-jest': {
       babelConfig: true,
-      tsConfig: 'tsconfig.json'
+      tsconfig: 'tsconfig.json'
     }
   },
   moduleFileExtensions: ['js', 'json', 'jsx', 'node', 'ts', 'tsx'],

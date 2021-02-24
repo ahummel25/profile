@@ -4,14 +4,14 @@ exports[`Experience renders correctly 1`] = `
 .emotion-0 {
   font-family: Roboto,sans-serif;
   margin: 0 auto;
-  background-color: rgb(0,128,115);
+  background-color: rgb(0, 128, 115);
   font-weight: 100;
   padding: 30px 40px;
   margin-bottom: 60px;
   text-transform: uppercase;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .emotion-0 {
     padding: 20px 30px;
     margin-bottom: 40px;
@@ -24,13 +24,10 @@ exports[`Experience renders correctly 1`] = `
   font-weight: 300;
   padding: 0 24px;
   max-width: 1280px;
-  -webkit-letter-spacing: 0.25px;
-  -moz-letter-spacing: 0.25px;
-  -ms-letter-spacing: 0.25px;
   letter-spacing: 0.25px;
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .emotion-17 {
     width: 860px;
   }
@@ -41,23 +38,25 @@ exports[`Experience renders correctly 1`] = `
 }
 
 .emotion-4 .card-footer {
-  background-color: rgba(0,0,0,0.02);
+  background-color: rgba(0, 0, 0, 0.02);
   border: none;
   padding: 20px;
 }
 
 .emotion-4 .card-footer span {
-  color: rgb(102,102,102);
+  color: rgb(102, 102, 102);
   font-size: 94%;
   font-weight: 400;
 }
+
+
 
 .emotion-3 .card-title {
   padding-top: 10px;
   text-transform: uppercase;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-3 .card-title {
     text-align: center;
   }
@@ -77,11 +76,11 @@ exports[`Experience renders correctly 1`] = `
 }
 
 .emotion-3 .hoverline:hover {
-  border-bottom: 3px solid rgb(0,150,136);
+  border-bottom: 3px solid rgb(0, 150, 136);
 }
 
 .emotion-3 .text-description {
-  color: rgb(102,102,102);
+  color: rgb(102, 102, 102);
 }
 
 .emotion-3 .subtitle {
@@ -93,16 +92,13 @@ exports[`Experience renders correctly 1`] = `
 .emotion-3 h6 {
   font-size: 1.05rem;
   font-weight: 300;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
   letter-spacing: 1px;
   line-height: 1.1rem;
   margin-top: 2rem;
   text-transform: uppercase;
 }
 
-.emotion-3 ul > li {
+.emotion-3 ul>li {
   line-height: 150%;
   font-size: 14px;
   font-weight: 400;
@@ -123,7 +119,7 @@ exports[`Experience renders correctly 1`] = `
   top: 35px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-2 .role {
     position: relative;
     right: initial;
@@ -137,7 +133,7 @@ exports[`Experience renders correctly 1`] = `
   height: 60px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-1 {
     margin-bottom: 10px;
   }
@@ -146,14 +142,14 @@ exports[`Experience renders correctly 1`] = `
 .emotion-0 {
   font-family: Roboto,sans-serif;
   margin: 0 auto;
-  background-color: rgb(0,128,115);
+  background-color: rgb(0, 128, 115);
   font-weight: 100;
   padding: 30px 40px;
   margin-bottom: 60px;
   text-transform: uppercase;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .emotion-0 {
     padding: 20px 30px;
     margin-bottom: 40px;
@@ -166,13 +162,10 @@ exports[`Experience renders correctly 1`] = `
   font-weight: 300;
   padding: 0 24px;
   max-width: 1280px;
-  -webkit-letter-spacing: 0.25px;
-  -moz-letter-spacing: 0.25px;
-  -ms-letter-spacing: 0.25px;
   letter-spacing: 0.25px;
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .emotion-17 {
     width: 860px;
   }
@@ -183,23 +176,25 @@ exports[`Experience renders correctly 1`] = `
 }
 
 .emotion-4 .card-footer {
-  background-color: rgba(0,0,0,0.02);
+  background-color: rgba(0, 0, 0, 0.02);
   border: none;
   padding: 20px;
 }
 
 .emotion-4 .card-footer span {
-  color: rgb(102,102,102);
+  color: rgb(102, 102, 102);
   font-size: 94%;
   font-weight: 400;
 }
+
+
 
 .emotion-3 .card-title {
   padding-top: 10px;
   text-transform: uppercase;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-3 .card-title {
     text-align: center;
   }
@@ -219,11 +214,11 @@ exports[`Experience renders correctly 1`] = `
 }
 
 .emotion-3 .hoverline:hover {
-  border-bottom: 3px solid rgb(0,150,136);
+  border-bottom: 3px solid rgb(0, 150, 136);
 }
 
 .emotion-3 .text-description {
-  color: rgb(102,102,102);
+  color: rgb(102, 102, 102);
 }
 
 .emotion-3 .subtitle {
@@ -235,16 +230,13 @@ exports[`Experience renders correctly 1`] = `
 .emotion-3 h6 {
   font-size: 1.05rem;
   font-weight: 300;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
   letter-spacing: 1px;
   line-height: 1.1rem;
   margin-top: 2rem;
   text-transform: uppercase;
 }
 
-.emotion-3 ul > li {
+.emotion-3 ul>li {
   line-height: 150%;
   font-size: 14px;
   font-weight: 400;
@@ -265,7 +257,7 @@ exports[`Experience renders correctly 1`] = `
   top: 35px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-2 .role {
     position: relative;
     right: initial;
@@ -279,7 +271,7 @@ exports[`Experience renders correctly 1`] = `
   height: 60px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-1 {
     margin-bottom: 10px;
   }
@@ -320,6 +312,7 @@ exports[`Experience renders correctly 1`] = `
                 style={
                   Object {
                     "maxHeight": "100%",
+                    "maxWidth": null,
                     "overflow": "hidden",
                     "position": "relative",
                   }
@@ -486,6 +479,7 @@ exports[`Experience renders correctly 1`] = `
                 style={
                   Object {
                     "maxHeight": "100%",
+                    "maxWidth": null,
                     "overflow": "hidden",
                     "position": "relative",
                   }
@@ -652,6 +646,7 @@ exports[`Experience renders correctly 1`] = `
                 style={
                   Object {
                     "maxHeight": "100%",
+                    "maxWidth": null,
                     "overflow": "hidden",
                     "position": "relative",
                   }
@@ -818,6 +813,7 @@ exports[`Experience renders correctly 1`] = `
                 style={
                   Object {
                     "maxHeight": "100%",
+                    "maxWidth": null,
                     "overflow": "hidden",
                     "position": "relative",
                   }

@@ -29,7 +29,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-10 .name-title span {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-size: 14px;
 }
 
@@ -48,7 +48,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-0:hover {
-  border-left: 3px solid rgb(0,128,115);
+  border-left: 3px solid rgb(0, 128, 115);
   -webkit-animation: hover-on 0.75s;
   animation: hover-on 0.75s;
   -webkit-animation-fill-mode: forwards;
@@ -57,7 +57,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-0 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -71,7 +71,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-0 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -85,12 +85,12 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-0 i.icon-color {
-  color: rgb(0,128,115);
+  color: rgb(0, 128, 115);
 }
 
 .emotion-0 .active {
-  background-color: rgb(250,250,250);
-  border-left: 3px solid rgb(0,128,115);
+  background-color: rgb(250, 250, 250);
+  border-left: 3px solid rgb(0, 128, 115);
   font-weight: 500;
 }
 
@@ -109,7 +109,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-1:hover {
-  border-left: 3px solid rgb(0,188,212);
+  border-left: 3px solid rgb(0, 188, 212);
   -webkit-animation: hover-on 0.75s;
   animation: hover-on 0.75s;
   -webkit-animation-fill-mode: forwards;
@@ -118,7 +118,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-1 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -132,7 +132,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-1 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -146,12 +146,12 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-1 i.icon-color {
-  color: rgb(0,188,212);
+  color: rgb(0, 188, 212);
 }
 
 .emotion-1 .active {
-  background-color: rgb(250,250,250);
-  border-left: 3px solid rgb(0,188,212);
+  background-color: rgb(250, 250, 250);
+  border-left: 3px solid rgb(0, 188, 212);
   font-weight: 500;
 }
 
@@ -179,7 +179,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-2 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -193,7 +193,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-2 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -211,7 +211,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-2 .active {
-  background-color: rgb(250,250,250);
+  background-color: rgb(250, 250, 250);
   border-left: 3px solid rgb(156,38,176);
   font-weight: 500;
 }
@@ -240,7 +240,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-3 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -254,7 +254,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-3 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -272,7 +272,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-3 .active {
-  background-color: rgb(250,250,250);
+  background-color: rgb(250, 250, 250);
   border-left: 3px solid rgb(244,67,53);
   font-weight: 500;
 }
@@ -292,7 +292,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-4:hover {
-  border-left: 3px solid rgb(121,85,72);
+  border-left: 3px solid rgb(121, 85, 72);
   -webkit-animation: hover-on 0.75s;
   animation: hover-on 0.75s;
   -webkit-animation-fill-mode: forwards;
@@ -301,7 +301,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-4 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -315,7 +315,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-4 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -329,12 +329,12 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-4 i.icon-color {
-  color: rgb(121,85,72);
+  color: rgb(121, 85, 72);
 }
 
 .emotion-4 .active {
-  background-color: rgb(250,250,250);
-  border-left: 3px solid rgb(121,85,72);
+  background-color: rgb(250, 250, 250);
+  border-left: 3px solid rgb(121, 85, 72);
   font-weight: 500;
 }
 
@@ -345,9 +345,9 @@ exports[`Navbar renders correctly 1`] = `
   bottom: 10px;
   padding: 8px 0 0 8px;
   position: absolute;
-  border: 1px solid rgba(0,0,0,0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 12px;
-  background-color: rgb(245,245,245);
+  background-color: rgb(245, 245, 245);
   height: 150px;
   width: 90%;
 }
@@ -358,8 +358,8 @@ exports[`Navbar renders correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -373,10 +373,10 @@ exports[`Navbar renders correctly 1`] = `
   height: 50px;
   margin-right: 15px;
   border-radius: 50%;
-  background-color: rgb(211,211,211);
+  background-color: rgb(211, 211, 211);
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .emotion-5 {
     margin-right: 8px;
   }
@@ -420,7 +420,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-10 .name-title span {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-size: 14px;
 }
 
@@ -439,7 +439,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-0:hover {
-  border-left: 3px solid rgb(0,128,115);
+  border-left: 3px solid rgb(0, 128, 115);
   -webkit-animation: hover-on 0.75s;
   animation: hover-on 0.75s;
   -webkit-animation-fill-mode: forwards;
@@ -448,7 +448,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-0 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -462,7 +462,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-0 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -476,12 +476,12 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-0 i.icon-color {
-  color: rgb(0,128,115);
+  color: rgb(0, 128, 115);
 }
 
 .emotion-0 .active {
-  background-color: rgb(250,250,250);
-  border-left: 3px solid rgb(0,128,115);
+  background-color: rgb(250, 250, 250);
+  border-left: 3px solid rgb(0, 128, 115);
   font-weight: 500;
 }
 
@@ -500,7 +500,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-1:hover {
-  border-left: 3px solid rgb(0,188,212);
+  border-left: 3px solid rgb(0, 188, 212);
   -webkit-animation: hover-on 0.75s;
   animation: hover-on 0.75s;
   -webkit-animation-fill-mode: forwards;
@@ -509,7 +509,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-1 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -523,7 +523,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-1 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -537,12 +537,12 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-1 i.icon-color {
-  color: rgb(0,188,212);
+  color: rgb(0, 188, 212);
 }
 
 .emotion-1 .active {
-  background-color: rgb(250,250,250);
-  border-left: 3px solid rgb(0,188,212);
+  background-color: rgb(250, 250, 250);
+  border-left: 3px solid rgb(0, 188, 212);
   font-weight: 500;
 }
 
@@ -570,7 +570,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-2 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -584,7 +584,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-2 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -602,7 +602,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-2 .active {
-  background-color: rgb(250,250,250);
+  background-color: rgb(250, 250, 250);
   border-left: 3px solid rgb(156,38,176);
   font-weight: 500;
 }
@@ -631,7 +631,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-3 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -645,7 +645,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-3 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -663,7 +663,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-3 .active {
-  background-color: rgb(250,250,250);
+  background-color: rgb(250, 250, 250);
   border-left: 3px solid rgb(244,67,53);
   font-weight: 500;
 }
@@ -683,7 +683,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-4:hover {
-  border-left: 3px solid rgb(121,85,72);
+  border-left: 3px solid rgb(121, 85, 72);
   -webkit-animation: hover-on 0.75s;
   animation: hover-on 0.75s;
   -webkit-animation-fill-mode: forwards;
@@ -692,7 +692,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-4 a {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -706,7 +706,7 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-4 i {
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-weight: 500;
   display: -webkit-box;
   display: -webkit-flex;
@@ -720,12 +720,12 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-4 i.icon-color {
-  color: rgb(121,85,72);
+  color: rgb(121, 85, 72);
 }
 
 .emotion-4 .active {
-  background-color: rgb(250,250,250);
-  border-left: 3px solid rgb(121,85,72);
+  background-color: rgb(250, 250, 250);
+  border-left: 3px solid rgb(121, 85, 72);
   font-weight: 500;
 }
 
@@ -736,9 +736,9 @@ exports[`Navbar renders correctly 1`] = `
   bottom: 10px;
   padding: 8px 0 0 8px;
   position: absolute;
-  border: 1px solid rgba(0,0,0,0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 12px;
-  background-color: rgb(245,245,245);
+  background-color: rgb(245, 245, 245);
   height: 150px;
   width: 90%;
 }
@@ -749,8 +749,8 @@ exports[`Navbar renders correctly 1`] = `
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -764,10 +764,10 @@ exports[`Navbar renders correctly 1`] = `
   height: 50px;
   margin-right: 15px;
   border-radius: 50%;
-  background-color: rgb(211,211,211);
+  background-color: rgb(211, 211, 211);
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .emotion-5 {
     margin-right: 8px;
   }

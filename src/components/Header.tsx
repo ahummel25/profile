@@ -1,13 +1,15 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
-import Img from 'gatsby-image';
+import Img, { GatsbyImageFluidProps } from 'gatsby-image';
 
 import Navbar from '../components/Navbar';
 import { useGetImages } from '../hooks';
 import { HeaderProps } from '../interfaces';
 import { breakpoints as bp } from '../styles/variables';
 
-const ImgStyled = styled(({ ...rest }) => <Img {...rest} />)`
+const ImgStyled = styled(({ ...rest }: GatsbyImageFluidProps) => (
+  <Img {...rest} />
+))`
   @media (max-width: ${bp.sm}px) {
     margin-top: 60px;
   }
