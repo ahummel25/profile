@@ -39,19 +39,19 @@ const CardContent = styled.div`
   }
 
   .hoverline {
-    border-bottom: 3px solid transparent !important;
+    border-bottom: 3px solid transparent;
     padding: 3px 3px 0 3px;
     transition: 0.25s all;
     -moz-transition: 0.25s all;
     -webkit-transition: 0.25s all;
 
     &:hover {
-      border-bottom: 3px solid rgb(0, 150, 136) !important;
+      border-bottom: 3px solid rgb(0, 150, 136);
     }
   }
 
-  .grey-text {
-    color: rgb(102, 102, 102) !important;
+  .text-description {
+    color: rgb(102, 102, 102);
   }
 
   .subtitle {
@@ -147,7 +147,7 @@ const Experience: FC<{}> = (): JSX.Element => {
               </Row>
               <Divider className="divider" variant="middle" />
               <p className="subtitle">
-                <em className="grey-text">
+                <em className="text-description">
                   Innovative, software consulting firm implementing cutting-edge
                   solutions combining technology, strategy, and change
                   management to meet and exceed client needs
@@ -212,7 +212,7 @@ const Experience: FC<{}> = (): JSX.Element => {
               </Row>
               <Divider className="divider" variant="middle" />
               <p className="subtitle">
-                <em className="grey-text">
+                <em className="text-description">
                   Legal software company allowing patent prosecutors to predict
                   the behavior of their examiner, competitors, and potential
                   clients using big data analytics
@@ -277,7 +277,7 @@ const Experience: FC<{}> = (): JSX.Element => {
               </Row>
               <Divider className="divider" variant="middle" />
               <p className="subtitle">
-                <em className="grey-text">
+                <em className="text-description">
                   Technology and supply chain services provider
                 </em>
               </p>
@@ -341,7 +341,7 @@ const Experience: FC<{}> = (): JSX.Element => {
               </Row>
               <Divider className="divider" variant="middle" />
               <p className="subtitle">
-                <em className="grey-text">
+                <em className="text-description">
                   Technology and supply chain services provider
                 </em>
               </p>
