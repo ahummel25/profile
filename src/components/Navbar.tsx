@@ -35,7 +35,6 @@ const DrawerContainer = styled(({ ...rest }) => <Drawer {...rest} />)`
     }
 
     span {
-      color: rgb(51, 51, 51);
       font-size: 14px;
     }
 

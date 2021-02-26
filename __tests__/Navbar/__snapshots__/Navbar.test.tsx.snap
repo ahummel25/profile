@@ -29,7 +29,6 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-10 .name-title span {
-  color: rgb(51, 51, 51);
   font-size: 14px;
 }
 
@@ -420,7 +419,6 @@ exports[`Navbar renders correctly 1`] = `
 }
 
 .emotion-10 .name-title span {
-  color: rgb(51, 51, 51);
   font-size: 14px;
 }
 
@@ -910,7 +908,7 @@ exports[`Navbar renders correctly 1`] = `
         <div
           className="emotion-6"
         >
-          Thu, Feb 25th
+          Fri, Feb 26th
         </div>
       </div>
       <div
