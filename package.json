@@ -71,7 +71,7 @@
     "@fortawesome/fontawesome-free": "^5.12.1",
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^11.0.0",
-    "@testing-library/react-hooks": "^5.0.0",
+    "@testing-library/react-hooks": "^5.1.0",
     "@types/classnames": "^2.2.10",
     "@types/date-fns": "^2.6.0",
     "@types/jest": "^26.0.0",
