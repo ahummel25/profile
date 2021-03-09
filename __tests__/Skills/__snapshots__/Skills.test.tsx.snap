@@ -18,7 +18,7 @@ exports[`Skills renders correctly 1`] = `
   }
 }
 
-.emotion-34 {
+.emotion-1 {
   width: 95%;
   font-family: Roboto,sans-serif;
   font-weight: 300;
@@ -28,34 +28,34 @@ exports[`Skills renders correctly 1`] = `
 }
 
 @media (min-width: 1200px) {
-  .emotion-34 {
+  .emotion-1 {
     width: px;
   }
 }
 
-.emotion-5 {
+.emotion-2 {
   margin-bottom: 60px;
 }
 
-.emotion-4 {
+.emotion-3 {
   padding: 20px 20px 60px 20px;
 }
 
-.emotion-4 .divider {
+.emotion-3 .divider {
   margin: 0;
 }
 
-.emotion-4 h4 {
+.emotion-3 h4 {
   padding-bottom: 15px;
 }
 
-.emotion-3 {
+.emotion-4 {
   text-align: center;
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
 
-.emotion-1 {
+.emotion-5 {
   font-size: 16px;
   font-weight: 400;
   position: relative;
@@ -66,109 +66,21 @@ exports[`Skills renders correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-1 {
+  .emotion-5 {
     margin-bottom: 20px;
   }
 
-  .emotion-1 p[data-react='native'] {
+  .emotion-5 p[data-react='native'] {
     padding-top: 0;
   }
 }
 
-.emotion-1 p {
+.emotion-5 p {
   padding-top: 5px;
 }
 
-
-
 @media (max-width: 1024px) {
-  .emotion-1 .sass {
-    padding-top: 30px;
-  }
-}
-
-.emotion-0 {
-  font-family: Roboto,sans-serif;
-  margin: 0 auto;
-  background-color: rgb(0, 128, 115);
-  font-weight: 100;
-  padding: 30px 40px;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 992px) {
-  .emotion-0 {
-    padding: 20px 30px;
-    margin-bottom: 40px;
-  }
-}
-
-.emotion-34 {
-  width: 95%;
-  font-family: Roboto,sans-serif;
-  font-weight: 300;
-  padding: 0 24px;
-  max-width: 1280px;
-  letter-spacing: 0.25px;
-}
-
-@media (min-width: 1200px) {
-  .emotion-34 {
-    width: px;
-  }
-}
-
-.emotion-5 {
-  margin-bottom: 60px;
-}
-
-.emotion-4 {
-  padding: 20px 20px 60px 20px;
-}
-
-.emotion-4 .divider {
-  margin: 0;
-}
-
-.emotion-4 h4 {
-  padding-bottom: 15px;
-}
-
-.emotion-3 {
-  text-align: center;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-}
-
-.emotion-1 {
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-  text-align: center;
-  margin-top: 30px;
-  max-height: 100px;
-  height: 90px;
-}
-
-@media (max-width: 768px) {
-  .emotion-1 {
-    margin-bottom: 20px;
-  }
-
-  .emotion-1 p[data-react='native'] {
-    padding-top: 0;
-  }
-}
-
-.emotion-1 p {
-  padding-top: 5px;
-}
-
-
-
-@media (max-width: 1024px) {
-  .emotion-1 .sass {
+  .emotion-5 .sass {
     padding-top: 30px;
   }
 }
@@ -183,13 +95,13 @@ exports[`Skills renders correctly 1`] = `
     Skills
   </h3>
   <div
-    className="container emotion-34"
+    className="container emotion-1"
   >
     <div
-      className="card emotion-5"
+      className="card emotion-2"
     >
       <div
-        className="emotion-4"
+        className="emotion-3"
       >
         <h4
           className="brown-text light"
@@ -200,10 +112,10 @@ exports[`Skills renders correctly 1`] = `
           className="MuiDivider-root divider MuiDivider-middle"
         />
         <div
-          className="row emotion-3"
+          className="row emotion-4"
         >
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -299,7 +211,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -398,10 +310,10 @@ exports[`Skills renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="card emotion-5"
+      className="card emotion-2"
     >
       <div
-        className="emotion-4"
+        className="emotion-3"
       >
         <h4
           className="brown-text light"
@@ -412,10 +324,10 @@ exports[`Skills renders correctly 1`] = `
           className="MuiDivider-root divider MuiDivider-middle"
         />
         <div
-          className="row emotion-3"
+          className="row emotion-4"
         >
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -511,7 +423,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -609,7 +521,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -705,7 +617,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -801,7 +713,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -900,10 +812,10 @@ exports[`Skills renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="card emotion-5"
+      className="card emotion-2"
     >
       <div
-        className="emotion-4"
+        className="emotion-3"
       >
         <h4
           className="brown-text light"
@@ -914,10 +826,10 @@ exports[`Skills renders correctly 1`] = `
           className="MuiDivider-root divider MuiDivider-middle"
         />
         <div
-          className="row emotion-3"
+          className="row emotion-4"
         >
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1013,7 +925,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1111,7 +1023,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1207,7 +1119,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1303,7 +1215,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1402,10 +1314,10 @@ exports[`Skills renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="card emotion-5"
+      className="card emotion-2"
     >
       <div
-        className="emotion-4"
+        className="emotion-3"
       >
         <h4
           className="brown-text light"
@@ -1416,10 +1328,10 @@ exports[`Skills renders correctly 1`] = `
           className="MuiDivider-root divider MuiDivider-middle"
         />
         <div
-          className="row emotion-3"
+          className="row emotion-4"
         >
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1515,7 +1427,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1611,7 +1523,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1707,7 +1619,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1803,7 +1715,7 @@ exports[`Skills renders correctly 1`] = `
             </p>
           </div>
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"
@@ -1902,10 +1814,10 @@ exports[`Skills renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="card emotion-5"
+      className="card emotion-2"
     >
       <div
-        className="emotion-4"
+        className="emotion-3"
       >
         <h4
           className="brown-text light"
@@ -1916,10 +1828,10 @@ exports[`Skills renders correctly 1`] = `
           className="MuiDivider-root divider MuiDivider-middle"
         />
         <div
-          className="row emotion-3"
+          className="row emotion-4"
         >
           <div
-            className="col s4 m2 emotion-1"
+            className="col s4 m2 emotion-5"
           >
             <div
               className=" gatsby-image-wrapper"

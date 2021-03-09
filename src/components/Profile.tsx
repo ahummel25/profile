@@ -6,7 +6,7 @@ import Skills from './Skills';
 import Contact from './Contact';
 import Certifications from './Certifications';
 
-const Profile: FC<{}> = (): JSX.Element => (
+const Profile: FC<Record<string, unknown>> = (): JSX.Element => (
   <>
     <About />
     <Experience />

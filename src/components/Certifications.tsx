@@ -76,7 +76,7 @@ const ImgContainer = styled.div`
   }
 `;
 
-const Certifications: FC<{}> = (): JSX.Element => {
+const Certifications: FC<Record<string, unknown>> = (): JSX.Element => {
   const { awsImg } = useGetImages();
   return (
     <>

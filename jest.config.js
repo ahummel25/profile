@@ -24,7 +24,6 @@ module.exports = {
   },
   transformIgnorePatterns: ['<rootDir>/node_modules/'],
   setupFiles: ['<rootDir>/__mocks__/setup-mocks.ts'],
-  setupFilesAfterEnv: ['<rootDir>/setup-test-env.js'],
-  snapshotSerializers: ['jest-emotion'],
+  snapshotSerializers: ['@emotion/jest/serializer'],
   verbose: true
 };

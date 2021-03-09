@@ -106,7 +106,7 @@ const ImgContainer = styled.div`
   height: 60px;
 `;
 
-const Experience: FC<{}> = (): JSX.Element => {
+const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
   const { i11Img, juristatImg, wwtImg } = useGetImages();
 
   return (

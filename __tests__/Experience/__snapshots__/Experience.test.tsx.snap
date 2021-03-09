@@ -18,7 +18,7 @@ exports[`Experience renders correctly 1`] = `
   }
 }
 
-.emotion-17 {
+.emotion-1 {
   width: 95%;
   font-family: Roboto,sans-serif;
   font-weight: 300;
@@ -28,28 +28,26 @@ exports[`Experience renders correctly 1`] = `
 }
 
 @media (min-width: 1200px) {
-  .emotion-17 {
+  .emotion-1 {
     width: 860px;
   }
 }
 
-.emotion-4 {
+.emotion-2 {
   margin-bottom: 60px;
 }
 
-.emotion-4 .card-footer {
+.emotion-2 .card-footer {
   background-color: rgba(0, 0, 0, 0.02);
   border: none;
   padding: 20px;
 }
 
-.emotion-4 .card-footer span {
+.emotion-2 .card-footer span {
   color: rgb(102, 102, 102);
   font-size: 94%;
   font-weight: 400;
 }
-
-
 
 .emotion-3 .card-title {
   padding-top: 10px;
@@ -106,150 +104,12 @@ exports[`Experience renders correctly 1`] = `
   list-style-type: disc;
 }
 
-.emotion-2 {
-  margin-bottom: 0;
-  padding-bottom: 10px;
-}
-
-.emotion-2 .role {
-  font-size: 1.25rem;
-  font-weight: 400;
-  position: absolute;
-  right: 38px;
-  top: 35px;
-}
-
-@media (max-width: 768px) {
-  .emotion-2 .role {
-    position: relative;
-    right: initial;
-    top: initial;
-    text-align: center;
-  }
-}
-
-.emotion-1 {
-  max-height: 100px;
-  height: 60px;
-}
-
-@media (max-width: 768px) {
-  .emotion-1 {
-    margin-bottom: 10px;
-  }
-}
-
-.emotion-0 {
-  font-family: Roboto,sans-serif;
-  margin: 0 auto;
-  background-color: rgb(0, 128, 115);
-  font-weight: 100;
-  padding: 30px 40px;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 992px) {
-  .emotion-0 {
-    padding: 20px 30px;
-    margin-bottom: 40px;
-  }
-}
-
-.emotion-17 {
-  width: 95%;
-  font-family: Roboto,sans-serif;
-  font-weight: 300;
-  padding: 0 24px;
-  max-width: 1280px;
-  letter-spacing: 0.25px;
-}
-
-@media (min-width: 1200px) {
-  .emotion-17 {
-    width: 860px;
-  }
-}
-
 .emotion-4 {
-  margin-bottom: 60px;
-}
-
-.emotion-4 .card-footer {
-  background-color: rgba(0, 0, 0, 0.02);
-  border: none;
-  padding: 20px;
-}
-
-.emotion-4 .card-footer span {
-  color: rgb(102, 102, 102);
-  font-size: 94%;
-  font-weight: 400;
-}
-
-
-
-.emotion-3 .card-title {
-  padding-top: 10px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-  .emotion-3 .card-title {
-    text-align: center;
-  }
-}
-
-.emotion-3 .divider {
-  margin: 0;
-}
-
-.emotion-3 .hoverline {
-  border-bottom: 3px solid transparent;
-  padding: 3px 3px 0 3px;
-  -webkit-transition: 0.25s all;
-  transition: 0.25s all;
-  -moz-transition: 0.25s all;
-  -webkit-transition: 0.25s all;
-}
-
-.emotion-3 .hoverline:hover {
-  border-bottom: 3px solid rgb(0, 150, 136);
-}
-
-.emotion-3 .text-description {
-  color: rgb(102, 102, 102);
-}
-
-.emotion-3 .subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  padding-top: 20px;
-}
-
-.emotion-3 h6 {
-  font-size: 1.05rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 1.1rem;
-  margin-top: 2rem;
-  text-transform: uppercase;
-}
-
-.emotion-3 ul>li {
-  line-height: 150%;
-  font-size: 14px;
-  font-weight: 400;
-  margin-left: 20px;
-  list-style-type: disc;
-}
-
-.emotion-2 {
   margin-bottom: 0;
   padding-bottom: 10px;
 }
 
-.emotion-2 .role {
+.emotion-4 .role {
   font-size: 1.25rem;
   font-weight: 400;
   position: absolute;
@@ -258,7 +118,7 @@ exports[`Experience renders correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-2 .role {
+  .emotion-4 .role {
     position: relative;
     right: initial;
     top: initial;
@@ -266,13 +126,13 @@ exports[`Experience renders correctly 1`] = `
   }
 }
 
-.emotion-1 {
+.emotion-5 {
   max-height: 100px;
   height: 60px;
 }
 
 @media (max-width: 768px) {
-  .emotion-1 {
+  .emotion-5 {
     margin-bottom: 10px;
   }
 }
@@ -287,20 +147,20 @@ exports[`Experience renders correctly 1`] = `
     Experience
   </h3>
   <div
-    className="container emotion-17"
+    className="container emotion-1"
     width={860}
   >
     <div
-      className="card emotion-4"
+      className="card emotion-2"
     >
       <div
         className="card-content emotion-3"
       >
         <div
-          className="row emotion-2"
+          className="row emotion-4"
         >
           <div
-            className="col s12 m2 emotion-1"
+            className="col s12 m2 emotion-5"
           >
             <a
               href="https://inspire11.com"
@@ -458,16 +318,16 @@ exports[`Experience renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="card emotion-4"
+      className="card emotion-2"
     >
       <div
         className="card-content emotion-3"
       >
         <div
-          className="row emotion-2"
+          className="row emotion-4"
         >
           <div
-            className="col s12 m2 emotion-1"
+            className="col s12 m2 emotion-5"
           >
             <a
               href="https://juristat.com"
@@ -625,16 +485,16 @@ exports[`Experience renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="card emotion-4"
+      className="card emotion-2"
     >
       <div
         className="card-content emotion-3"
       >
         <div
-          className="row emotion-2"
+          className="row emotion-4"
         >
           <div
-            className="col s12 m2 emotion-1"
+            className="col s12 m2 emotion-5"
           >
             <a
               href="https://www.wwt.com"
@@ -792,16 +652,16 @@ exports[`Experience renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="card emotion-4"
+      className="card emotion-2"
     >
       <div
         className="card-content emotion-3"
       >
         <div
-          className="row emotion-2"
+          className="row emotion-4"
         >
           <div
-            className="col s12 m2 emotion-1"
+            className="col s12 m2 emotion-5"
           >
             <a
               href="https://wwt.com"

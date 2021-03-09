@@ -31,7 +31,7 @@ const BlockQuote = styled.blockquote`
   }
 `;
 
-const About: FC<{}> = (): JSX.Element => (
+const About: FC<Record<string, unknown>> = (): JSX.Element => (
   <>
     <Section id="about" className="section scrollspy">
       <TitleHeader title="About" />

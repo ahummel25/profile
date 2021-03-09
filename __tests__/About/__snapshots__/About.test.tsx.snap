@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About renders correctly 1`] = `
-.emotion-3 {
+.emotion-0 {
   margin-bottom: 20px;
   padding-top: 0;
 }
 
-.emotion-0 {
+.emotion-1 {
   font-family: Roboto,sans-serif;
   margin: 0 auto;
   background-color: rgb(0, 128, 115);
@@ -17,7 +17,7 @@ exports[`About renders correctly 1`] = `
 }
 
 @media (max-width: 992px) {
-  .emotion-0 {
+  .emotion-1 {
     padding: 20px 30px;
     margin-bottom: 40px;
   }
@@ -30,50 +30,7 @@ exports[`About renders correctly 1`] = `
   padding: 0 24px;
 }
 
-.emotion-1 {
-  border-left: 5px solid rgb(121, 85, 72);
-  color: rgb(121, 85, 72);
-  font-weight: 400;
-  font-size: 125%;
-  margin: 20px 0;
-  padding-left: 24px;
-}
-
-.emotion-1 h2 {
-  font-size: inherit;
-  line-height: inherit;
-}
-
 .emotion-3 {
-  margin-bottom: 20px;
-  padding-top: 0;
-}
-
-.emotion-0 {
-  font-family: Roboto,sans-serif;
-  margin: 0 auto;
-  background-color: rgb(0, 128, 115);
-  font-weight: 100;
-  padding: 30px 40px;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 992px) {
-  .emotion-0 {
-    padding: 20px 30px;
-    margin-bottom: 40px;
-  }
-}
-
-.emotion-2 {
-  width: 95%;
-  font-family: Roboto,sans-serif;
-  font-weight: 300;
-  padding: 0 24px;
-}
-
-.emotion-1 {
   border-left: 5px solid rgb(121, 85, 72);
   color: rgb(121, 85, 72);
   font-weight: 400;
@@ -82,17 +39,17 @@ exports[`About renders correctly 1`] = `
   padding-left: 24px;
 }
 
-.emotion-1 h2 {
+.emotion-3 h2 {
   font-size: inherit;
   line-height: inherit;
 }
 
 <section
-  className="section scrollspy emotion-3"
+  className="section scrollspy emotion-0"
   id="about"
 >
   <h3
-    className="page-title white-text emotion-0"
+    className="page-title white-text emotion-1"
   >
     About
   </h3>
@@ -100,7 +57,7 @@ exports[`About renders correctly 1`] = `
     className="container flow-text emotion-2"
   >
     <blockquote
-      className="emotion-1"
+      className="emotion-3"
     >
       <h2>
         Highly motivated, full stack software developer with a passion for delivering high quality, requirements-driven software.

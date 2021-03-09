@@ -5,7 +5,7 @@ const StyledPage = styled.div`
   display: contents;
 `;
 
-const Page: React.FC<{}> = ({ children }): JSX.Element => (
+const Page: React.FC<Record<string, unknown>> = ({ children }): JSX.Element => (
   <StyledPage>{children}</StyledPage>
 );
 

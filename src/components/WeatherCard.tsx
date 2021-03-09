@@ -45,7 +45,7 @@ const Temperature = styled.div`
   padding-bottom: 5px;
 `;
 
-const WeatherCard: FC<{}> = (): JSX.Element => {
+const WeatherCard: FC<Record<string, unknown>> = (): JSX.Element => {
   const response = useGetWeatherByCoords();
   const icon = response?.weather[0].icon;
   const formattedDate = format(new Date(), 'EEE, LLL do');

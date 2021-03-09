@@ -76,13 +76,16 @@ export interface DropDownListProps {
 }
 
 export interface HeaderProps {
+  // eslint-disable-next-line no-unused-vars
   setDrawerWidth: (drawerWidth: number) => void;
 }
 
 export interface NavbarProps {
+  // eslint-disable-next-line no-unused-vars
   setDrawerWidth: (drawerWidth: number) => void;
 }
 
 export interface NavListProps {
+  // eslint-disable-next-line no-unused-vars
   setOpen?: (open: boolean) => void;
 }

@@ -40,7 +40,7 @@ const Container = styled.div`
   }
 `;
 
-const Contact: FC<{}> = (): JSX.Element => (
+const Contact: FC<Record<string, unknown>> = (): JSX.Element => (
   <>
     <Section id="contact" className="section scrollspy">
       <TitleHeader title="Contact" />

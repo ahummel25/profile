@@ -26,7 +26,7 @@ const Main = styled.main`
   flex-flow: column nowrap;
 `;
 
-const IndexLayout: FC<{}> = ({ children }) => {
+const IndexLayout: FC<Record<string, unknown>> = ({ children }) => {
   return (
     <StaticQuery
       query={graphql`

@@ -57,7 +57,7 @@ const ImgContainer = styled.div`
   }
 `;
 
-const Skills: FC<{}> = (): JSX.Element => {
+const Skills: FC<Record<string, unknown>> = (): JSX.Element => {
   const {
     htmlImg,
     reactImg,

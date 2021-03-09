@@ -24,6 +24,7 @@ const mockGeolocation = (
 ): { [getCurrentPosition: string]: jest.Mock } => ({
   getCurrentPosition: jest
     .fn()
+    // eslint-disable-next-line no-unused-vars
     .mockImplementationOnce((success: (s: Record<string, unknown>) => void) =>
       Promise.resolve(
         success({
@@ -79,14 +80,15 @@ describe('useGetWeatherByCoords', () => {
   it('should not fetch weather if navigator getCurrentPosition call fails', async () => {
     navigator.geolocation.getCurrentPosition = jest
       .fn()
-      .mockImplementationOnce(
-        (
-          _success: (s: Record<string, unknown>) => void,
-          error: (err: Record<string, unknown>) => void
-        ) =>
-          Promise.resolve(
-            error({ code: 1, message: 'Geolocation access is denied!' })
-          )
+      .mockImplementationOnce((
+        // eslint-disable-next-line no-unused-vars
+        _success: (s: Record<string, unknown>) => void,
+        // eslint-disable-next-line no-unused-vars
+        error: (err: Record<string, unknown>) => void
+      ) =>
+        Promise.resolve(
+          error({ code: 1, message: 'Geolocation access is denied!' })
+        )
       );
 
     await act(async () => {

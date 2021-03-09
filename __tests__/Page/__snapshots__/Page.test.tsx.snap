@@ -5,10 +5,6 @@ exports[`Page renders correctly 1`] = `
   display: contents;
 }
 
-.emotion-0 {
-  display: contents;
-}
-
 <div
   className="emotion-0"
 />

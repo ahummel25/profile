@@ -175,7 +175,7 @@ const navItems = [
   }
 ];
 
-const RenderFullDrawer: FC<{}> = (): JSX.Element => (
+const RenderFullDrawer: FC<Record<string, unknown>> = (): JSX.Element => (
   <DrawerContainer variant="permanent" anchor="left">
     <div className="name-title">
       <a href="/">
@@ -191,7 +191,7 @@ const RenderFullDrawer: FC<{}> = (): JSX.Element => (
   </DrawerContainer>
 );
 
-const RenderMobileDrawer: FC<{}> = (): JSX.Element => {
+const RenderMobileDrawer: FC<Record<string, unknown>> = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
 
   const toggleDrawer = (
