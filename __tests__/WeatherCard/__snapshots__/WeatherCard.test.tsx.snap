@@ -50,6 +50,12 @@ exports[`WeatherCard renders correctly 1`] = `
   font-weight: bold;
 }
 
+@media (min-width: 1200px) {
+  .emotion-3 {
+    padding-right: 3px;
+  }
+}
+
 .emotion-4 {
   font-size: 16px;
   padding-bottom: 5px;
@@ -69,7 +75,7 @@ exports[`WeatherCard renders correctly 1`] = `
     <div
       className="emotion-3"
     >
-      Tue, Apr 13th
+      Sat,  Apr 17th
     </div>
   </div>
   <div

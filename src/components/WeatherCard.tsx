@@ -38,6 +38,10 @@ const WeatherImage = styled.img`
 const Title = styled.div`
   font-size: 16px;
   font-weight: bold;
+
+  @media (min-width: ${bp.xxl}px) {
+    padding-right: 3px;
+  }
 `;
 
 const Temperature = styled.div`
@@ -48,7 +52,7 @@ const Temperature = styled.div`
 const WeatherCard: FC<Record<string, unknown>> = (): JSX.Element => {
   const response = useGetWeatherByCoords();
   const icon = response?.weather[0].icon;
-  const formattedDate = format(new Date(), 'EEE, LLL do');
+  const formattedDate = format(new Date(), 'EEE, \n LLL \n\n\ndo');
 
   return (
     <Card>

@@ -386,6 +386,12 @@ exports[`Navbar renders correctly 1`] = `
   font-weight: bold;
 }
 
+@media (min-width: 1200px) {
+  .emotion-9 {
+    padding-right: 3px;
+  }
+}
+
 .emotion-10 {
   font-size: 16px;
   padding-bottom: 5px;
@@ -518,7 +524,7 @@ exports[`Navbar renders correctly 1`] = `
         <div
           className="emotion-9"
         >
-          Tue, Apr 13th
+          Sat,  Apr 17th
         </div>
       </div>
       <div
