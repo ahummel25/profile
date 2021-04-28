@@ -52,7 +52,7 @@ const Temperature = styled.div`
 const WeatherCard: FC<Record<string, unknown>> = (): JSX.Element => {
   const response = useGetWeatherByCoords();
   const icon = response?.weather[0].icon;
-  const formattedDate = format(new Date(), 'EEE, \n LLL \n\n\ndo');
+  const formattedDate = format(new Date(), 'EEE, LLL do');
 
   return (
     <Card>
