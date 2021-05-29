@@ -14,6 +14,7 @@ module.exports = {
       '<rootDir>/__mocks__/file-mock.js'
   },
   preset: 'ts-jest',
+  testEnvironment: 'jsdom',
   testMatch: null,
   testPathIgnorePatterns: ['node_modules', '\\.cache', '<rootDir>.*/public'],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',

@@ -11,8 +11,6 @@
 		"plugin:import/errors",
 		"plugin:import/typescript",
 		"plugin:import/warnings",
-		"plugin:prettierx/@typescript-eslint",
-		"plugin:prettierx/react",
 		"plugin:prettierx/standardx",
 		"plugin:react/recommended"
 	],
