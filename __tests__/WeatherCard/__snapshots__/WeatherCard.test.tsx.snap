@@ -75,7 +75,7 @@ exports[`WeatherCard renders correctly 1`] = `
     <div
       className="emotion-3"
     >
-      Sat, May 29th
+      Sat, Jun 12th
     </div>
   </div>
   <div
