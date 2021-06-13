@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from '@emotion/styled';
 import Divider from '@material-ui/core/Divider';
 
@@ -35,8 +35,6 @@ const CardContent = styled.div`
 
 const Row = styled.div`
   text-align: center;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
 `;
 
 const ImgContainer = styled.div`
@@ -49,14 +47,6 @@ const ImgContainer = styled.div`
   position: relative;
   text-align: center;
 
-  .gatsby-image-wrapper {
-    @media (min-width: ${bp.xxl}px) {
-      div:first-of-type {
-        padding-bottom: 70% !important;
-      }
-    }
-  }
-
   a {
     color: rgb(51, 51, 51);
   }
@@ -65,6 +55,7 @@ const ImgContainer = styled.div`
     @media (max-width: ${bp.md}px) {
       margin-top: 10px;
     }
+    margin: auto;
     margin-top: 25px;
     max-height: 90px;
   }
@@ -94,10 +85,10 @@ const Certifications: FC<Record<string, unknown>> = (): JSX.Element => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Img
+                    <GatsbyImage
                       style={{ maxHeight: '100%' }}
                       imgStyle={{ objectFit: 'contain' }}
-                      fluid={awsImg.childImageSharp.fluid}
+                      image={awsImg.childImageSharp.gatsbyImageData}
                       alt="AWS Logo"
                     />
                     <p>AWS Certified Cloud Practitioner</p>

@@ -212,7 +212,7 @@ const RenderMobileDrawer: FC<Record<string, unknown>> = (): JSX.Element => {
 
   return (
     <>
-      <AppBarCustom color="inherit" position="fixed">
+      <AppBarCustom color="inherit" position="relative">
         <Toolbar className="tool-bar">
           <a href="/" onClick={toggleDrawer}>
             <i className="material-icons icon-green">menu</i>

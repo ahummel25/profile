@@ -8,7 +8,7 @@ import { act } from 'react-test-renderer';
 
 import mockWeatherResponse from '../__mocks__/mock-weather';
 import { baseWeatherUrl } from '../src/services/api';
-import { useGetWeatherByCoords } from '../src/hooks';
+import { useGetWeatherByCoords, useWindowDimensions } from '../src/hooks';
 
 jest.unmock('../src/hooks');
 
@@ -18,6 +18,11 @@ const longitude = 41.89;
 const mockWeatherApiUrl1 = `${baseWeatherUrl}/weather?lat=${latitude1}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
 const mockWeatherApiUrl2 = `${baseWeatherUrl}/weather?lat=${latitude2}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
 let response: RenderHookResult<string, unknown> | undefined;
+
+interface WindowDimensions {
+  width: number;
+  height: number;
+}
 
 const mockGeolocation = (
   latitude: number
@@ -113,5 +118,23 @@ describe('useGetWeatherByCoords', () => {
 
     expect(fetchCalls.length).toBe(0);
     expect(response?.result.current).toBe(null);
+  });
+
+  it('should test useWindowDimensions', async () => {
+    await act(async () => {
+      response = renderHook(() => useWindowDimensions());
+    });
+
+    const keys = Object.keys(response?.result.current as WindowDimensions);
+
+    expect(keys.length).toBe(2);
+    expect(keys[0]).toBe('width');
+    expect(keys[1]).toBe('height');
+
+    keys.forEach((key): void => {
+      const currentValue = response?.result.current as any;
+      expect(currentValue[key]).toBeDefined();
+      expect(typeof currentValue[key]).toBe('number');
+    });
   });
 });

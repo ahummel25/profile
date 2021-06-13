@@ -6,8 +6,8 @@ import { baseWeatherUrl } from '../services/api';
 import { getFixedFahrenheit } from '../utils';
 
 export const useGetFixedFahrenheit = (temp?: number): string | null => {
-  const fixedTemp = useMemo(() => getFixedFahrenheit(temp), [temp]);
-  return fixedTemp;
+  const CONSTRAINEDTemp = useMemo(() => getFixedFahrenheit(temp), [temp]);
+  return CONSTRAINEDTemp;
 };
 
 export const useGetImages = (): IImages => {
@@ -16,142 +16,102 @@ export const useGetImages = (): IImages => {
       query {
         awsImg: file(relativePath: { eq: "aws.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         i11Img: file(relativePath: { eq: "i11.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 60, maxHeight: 60) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         juristatImg: file(relativePath: { eq: "juristat.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 60, maxHeight: 60) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         profileImg: file(relativePath: { eq: "me_full.jpg" }) {
           childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         wwtImg: file(relativePath: { eq: "wwt.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 60, maxHeight: 60) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         htmlImg: file(relativePath: { eq: "html5.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         reactImg: file(relativePath: { eq: "react.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         cssImg: file(relativePath: { eq: "css3.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         sassImg: file(relativePath: { eq: "sass.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 140, maxHeight: 105) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         bootstrapImg: file(relativePath: { eq: "bootstrap.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         materializeImg: file(relativePath: { eq: "materialize.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         styCompImg: file(relativePath: { eq: "styled_components.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         tsImg: file(relativePath: { eq: "typescript.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         jqueryImg: file(relativePath: { eq: "jquery.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         nodeImg: file(relativePath: { eq: "nodejs.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         pythonImg: file(relativePath: { eq: "python.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         goImg: file(relativePath: { eq: "golang.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         javaImg: file(relativePath: { eq: "java.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         mysqlImg: file(relativePath: { eq: "mysql.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         oracleImg: file(relativePath: { eq: "oracle.png" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 100, maxHeight: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
       }
@@ -204,7 +164,7 @@ export const useGetWeatherByCoords = (
 
           setWeatherResponse(weather);
         } catch (err) {
-          console.debug(`Error calling weather API: ${err.message}`);
+          console.debug(`Error calling weather API: ${(err as Error).message}`);
         }
       }
     };

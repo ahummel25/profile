@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from '@emotion/styled';
 import Divider from '@material-ui/core/Divider';
 
@@ -41,7 +41,6 @@ const ImgContainer = styled.div`
   font-size: 16px;
   font-weight: 400;
   position: relative;
-  text-align: center;
   margin-top: 30px;
   max-height: 100px;
   height: 90px;
@@ -88,19 +87,19 @@ const Skills: FC<Record<string, unknown>> = (): JSX.Element => {
               <Divider className="divider" variant="middle" />
               <Row className="row">
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={htmlImg.childImageSharp.fluid}
+                    image={htmlImg.childImageSharp.gatsbyImageData}
                     alt="HTML5 Logo"
                   />
                   <p>HTML5</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={reactImg.childImageSharp.fluid}
+                    image={reactImg.childImageSharp.gatsbyImageData}
                     alt="React Logo"
                   />
                   <p>JSX/TSX</p>
@@ -114,46 +113,46 @@ const Skills: FC<Record<string, unknown>> = (): JSX.Element => {
               <Divider className="divider" variant="middle" />
               <Row className="row">
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={cssImg.childImageSharp.fluid}
+                    image={cssImg.childImageSharp.gatsbyImageData}
                     alt="CSS3 Logo"
                   />
                   <p>CSS3</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={sassImg.childImageSharp.fluid}
+                    image={sassImg.childImageSharp.gatsbyImageData}
                     alt="SASS Logo"
                   />
                   <p className="sass">SASS</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={bootstrapImg.childImageSharp.fluid}
+                    image={bootstrapImg.childImageSharp.gatsbyImageData}
                     alt="Bootstrap Logo"
                   />
                   <p>Bootstrap</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={materializeImg.childImageSharp.fluid}
+                    image={materializeImg.childImageSharp.gatsbyImageData}
                     alt="Materialize Logo"
                   />
                   <p>Materialize</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={styCompImg.childImageSharp.fluid}
+                    image={styCompImg.childImageSharp.gatsbyImageData}
                     alt="Styled Components Logo"
                   />
                   <p>Styled Components</p>
@@ -167,46 +166,46 @@ const Skills: FC<Record<string, unknown>> = (): JSX.Element => {
               <Divider className="divider" variant="middle" />
               <Row className="row">
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={reactImg.childImageSharp.fluid}
+                    image={reactImg.childImageSharp.gatsbyImageData}
                     alt="React Logo"
                   />
                   <p>React</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={reactImg.childImageSharp.fluid}
+                    image={reactImg.childImageSharp.gatsbyImageData}
                     alt="React Logo"
                   />
                   <p data-react="native">React Native</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={tsImg.childImageSharp.fluid}
+                    image={tsImg.childImageSharp.gatsbyImageData}
                     alt="Typescript Logo"
                   />
                   <p>Typescript</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={jqueryImg.childImageSharp.fluid}
+                    image={jqueryImg.childImageSharp.gatsbyImageData}
                     alt="jQuery Logo"
                   />
                   <p>jQuery</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={nodeImg.childImageSharp.fluid}
+                    image={nodeImg.childImageSharp.gatsbyImageData}
                     alt="Node.js Logo"
                   />
                   <p>Node</p>
@@ -220,46 +219,46 @@ const Skills: FC<Record<string, unknown>> = (): JSX.Element => {
               <Divider className="divider" variant="middle" />
               <Row className="row">
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={pythonImg.childImageSharp.fluid}
+                    image={pythonImg.childImageSharp.gatsbyImageData}
                     alt="Python Logo"
                   />
                   <p>Python</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={goImg.childImageSharp.fluid}
+                    image={goImg.childImageSharp.gatsbyImageData}
                     alt="Golang Logo"
                   />
                   <p>Go</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={javaImg.childImageSharp.fluid}
+                    image={javaImg.childImageSharp.gatsbyImageData}
                     alt="Java Logo"
                   />
                   <p>Java</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={mysqlImg.childImageSharp.fluid}
+                    image={mysqlImg.childImageSharp.gatsbyImageData}
                     alt="MySQL Logo"
                   />
                   <p>MySQL</p>
                 </ImgContainer>
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={oracleImg.childImageSharp.fluid}
+                    image={oracleImg.childImageSharp.gatsbyImageData}
                     alt="Oracle Logo"
                   />
                   <p>Oracle</p>
@@ -273,10 +272,10 @@ const Skills: FC<Record<string, unknown>> = (): JSX.Element => {
               <Divider className="divider" variant="middle" />
               <Row className="row">
                 <ImgContainer className="col s4 m2">
-                  <Img
+                  <GatsbyImage
                     style={{ maxHeight: '100%' }}
                     imgStyle={{ objectFit: 'contain' }}
-                    fluid={awsImg.childImageSharp.fluid}
+                    image={awsImg.childImageSharp.gatsbyImageData}
                     alt="AWS Logo"
                   />
                   <p>AWS</p>

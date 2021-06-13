@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import styled from '@emotion/styled';
 import Divider from '@material-ui/core/Divider';
 
@@ -102,6 +102,7 @@ const ImgContainer = styled.div`
   @media (max-width: ${bp.md}px) {
     margin-bottom: 10px;
   }
+  text-align: center;
   max-height: 100px;
   height: 60px;
 `;
@@ -123,10 +124,16 @@ const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Img
+                    {/* <StaticImage
                       style={{ maxHeight: '100%' }}
                       imgStyle={{ objectFit: 'contain' }}
-                      fluid={i11Img.childImageSharp.fluid}
+                      src="../images/i11.png"
+                      alt="Inspire11 Logo"
+                    /> */}
+                    <GatsbyImage
+                      style={{ maxHeight: '100%' }}
+                      imgStyle={{ objectFit: 'contain' }}
+                      image={i11Img.childImageSharp.gatsbyImageData}
                       alt="Inspire11 Logo"
                     />
                   </a>
@@ -190,10 +197,16 @@ const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Img
+                    {/* <StaticImage
                       style={{ maxHeight: '100%' }}
                       imgStyle={{ objectFit: 'contain' }}
-                      fluid={juristatImg.childImageSharp.fluid}
+                      src="../images/juristat.png"
+                      alt="Juristat Logo"
+                    /> */}
+                    <GatsbyImage
+                      style={{ maxHeight: '100%' }}
+                      imgStyle={{ objectFit: 'contain' }}
+                      image={juristatImg.childImageSharp.gatsbyImageData}
                       alt="Juristat Logo"
                     />
                   </a>
@@ -255,10 +268,16 @@ const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Img
+                    {/* <StaticImage
                       style={{ maxHeight: '100%' }}
                       imgStyle={{ objectFit: 'contain' }}
-                      fluid={wwtImg.childImageSharp.fluid}
+                      src="../images/wwt.png"
+                      alt="WWT Logo"
+                    /> */}
+                    <GatsbyImage
+                      style={{ maxHeight: '100%' }}
+                      imgStyle={{ objectFit: 'contain' }}
+                      image={wwtImg.childImageSharp.gatsbyImageData}
                       alt="WWT Logo"
                     />
                   </a>
@@ -319,10 +338,16 @@ const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Img
+                    {/* <StaticImage
                       style={{ maxHeight: '100%' }}
                       imgStyle={{ objectFit: 'contain' }}
-                      fluid={wwtImg.childImageSharp.fluid}
+                      src="../images/wwt.png"
+                      alt="WWT Logo"
+                    /> */}
+                    <GatsbyImage
+                      style={{ maxHeight: '100%' }}
+                      imgStyle={{ objectFit: 'contain' }}
+                      image={wwtImg.childImageSharp.gatsbyImageData}
                       alt="WWT Logo"
                     />
                   </a>

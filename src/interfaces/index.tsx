@@ -1,9 +1,9 @@
 import { MutableRefObject } from 'react';
-import { FluidObject } from 'gatsby-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 export interface IImages {
   [key: string]: {
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
 }

@@ -59,7 +59,7 @@ const WeatherCard: FC<Record<string, unknown>> = (): JSX.Element => {
       <Header>
         <WeatherImage
           src={icon ? `https://openweathermap.org/img/w/${icon}.png` : ''}
-          alt={icon}
+          alt={icon || ''}
         />
         <Title>{formattedDate}</Title>
       </Header>

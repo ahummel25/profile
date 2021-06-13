@@ -17,8 +17,9 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
-    'gatsby-transformer-sharp',
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
