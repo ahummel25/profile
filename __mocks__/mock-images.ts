@@ -20,7 +20,8 @@ const imgTypes = [
   'goImg',
   'javaImg',
   'mysqlImg',
-  'oracleImg'
+  'oracleImg',
+  'meImg'
 ];
 
 const mockImagesResponse: IImages = {};

@@ -124,12 +124,6 @@ const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {/* <StaticImage
-                      style={{ maxHeight: '100%' }}
-                      imgStyle={{ objectFit: 'contain' }}
-                      src="../images/i11.png"
-                      alt="Inspire11 Logo"
-                    /> */}
                     <GatsbyImage
                       style={{ maxHeight: '100%' }}
                       imgStyle={{ objectFit: 'contain' }}
@@ -197,12 +191,6 @@ const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {/* <StaticImage
-                      style={{ maxHeight: '100%' }}
-                      imgStyle={{ objectFit: 'contain' }}
-                      src="../images/juristat.png"
-                      alt="Juristat Logo"
-                    /> */}
                     <GatsbyImage
                       style={{ maxHeight: '100%' }}
                       imgStyle={{ objectFit: 'contain' }}
@@ -268,12 +256,6 @@ const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {/* <StaticImage
-                      style={{ maxHeight: '100%' }}
-                      imgStyle={{ objectFit: 'contain' }}
-                      src="../images/wwt.png"
-                      alt="WWT Logo"
-                    /> */}
                     <GatsbyImage
                       style={{ maxHeight: '100%' }}
                       imgStyle={{ objectFit: 'contain' }}
@@ -338,12 +320,6 @@ const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {/* <StaticImage
-                      style={{ maxHeight: '100%' }}
-                      imgStyle={{ objectFit: 'contain' }}
-                      src="../images/wwt.png"
-                      alt="WWT Logo"
-                    /> */}
                     <GatsbyImage
                       style={{ maxHeight: '100%' }}
                       imgStyle={{ objectFit: 'contain' }}

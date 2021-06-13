@@ -114,6 +114,11 @@ export const useGetImages = (): IImages => {
             gatsbyImageData(layout: CONSTRAINED)
           }
         }
+        meImg: file(relativePath: { eq: "me_full.jpg" }) {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, quality: 100)
+          }
+        }
       }
     `
   );
