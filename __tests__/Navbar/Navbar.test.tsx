@@ -84,7 +84,7 @@ describe('Navbar', () => {
       const mobileAppBar = tree.root.findAllByType(AppBar);
       expect(mobileAppBar.length).toBe(1);
       expect(mobileAppBar[0].props.color).toBe('inherit');
-      expect(mobileAppBar[0].props.position).toBe('relative');
+      expect(mobileAppBar[0].props.position).toBe('sticky');
 
       const mobileDrawer = tree.root.findAllByType(Drawer);
       expect(mobileDrawer.length).toBe(1);
