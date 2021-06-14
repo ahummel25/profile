@@ -6,8 +6,8 @@ import { baseWeatherUrl } from '../services/api';
 import { getFixedFahrenheit } from '../utils';
 
 export const useGetFixedFahrenheit = (temp?: number): string | null => {
-  const CONSTRAINEDTemp = useMemo(() => getFixedFahrenheit(temp), [temp]);
-  return CONSTRAINEDTemp;
+  const fixedTemp = useMemo(() => getFixedFahrenheit(temp), [temp]);
+  return fixedTemp;
 };
 
 export const useGetImages = (): IImages => {
