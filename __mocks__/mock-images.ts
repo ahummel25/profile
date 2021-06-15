@@ -26,21 +26,22 @@ const imgTypes = [
 
 const mockImagesResponse: IImages = {};
 
-imgTypes.forEach((imgType: string): object => {
-  return (mockImagesResponse[imgType] = {
-    childImageSharp: {
-      gatsbyImageData: {
-        layout: "constrained",
-		width: 100,
-		height: 100,
-		images: {
-			fallback: {
-				src: "some/mock/img.png"
-			}
-		}
+imgTypes.forEach(
+  (imgType: string): object =>
+    (mockImagesResponse[imgType] = {
+      childImageSharp: {
+        gatsbyImageData: {
+          layout: 'constrained',
+          width: 100,
+          height: 100,
+          images: {
+            fallback: {
+              src: 'some/mock/img.png'
+            }
+          }
+        }
       }
-    }
-  });
-});
+    })
+);
 
 export default mockImagesResponse;

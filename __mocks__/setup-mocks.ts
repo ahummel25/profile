@@ -9,5 +9,6 @@ jest.mock('../src/hooks', () => ({
 }));
 
 import { IImages, IWeatherResponse } from '../src/interfaces';
+
 import mockImagesResponse from './mock-images';
 import mockWeatherResponse from './mock-weather';
