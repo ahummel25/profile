@@ -74,7 +74,7 @@
     "@testing-library/react-hooks": "^7.0.0",
     "@types/classnames": "^2.2.10",
     "@types/date-fns": "^2.6.0",
-    "@types/jest": "^26.0.20",
+    "@types/jest": "^27.0.0",
     "@types/materialize-css": "^1.0.8",
     "@types/node": "^15.6.1",
     "@types/react": "^17.0.0",
