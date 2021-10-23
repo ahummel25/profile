@@ -1,11 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import WeatherCard from '../../src/components/WeatherCard';
 
 describe('WeatherCard', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<WeatherCard />);
+    const tree = create(<WeatherCard />);
 
     expect(tree).toBeDefined();
   });

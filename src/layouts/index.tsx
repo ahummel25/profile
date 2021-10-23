@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import Helmet from 'react-helmet';
+import { default as Helmet } from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 

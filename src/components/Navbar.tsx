@@ -194,6 +194,14 @@ const RenderFullDrawer: FC<Record<string, unknown>> = (): JSX.Element => (
 const RenderMobileDrawer: FC<Record<string, unknown>> = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
 
+  useEffect((): void => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [open]);
+
   const toggleDrawer = (
     event: React.KeyboardEvent | React.MouseEvent
   ): void => {

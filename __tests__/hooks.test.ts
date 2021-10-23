@@ -9,6 +9,7 @@ import { act } from 'react-test-renderer';
 import mockWeatherResponse from '../__mocks__/mock-weather';
 import { baseWeatherUrl } from '../src/services/api';
 import { useGetWeatherByCoords, useWindowDimensions } from '../src/hooks';
+import { IWeatherResponse } from '../src/interfaces';
 
 jest.unmock('../src/hooks');
 
@@ -17,7 +18,12 @@ const latitude2 = -88.66;
 const longitude = 41.89;
 const mockWeatherApiUrl1 = `${baseWeatherUrl}/weather?lat=${latitude1}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
 const mockWeatherApiUrl2 = `${baseWeatherUrl}/weather?lat=${latitude2}&lon=${longitude}&appid=${process.env.GATSBY_WEATHER_API_KEY}&units=imperial`;
-let response: RenderHookResult<string, unknown> | undefined;
+let response:
+  | RenderHookResult<
+      string,
+      IWeatherResponse | { width: number; height: number } | null
+    >
+  | undefined;
 
 interface WindowDimensions {
   width: number;

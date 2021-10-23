@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 import Header from '../../src/components/Header';
@@ -13,13 +13,13 @@ describe('Header', () => {
   });
 
   it('renders correctly', () => {
-    const tree = renderer.create(<Header setDrawerWidth={setDrawerWidth} />);
+    const tree = create(<Header setDrawerWidth={setDrawerWidth} />);
 
     expect(tree).toBeDefined();
   });
 
   it('renders the correct number of images', () => {
-    const tree = renderer.create(<Header setDrawerWidth={setDrawerWidth} />);
+    const tree = create(<Header setDrawerWidth={setDrawerWidth} />);
 
     const images = tree.root.findAllByType(GatsbyImage);
 
@@ -27,7 +27,7 @@ describe('Header', () => {
   });
 
   it('has correct props for subcomponent and HTML element styles', () => {
-    const tree = renderer.create(<Header setDrawerWidth={setDrawerWidth} />);
+    const tree = create(<Header setDrawerWidth={setDrawerWidth} />);
     const root = tree.root;
 
     expect(root.findByType(Navbar).props.setDrawerWidth).toBe(setDrawerWidth);

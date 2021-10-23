@@ -24,22 +24,10 @@ jest.mock('react-dom', () => {
 // jest.mock('@material-ui/core/Drawer');
 // jest.mock('@material-ui/styles/withStyles');
 
-jest.mock('@material-ui/core', () => {
-  const materialUI = jest.requireActual('@material-ui/core');
-  return {
-    ...materialUI,
-    Fade: jest.fn(({ children, open }) => (open ? children : null))
-  };
-});
-
-// jest.mock('@material-ui/core/styles', () => ({
-//   withStyles: (_styles: any) => (component: any) => component
-// }));
-
 import React, { ReactNode, ReactHTMLElement } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Drawer from '@material-ui/core/Drawer';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import { mocked } from 'ts-jest/utils';
 
 import Navbar from '../../src/components/Navbar';
@@ -52,7 +40,7 @@ describe('Navbar', () => {
   const setDrawerWidth = jest.fn();
 
   it('renders correctly', () => {
-    const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
+    const tree = create(<Navbar setDrawerWidth={setDrawerWidth} />);
 
     expect(tree).toBeDefined();
   });
@@ -68,7 +56,7 @@ describe('Navbar', () => {
         height: 799
       }));
 
-      const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />, {
+      const tree = create(<Navbar setDrawerWidth={setDrawerWidth} />, {
         createNodeMock: (node: ReactHTMLElement<HTMLElement>): HTMLElement =>
           document.createElement(node.type)
       });
@@ -129,7 +117,7 @@ describe('Navbar', () => {
         height: 1200
       }));
 
-      const tree = renderer.create(<Navbar setDrawerWidth={setDrawerWidth} />);
+      const tree = create(<Navbar setDrawerWidth={setDrawerWidth} />);
 
       expect(tree.root.props.setDrawerWidth).toHaveBeenCalledWith(DRAWER_WIDTH);
       expect(tree.root.props.setDrawerWidth.mock.calls[0][0]).toBe(

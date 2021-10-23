@@ -1,18 +1,18 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 import Certifications from '../../src/components/Certifications';
 
 describe('Certifications', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Certifications />);
+    const tree = create(<Certifications />);
 
     expect(tree).toBeDefined();
   });
 
   it('renders and makes assertions about child elements', () => {
-    const tree = renderer.create(<Certifications />);
+    const tree = create(<Certifications />);
     const root = tree.root;
 
     const a = root.findAllByType('a');

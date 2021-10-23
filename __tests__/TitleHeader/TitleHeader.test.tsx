@@ -1,11 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import TitleHeader from '../../src/components/TitleHeader';
 
 describe('TitleHeader', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<TitleHeader title="Mock Title Header" />);
+    const tree = create(<TitleHeader title="Mock Title Header" />);
 
     expect(tree).toBeDefined();
   });

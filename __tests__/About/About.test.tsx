@@ -1,11 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { create } from 'react-test-renderer';
 
 import About from '../../src/components/About';
 
 describe('About', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<About />);
+    const tree = create(<About />);
 
     expect(tree).toBeDefined();
   });
