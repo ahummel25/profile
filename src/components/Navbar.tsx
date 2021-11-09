@@ -196,9 +196,9 @@ const RenderMobileDrawer: FC<Record<string, unknown>> = (): JSX.Element => {
 
   useEffect((): void => {
     if (open) {
-      document.body.style.overflow = 'hidden';
+      document.ontouchmove = (e: TouchEvent): void => e.preventDefault();
     } else {
-      document.body.style.overflow = '';
+      document.ontouchmove = (): boolean => true;
     }
   }, [open]);
 
