@@ -1,2 +1,5 @@
+# Jest
+jest.config.*
+
 # Ignore mocks
 __mocks__/*
