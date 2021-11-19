@@ -5,6 +5,7 @@ const imgTypes = [
   'awsImg',
   'i11Img',
   'juristatImg',
+  'ussfImg',
   'wwtImg',
   'htmlImg',
   'reactImg',

@@ -34,6 +34,11 @@ export const useGetImages = (): IImages => {
             gatsbyImageData(layout: CONSTRAINED)
           }
         }
+        ussfImg: file(relativePath: { eq: "ussf.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED)
+          }
+        }
         wwtImg: file(relativePath: { eq: "wwt.png" }) {
           childImageSharp {
             gatsbyImageData(layout: CONSTRAINED)

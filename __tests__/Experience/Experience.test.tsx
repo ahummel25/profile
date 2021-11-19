@@ -16,6 +16,6 @@ describe('Experience', () => {
 
     const images = tree.root.findAllByType(GatsbyImage);
 
-    expect(images.length).toBe(4);
+    expect(images.length).toBe(5);
   });
 });

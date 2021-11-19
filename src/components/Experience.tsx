@@ -5,6 +5,7 @@ import Divider from '@material-ui/core/Divider';
 
 import { useGetImages } from '../hooks';
 import { breakpoints as bp } from '../styles/variables';
+import { CARD_CONTAINER_WIDTH } from '../utils/constants';
 
 import TitleHeader from './TitleHeader';
 import CardContainer from './CardContainer';
@@ -108,13 +109,72 @@ const ImgContainer = styled.div`
 `;
 
 const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
-  const { i11Img, juristatImg, wwtImg } = useGetImages();
+  const { i11Img, juristatImg, ussfImg, wwtImg } = useGetImages();
 
   return (
     <>
       <section id="experience" className="section scrollspy">
         <TitleHeader title="Experience" />
-        <CardContainer width={860}>
+        <CardContainer width={CARD_CONTAINER_WIDTH}>
+          <Card className="card">
+            <CardContent className="card-content">
+              <Row className="row">
+                <ImgContainer className="col s12 m2">
+                  <a
+                    href="https://ussoccer.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GatsbyImage
+                      style={{ maxHeight: '100%' }}
+                      imgStyle={{ objectFit: 'contain' }}
+                      image={ussfImg.childImageSharp.gatsbyImageData}
+                      alt="US Soccer Logo"
+                    />
+                  </a>
+                </ImgContainer>
+                <div className="card-title">
+                  <a
+                    href="https://ussoccer.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="teal-text hoverline"
+                  >
+                    US Soccer Federation
+                  </a>
+                </div>
+                <div className="role brown-text">
+                  Full Stack Software Developer
+                </div>
+              </Row>
+              <Divider className="divider" variant="middle" />
+              <p className="subtitle">
+                <em className="text-description"></em>
+              </p>
+              <h6>Product Development</h6>
+              <ul>
+                <li>
+                  Lead developer on maintaining and building new features for
+                  USSoccer.com website and backend .NET APIs
+                </li>
+                <li>
+                  Working with internal and external teams to bring software
+                  engineering in-house at US Soccer
+                </li>
+                <li>
+                  Rearchitecting legacy consulting company code to better
+                  position organization for future engineering success
+                </li>
+                <li>
+                  Tools: React, Typescript // C#, .NET, Go, MySQL, Postgres //
+                  Sitecore CMS // AWS, Azure
+                </li>
+              </ul>
+            </CardContent>
+            <div className="card-footer">
+              <span>March 2021 - Present | Chicago, IL</span>
+            </div>
+          </Card>
           <Card className="card">
             <CardContent className="card-content">
               <Row className="row">
@@ -179,7 +239,7 @@ const Experience: FC<Record<string, unknown>> = (): JSX.Element => {
               </ul>
             </CardContent>
             <div className="card-footer">
-              <span>May 2019 - Present | Chicago, IL</span>
+              <span>May 2019 - March 2021 | Chicago, IL</span>
             </div>
           </Card>
           <Card className="card">

@@ -8,15 +8,13 @@ import Divider from '@material-ui/core/Divider';
 import { useWindowDimensions } from '../hooks';
 import { NavbarProps, NavListProps } from '../interfaces';
 import { colors, fonts } from '../styles/variables';
+import { DRAWER_WIDTH, MAX_WINDOW_WIDTH } from '../utils/constants';
 
 import WeatherCard from './WeatherCard';
 
 type StyledLiProps = {
   color: string;
 };
-
-const DRAWER_WIDTH = 190;
-const MAX_WINDOW_WIDTH = 992;
 
 const DrawerContainer = styled(({ ...rest }) => <Drawer {...rest} />)`
   flex-shrink: 0;
