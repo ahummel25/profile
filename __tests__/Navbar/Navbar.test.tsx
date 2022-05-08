@@ -28,12 +28,11 @@ import React, { ReactNode, ReactHTMLElement } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Drawer from '@material-ui/core/Drawer';
 import { create } from 'react-test-renderer';
-import { mocked } from 'ts-jest/utils';
 
 import Navbar from '../../src/components/Navbar';
 import { useWindowDimensions } from '../../src/hooks';
 
-const mockUseWindowDimensions = mocked(useWindowDimensions, true);
+const mockUseWindowDimensions = jest.mocked(useWindowDimensions, true);
 
 describe('Navbar', () => {
   const DRAWER_WIDTH = 190;
