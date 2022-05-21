@@ -81,7 +81,7 @@ const Certifications: FC<Record<string, unknown>> = (): JSX.Element => {
               <Row className="row">
                 <ImgContainer className="col s4 m2">
                   <a
-                    href="https://www.youracclaim.com/badges/018dda7d-8dc3-4192-b636-52706f01ad13/public_url"
+                    href="https://www.credly.com/badges/9af93a40-0c61-4059-8cd2-5a4b123d6bcf/public_url"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
