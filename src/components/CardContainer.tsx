@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
 
+import { IChildrenProp } from '../interfaces';
 import { fonts, breakpoints as bp } from '../styles/variables';
 
-type ContainerProps = {
+interface ContainerProps extends IChildrenProp {
   width?: number;
-};
+}
 
 const Container = styled.div<ContainerProps>`
   width: 95%;

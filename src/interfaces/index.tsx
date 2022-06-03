@@ -1,5 +1,9 @@
 import { MutableRefObject } from 'react';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
+
+export interface IChildrenProp {
+  children?: React.ReactNode;
+}
 export interface IImages {
   [key: string]: {
     childImageSharp: {
@@ -60,7 +64,7 @@ export interface ForwardedRefsProps {
   };
 }
 
-export interface LayoutMainProps {
+export interface LayoutMainProps extends IChildrenProp {
   paddingLeft: number;
 }
 

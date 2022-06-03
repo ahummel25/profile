@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 import styled from '@emotion/styled';
 
+import { IChildrenProp } from '../interfaces';
 import { widths } from '../styles/variables';
 import { getEmSize } from '../styles/mixins';
 
-interface ContainerProps {
+interface ContainerProps extends IChildrenProp {
   className?: string;
 }
 

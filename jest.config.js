@@ -3,6 +3,7 @@ module.exports = {
     __PATH_PREFIX__: '',
     'ts-jest': {
       babelConfig: true,
+      // isolatedModules: true,
       tsconfig: 'tsconfig.json'
     }
   },
@@ -16,14 +17,12 @@ module.exports = {
       'gatsby-plugin-utils/dist/$1',
       'gatsby-plugin-utils/$1'
     ],
-    '^gatsby-page-utils/(.*)$': 'gatsby-page-utils/dist/$1' // Workaround for https://github.com/facebook/jest/issues/9771
+    '^gatsby-page-utils/(.*)$': 'gatsby-page-utils/$1' // Workaround for https://github.com/facebook/jest/issues/9771
   },
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
-  testMatch: null,
   testPathIgnorePatterns: ['node_modules', '\\.cache', '<rootDir>.*/public'],
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
-  testURL: 'http://localhost',
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
     '^.+\\.jsx?$': 'babel-jest'
