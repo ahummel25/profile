@@ -26,13 +26,9 @@ const CardContainer: FC<ContainerProps> = ({
   width
 }): JSX.Element => (
   <>
-    {width ? (
-      <Container className="container" width={width}>
-        {children}
-      </Container>
-    ) : (
-      <Container className="container">{children}</Container>
-    )}
+    <Container className="container" width={width}>
+      {children}
+    </Container>
   </>
 );
 
