@@ -101,5 +101,8 @@
 		"rimraf": "^3.0.2",
 		"ts-jest": "^28.0.4",
 		"typescript": "^4.7.3"
+	},
+	"peerDependencies": {
+		"@parcel/namer-default": "2.6.1"
 	}
 }
