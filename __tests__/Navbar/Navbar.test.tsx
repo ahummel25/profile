@@ -17,17 +17,12 @@ jest.mock('react-dom', () => {
 });
 
 // https://github.com/mui-org/material-ui/issues/12237
-// jest.mock('@material-ui/core/Fade');
-// jest.mock('@material-ui/core/Backdrop');
-// jest.mock('@material-ui/core/Portal');
-// jest.mock('@material-ui/core/Modal');
-// jest.mock('@material-ui/core/Drawer');
-// jest.mock('@material-ui/styles/withStyles');
+jest.mock('@material-ui/core/Fade');
 
 import React, { ReactNode, ReactHTMLElement } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Drawer from '@material-ui/core/Drawer';
-import { create } from 'react-test-renderer';
+import { act, create } from 'react-test-renderer';
 
 import Navbar from '../../src/components/Navbar';
 import { useWindowDimensions } from '../../src/hooks';
@@ -65,7 +60,7 @@ describe('Navbar', () => {
         DRAWER_WIDTH
       );
 
-      const lis = tree.root.findAllByType('li');
+      let lis = tree.root.findAllByType('li');
       expect(lis.length).toBe(0);
 
       const mobileAppBar = tree.root.findAllByType(AppBar);
@@ -83,11 +78,21 @@ describe('Navbar', () => {
       // @ts-ignore
       expect(tree.toJSON().children[0].children[0].props.onClick).toBeTruthy();
 
-      //   const as = tree.root.findAllByType('a');
-      //   const e = { preventDefault: jest.fn() };
+      const as = tree.root.findAllByType('a');
+      const e = { preventDefault: jest.fn(), key: 'Tab', type: 'keydown' };
+
+      // Mobile drawer will not be open due to event type
+      act(() => {
+        as[0].props.onClick(e);
+      });
+
+      expect(mobileDrawer[0].props.open).toBe(false);
+
+      // Change the event type to a click
+      e.type = 'click';
 
       // Open mobile drawer
-      /*act(() => {
+      act(() => {
         as[0].props.onClick(e);
       });
 
@@ -101,7 +106,7 @@ describe('Navbar', () => {
         lis[0].props.children.props.onClick();
       });
 
-      expect(mobileDrawer[0].props.open).toBe(false);*/
+      expect(mobileDrawer[0].props.open).toBe(false);
     });
   });
 

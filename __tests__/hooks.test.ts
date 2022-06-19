@@ -131,14 +131,16 @@ describe('useGetWeatherByCoords', () => {
       response = renderHook(() => useWindowDimensions());
     });
 
-    const keys = Object.keys(response?.result.current as WindowDimensions);
+    const keys = Object.keys(
+      response?.result.current as WindowDimensions
+    ) as Array<keyof WindowDimensions>;
 
     expect(keys.length).toBe(2);
     expect(keys[0]).toBe('width');
     expect(keys[1]).toBe('height');
 
     keys.forEach((key): void => {
-      const currentValue = response?.result.current as any;
+      const currentValue = response?.result.current as WindowDimensions;
       expect(currentValue[key]).toBeDefined();
       expect(typeof currentValue[key]).toBe('number');
     });
