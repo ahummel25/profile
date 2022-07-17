@@ -38,7 +38,7 @@ jobs:
             ${{ runner.OS }}-npm-cache-
 
       - name: NPM Install
-        run: npm install
+        run: npm install --force
 
       - name: NPM Test
         run: npm test
