@@ -139,8 +139,9 @@ describe('useGetWeatherByCoords', () => {
     expect(keys[0]).toBe('width');
     expect(keys[1]).toBe('height');
 
+    const currentValue = response?.result.current as WindowDimensions;
+
     keys.forEach((key): void => {
-      const currentValue = response?.result.current as WindowDimensions;
       expect(currentValue[key]).toBeDefined();
       expect(typeof currentValue[key]).toBe('number');
     });
