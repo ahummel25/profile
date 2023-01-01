@@ -1,11 +1,6 @@
 module.exports = {
   globals: {
-    __PATH_PREFIX__: '',
-    'ts-jest': {
-      babelConfig: true,
-      // isolatedModules: true,
-      tsconfig: 'tsconfig.json'
-    }
+    __PATH_PREFIX__: ''
   },
   moduleFileExtensions: ['js', 'json', 'jsx', 'node', 'ts', 'tsx'],
   moduleNameMapper: {

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { default as Helmet } from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import styled from '@emotion/styled';
 
 import 'materialize-css/dist/css/materialize.min.css';
@@ -26,55 +26,55 @@ const Main = styled.main`
   flex-flow: column nowrap;
 `;
 
-const IndexLayout: FC<Record<string, unknown>> = ({ children }) => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query IndexLayoutQuery {
-          site {
-            siteMetadata {
-              faUrl
-              iconUrl
-              title
-              description
-              robotoFontsUrl
-            }
+const IndexLayout: FC<Record<string, JSX.Element | JSX.Element[]>> = ({
+  children
+}): JSX.Element => {
+  const { site } = useStaticQuery<StaticQueryProps>(
+    graphql`
+      query IndexLayoutQuery {
+        site {
+          siteMetadata {
+            faUrl
+            iconUrl
+            title
+            description
+            robotoFontsUrl
           }
         }
-      `}
-      render={(data: StaticQueryProps): JSX.Element => (
-        <Main>
-          <Helmet
-            htmlAttributes={{
-              lang: 'en'
-            }}
-            title={data.site.siteMetadata.title}
-            meta={[
-              {
-                name: 'description',
-                content: data.site.siteMetadata.description
-              },
-              { name: 'keywords', content: data.site.siteMetadata.keywords }
-            ]}
-            link={[
-              {
-                href: data.site.siteMetadata.iconUrl,
-                rel: 'stylesheet'
-              },
-              {
-                href: data.site.siteMetadata.robotoFontsUrl,
-                rel: 'stylesheet'
-              },
-              {
-                href: data.site.siteMetadata.faUrl,
-                rel: 'stylesheet'
-              }
-            ]}
-          />
-          {children}
-        </Main>
-      )}
-    />
+      }
+    `
+  );
+  return (
+    <Main>
+      <Helmet
+        htmlAttributes={{
+          lang: 'en'
+        }}
+        title={site.siteMetadata.title}
+        meta={[
+          {
+            name: 'description',
+            content: site.siteMetadata.description
+          },
+          { name: 'keywords', content: site.siteMetadata.keywords }
+        ]}
+        link={[
+          {
+            href: site.siteMetadata.iconUrl,
+            rel: 'stylesheet'
+          },
+          {
+            href: site.siteMetadata.robotoFontsUrl,
+            rel: 'stylesheet'
+          },
+          {
+            href: site.siteMetadata.faUrl,
+            rel: 'stylesheet'
+          }
+        ]}
+      />
+      {children}
+    </Main>
   );
 };
 

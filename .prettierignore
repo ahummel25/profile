@@ -1,0 +1,7 @@
+# Files Prettier should not format
+**/*.log
+**/.DS_Store
+*.
+.github
+dist
+node_modules

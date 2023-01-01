@@ -27,7 +27,7 @@ import { act, create } from 'react-test-renderer';
 import Navbar from '../../src/components/Navbar';
 import { useWindowDimensions } from '../../src/hooks';
 
-const mockUseWindowDimensions = jest.mocked(useWindowDimensions, true);
+const mockUseWindowDimensions = jest.mocked(useWindowDimensions);
 
 describe('Navbar', () => {
   const DRAWER_WIDTH = 190;

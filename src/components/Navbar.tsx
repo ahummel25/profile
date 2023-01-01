@@ -16,7 +16,9 @@ type StyledLiProps = {
   color: string;
 };
 
-const DrawerContainer = styled(({ ...rest }) => <Drawer {...rest} />)`
+const DrawerContainer = styled(({ ...rest }) => (
+  <Drawer {...rest} tabIndex={-1} />
+))`
   flex-shrink: 0;
 
   ul {
@@ -45,7 +47,9 @@ const DrawerContainer = styled(({ ...rest }) => <Drawer {...rest} />)`
   }
 `;
 
-const AppBarCustom = styled(({ ...rest }) => <AppBar {...rest} />)`
+const AppBarCustom = styled(({ ...rest }) => (
+  <AppBar {...rest} tabIndex={-1} />
+))`
   display: block;
   text-align: center;
   font-size: 22px;
