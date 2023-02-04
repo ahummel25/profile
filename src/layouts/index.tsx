@@ -21,6 +21,20 @@ interface StaticQueryProps {
   };
 }
 
+const indexLayoutQuery = graphql`
+  query IndexLayoutQuery {
+    site {
+      siteMetadata {
+        faUrl
+        iconUrl
+        title
+        description
+        robotoFontsUrl
+      }
+    }
+  }
+`;
+
 const Main = styled.main`
   display: flex;
   flex-flow: column nowrap;
@@ -29,21 +43,7 @@ const Main = styled.main`
 const IndexLayout: FC<Record<string, JSX.Element | JSX.Element[]>> = ({
   children
 }): JSX.Element => {
-  const { site } = useStaticQuery<StaticQueryProps>(
-    graphql`
-      query IndexLayoutQuery {
-        site {
-          siteMetadata {
-            faUrl
-            iconUrl
-            title
-            description
-            robotoFontsUrl
-          }
-        }
-      }
-    `
-  );
+  const { site } = useStaticQuery<StaticQueryProps>(indexLayoutQuery);
   return (
     <Main>
       <Helmet
